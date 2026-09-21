@@ -6,7 +6,7 @@
  * sua própria versão para evitar recarregar conteúdos que não mudaram.
  */
 export const APP_NAME = 'Rumo à Aprovação';
-export const APP_VERSION = '1.9.0';
+export const APP_VERSION = '1.9.1';
 export const DB_NAME = 'rumo-aprovacao-db';
 export const DB_VERSION = 1;
 

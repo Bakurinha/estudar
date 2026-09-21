@@ -305,7 +305,7 @@ export function buildLearningPlan({ contestId, subjectId, topicLabel, page, less
   const claims = extractGroundedClaims(page, lesson);
   const terms = extractKeyTerms(claims, page?.title || topicLabel);
   const domain = inferDomain({ contestId, subjectId, topicLabel });
-  let recallPrompts = claims.map((claim, index) => ({
+  let recallPrompts = practicePage ? [] : claims.map((claim, index) => ({
     prompt: cueForClaim(domain, terms, index),
     criterion: claim.sentence,
     sourceBlock: claim.blockTitle,

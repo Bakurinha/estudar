@@ -8,7 +8,7 @@
  * - falha de um arquivo opcional nunca invalida a instalação inteira.
  */
 
-const CACHE_VERSION = 'v1.9.0';
+const CACHE_VERSION = 'v1.9.1';
 const STATIC_CACHE = `rumo-aprovacao-static-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `rumo-aprovacao-runtime-${CACHE_VERSION}`;
 

@@ -185,6 +185,7 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
   const learningStates = await loadTopicLearningStates(topic.pk);
   const reviewMode = routeQuery?.get?.('review') === '1';
   const requestedPage = Number(routeQuery?.get?.('page') || 0);
+  const pageStateId = (page, index) => page?.id || `${topic.id}-page-${String(index + 1).padStart(3, '0')}`;
 
   const completedPages = () => [...learningStates.values()].filter(item => item.completedAt).length;
 
@@ -264,7 +265,7 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
         </div>
         <div id="lesson-page-index" style="display:grid;gap:8px;margin-top:12px">
           ${pages.map((page, index) => {
-            const learned = learningStates.get(page.id)?.completedAt;
+            const learned = learningStates.get(pageStateId(page, index))?.completedAt;
             return `
               <button
                 class="button"
@@ -350,7 +351,8 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
     const drawPage = index => {
       activePage = Math.max(0, Math.min(index, pages.length - 1));
       const page = pages[activePage];
-      const learningState = learningStates.get(page.id) || null;
+      const pageId = pageStateId(page, activePage);
+      const learningState = learningStates.get(pageId) || null;
       const today = new Date().toISOString().slice(0, 10);
       const due = Boolean(learningState?.nextReviewDate && learningState.nextReviewDate <= today);
       const forceRetrieval = reviewMode || due || !learningState?.completedAt;
@@ -396,6 +398,7 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
           </section>
 
           <div id="learning-content" ${forceRetrieval ? 'hidden' : ''}>
+            <div id="learning-reading-material">
             <div class="official-scope" style="margin-top:14px">
               <strong>${course ? 'Origem desta página no material' : 'Por que esta página está no edital'}</strong>
               <div>${escapeHtml(page.editalBasis || page.sourceScope || lesson.officialScope)}</div>
@@ -415,8 +418,11 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
               ${(page.blocks || []).map(renderBlock).join('')}
             </div>
 
+            </div>
+
             <section class="card" style="margin-top:24px;border-style:dashed">
               <h3>3. Recuperação ativa — agora pare de olhar o texto</h3>
+              <button id="toggle-learning-reading" class="button" style="margin-top:8px">Ocultar leitura enquanto respondo</button>
               <p class="small muted" style="margin-top:6px">
                 Responda primeiro. O botão de conferência revela uma afirmação que já existe nesta página.
               </p>
@@ -481,8 +487,25 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
 
       const contentHost = host.querySelector('#learning-content');
       host.querySelector('#open-learning-content')?.addEventListener('click', () => {
+        if (forceRetrieval) {
+          const diagnostic = host.querySelector('#learning-diagnostic')?.value?.trim() || '';
+          if (diagnostic.length < 10) {
+            toast('Escreva primeiro uma tentativa curta de memória antes de abrir o conteúdo.', 'warning');
+            return;
+          }
+        }
         if (contentHost) contentHost.hidden = false;
         contentHost?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      const readingMaterial = host.querySelector('#learning-reading-material');
+      const readingToggle = host.querySelector('#toggle-learning-reading');
+      readingToggle?.addEventListener('click', () => {
+        if (!readingMaterial) return;
+        readingMaterial.hidden = !readingMaterial.hidden;
+        readingToggle.textContent = readingMaterial.hidden
+          ? 'Mostrar leitura para conferir'
+          : 'Ocultar leitura enquanto respondo';
       });
 
       host.querySelectorAll('[data-reveal-criterion]').forEach(button => {
@@ -515,17 +538,17 @@ export async function renderLesson(contestId, topicId, routeQuery = new URLSearc
           contestId,
           topicId: topic.id,
           topicPk: topic.pk,
-          pageId: page.id,
+          pageId,
           pageIndex: activePage,
           pageTitle: page.title,
-          previousState: learningStates.get(page.id) || null,
+          previousState: learningStates.get(pageId) || null,
           diagnostic,
           recallAnswers: recalls,
           application,
           mastery: Number(masteryValue),
         });
 
-        learningStates.set(page.id, saved);
+        learningStates.set(pageId, saved);
         updateProgressUi();
         toast(`Página registrada. Próxima recuperação: ${saved.nextReviewDate}.`);
       });

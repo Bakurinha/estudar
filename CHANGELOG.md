@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.1 — Recuperação sem olhar e IDs estáveis
+
+- Páginas acadêmicas sem ID passam a usar identificador estável por tópico e posição.
+- Páginas práticas sempre usam tentativa independente, sem transformar enunciado em resposta teórica.
+- Em primeira leitura/revisão, a tentativa inicial é exigida antes de abrir o texto.
+- A leitura pode ser ocultada durante as respostas de recuperação.
+
 ## 1.9.0 — Aprendizagem guiada baseada em evidências
 
 - Modo Aprender por página: tentativa inicial, leitura segmentada, recuperação ativa, conferência, autoexplicação, aplicação e intercalação.
