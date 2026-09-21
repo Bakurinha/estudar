@@ -81,9 +81,20 @@ export async function markTopicStudied(contestId, subjectPk, topicPk) {
 }
 
 export async function completeReview(review, scorePct) {
-  let next = 30;
-  if (scorePct < 60) next = 1;
-  else if (scorePct < 80) next = 7;
+  const current = Number(review.intervalDays || 1);
+  let next = 1;
+
+  if (scorePct >= 80) {
+    if (current < 7) next = 7;
+    else next = 30;
+  } else if (scorePct >= 60) {
+    // Acerto intermediário mantém uma recuperação relativamente próxima.
+    next = current < 7 ? 7 : Math.min(current, 30);
+  } else {
+    // Dificuldade real: volta ao ciclo curto em vez de empurrar o erro adiante.
+    next = 1;
+  }
+
   const date = new Date();
   date.setDate(date.getDate() + next);
   review.intervalDays = next;

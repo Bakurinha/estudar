@@ -172,12 +172,12 @@ function bindConnectionStatus() {
 async function renderRoute() {
   if (!state.activeContestId) return;
 
-  const { route, parts } = currentRoute();
+  const { route, parts, query } = currentRoute();
   updateActiveNav(route);
 
   switch (route) {
     case 'study': return renderStudy(state.activeContestId);
-    case 'lesson': return renderLesson(state.activeContestId, parts[0]);
+    case 'lesson': return renderLesson(state.activeContestId, parts[0], query);
     case 'questions': return renderQuestions(state.activeContestId);
     case 'reviews': return renderReviews(state.activeContestId);
     case 'simulator': return renderSimulator(state.activeContestId);

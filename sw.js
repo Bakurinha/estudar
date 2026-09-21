@@ -8,7 +8,7 @@
  * - falha de um arquivo opcional nunca invalida a instalação inteira.
  */
 
-const CACHE_VERSION = 'v1.8.0';
+const CACHE_VERSION = 'v1.9.0';
 const STATIC_CACHE = `rumo-aprovacao-static-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `rumo-aprovacao-runtime-${CACHE_VERSION}`;
 
@@ -27,6 +27,7 @@ const APP_SHELL = [
   './js/state.js',
   './js/ui.js',
   './js/utils.js',
+  './js/services/learning.js',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png'
 ];

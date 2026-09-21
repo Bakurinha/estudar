@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.9.0 — Aprendizagem guiada baseada em evidências
+
+- Modo Aprender por página: tentativa inicial, leitura segmentada, recuperação ativa, conferência, autoexplicação, aplicação e intercalação.
+- Pistas e critérios de conferência são derivados do conteúdo já existente; nenhum novo assunto disciplinar é criado pelo motor pedagógico.
+- Progresso de aprendizagem por página salvo localmente no IndexedDB.
+- Revisões de página em ciclo 1 → 7 → 30 dias e revisão de tópicos ajustada ao desempenho.
+- Área Revisões agora separa recuperação livre de páginas e prática com questões.
+- Aplicado a GCM, Paradigmas/Python e Matemática e Lógica sem mudar seus escopos.
+
 ## [1.8.0] - 2026-09-21
 
 ### Added
