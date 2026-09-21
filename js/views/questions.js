@@ -13,10 +13,7 @@ function queryParams() {
 
 /**
  * Embaralha APENAS a ordem visual das alternativas.
- *
- * Cada alternativa mantém o índice original gravado no banco. Assim o usuário
- * pode ver a resposta correta como A, B, C, D ou E em momentos diferentes sem
- * que o gabarito real seja alterado.
+ * Cada alternativa mantém o índice original gravado no banco.
  */
 function buildDisplayOptions(question) {
   return shuffle(
@@ -25,6 +22,25 @@ function buildDisplayOptions(question) {
       originalIndex,
     })),
   );
+}
+
+function questionSourceBadge(question) {
+  if (question.sourceType === 'generated-from-pdf') {
+    return 'Autoral baseada no PDF';
+  }
+  return 'Questão autoral';
+}
+
+function questionSourceLine(question) {
+  if (!question.sourceDocument) return '';
+
+  const details = [
+    `Fonte-base: ${question.sourceDocument}`,
+    question.sourceModule ? `módulo ${question.sourceModule}` : '',
+    question.sourcePages ? `páginas ${question.sourcePages}` : '',
+  ].filter(Boolean);
+
+  return details.join(' · ');
 }
 
 export async function renderQuestions(contestId) {
@@ -76,6 +92,7 @@ export async function renderQuestions(contestId) {
               <option ${requestedCount === '10' ? 'selected' : ''}>10</option>
               <option ${requestedCount === '20' ? 'selected' : ''}>20</option>
               <option ${requestedCount === '30' ? 'selected' : ''}>30</option>
+              <option ${requestedCount === '50' ? 'selected' : ''}>50</option>
             </select>
           </label>
 
@@ -91,12 +108,8 @@ export async function renderQuestions(contestId) {
         </div>
 
         <div class="row" style="margin-top:12px">
-          <button id="start-questions" class="button button--primary">
-            Começar
-          </button>
-          <button id="wrong-questions" class="button">
-            Somente erradas
-          </button>
+          <button id="start-questions" class="button button--primary">Começar</button>
+          <button id="wrong-questions" class="button">Somente erradas</button>
         </div>
       </article>
 
@@ -110,7 +123,6 @@ export async function renderQuestions(contestId) {
   async function loadTopics() {
     const subjectId = subjectSelect.value;
     topicSelect.innerHTML = '<option value="">Todos</option>';
-
     if (!subjectId) return;
 
     const subject = subjects.find(item => item.id === subjectId);
@@ -179,19 +191,13 @@ export async function renderQuestions(contestId) {
     renderCurrentQuestion();
   }
 
-  document
-    .querySelector('#start-questions')
-    .addEventListener('click', () => start(false));
-
-  document
-    .querySelector('#wrong-questions')
-    .addEventListener('click', () => start(true));
+  document.querySelector('#start-questions').addEventListener('click', () => start(false));
+  document.querySelector('#wrong-questions').addEventListener('click', () => start(true));
 }
 
 async function renderCurrentQuestion() {
   const session = state.currentQuestionSession;
   const host = document.querySelector('#question-area');
-
   if (!session || !host) return;
 
   if (session.index >= session.questions.length) {
@@ -204,10 +210,7 @@ async function renderCurrentQuestion() {
         <h2>Sessão concluída</h2>
         <div class="metric">${session.correct}/${session.answered}</div>
         <p>${pct}% de acertos.</p>
-        <button
-          class="button button--primary"
-          onclick="location.hash='#/questions'"
-        >
+        <button class="button button--primary" onclick="location.hash='#/questions'">
           Nova sessão
         </button>
       </article>
@@ -221,26 +224,24 @@ async function renderCurrentQuestion() {
 
       if (review) {
         await completeReview(review, pct);
-        toast(
-          `Revisão concluída. Próximo intervalo: ${review.intervalDays} dia(s).`,
-        );
+        toast(`Revisão concluída. Próximo intervalo: ${review.intervalDays} dia(s).`);
       }
     }
-
     return;
   }
 
   const question = session.questions[session.index];
   const displayOptions = buildDisplayOptions(question);
+  const sourceLine = questionSourceLine(question);
 
   host.innerHTML = `
     <article class="card question-card">
       <div class="row row--between">
-        <span class="badge">
-          ${session.index + 1}/${session.questions.length}
-        </span>
-        <span class="badge badge--primary">Questão autoral</span>
+        <span class="badge">${session.index + 1}/${session.questions.length}</span>
+        <span class="badge badge--primary">${escapeHtml(questionSourceBadge(question))}</span>
       </div>
+
+      ${sourceLine ? `<div class="small muted" style="margin-top:10px">${escapeHtml(sourceLine)}</div>` : ''}
 
       <div class="question-stem" style="margin-top:14px">
         ${escapeHtml(question.stem)}
@@ -262,12 +263,8 @@ async function renderCurrentQuestion() {
       <div id="q-feedback"></div>
 
       <div class="question-footer">
-        <span class="small muted">
-          ${escapeHtml(question.topicIds.join(', '))}
-        </span>
-        <button id="next-question" class="button button--primary" disabled>
-          Próxima
-        </button>
+        <span class="small muted">${escapeHtml(question.topicIds.join(', '))}</span>
+        <button id="next-question" class="button button--primary" disabled>Próxima</button>
       </div>
     </article>
   `;
@@ -279,13 +276,8 @@ async function renderCurrentQuestion() {
       if (answered) return;
       answered = true;
 
-      // O valor salvo é o índice ORIGINAL da alternativa no banco. Dessa forma
-      // o embaralhamento visual nunca altera o gabarito real.
       const selectedOriginalIndex = Number(button.dataset.optionIndex);
-      const correct = await recordAttempt(
-        question,
-        selectedOriginalIndex,
-      );
+      const correct = await recordAttempt(question, selectedOriginalIndex);
 
       session.answered += 1;
       if (correct) session.correct += 1;
@@ -294,7 +286,6 @@ async function renderCurrentQuestion() {
 
       host.querySelectorAll('[data-option-index]').forEach(optionButton => {
         optionButton.disabled = true;
-
         const originalIndex = Number(optionButton.dataset.optionIndex);
 
         if (originalIndex === question.answerIndex) {
@@ -307,17 +298,13 @@ async function renderCurrentQuestion() {
 
       const feedback = document.querySelector('#q-feedback');
       feedback.innerHTML = `
-        <div
-          class="notice ${correct ? 'notice--success' : 'notice--danger'}"
-          style="margin-top:14px"
-        >
+        <div class="notice ${correct ? 'notice--success' : 'notice--danger'}" style="margin-top:14px">
           <strong>${correct ? 'Correto.' : 'Incorreto.'}</strong>
           <p style="margin-top:6px">
             Gabarito nesta exibição: <strong>${correctDisplayLetter}</strong>.
           </p>
-          <p style="margin-top:6px">
-            ${escapeHtml(question.explanation)}
-          </p>
+          <p style="margin-top:6px">${escapeHtml(question.explanation)}</p>
+          ${sourceLine ? `<p class="small muted" style="margin-top:8px">${escapeHtml(sourceLine)}</p>` : ''}
         </div>
       `;
 
@@ -325,10 +312,8 @@ async function renderCurrentQuestion() {
     });
   });
 
-  document
-    .querySelector('#next-question')
-    .addEventListener('click', () => {
-      session.index += 1;
-      renderCurrentQuestion();
-    });
+  document.querySelector('#next-question').addEventListener('click', () => {
+    session.index += 1;
+    renderCurrentQuestion();
+  });
 }
