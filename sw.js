@@ -9,7 +9,7 @@
  *    falhou durante o pré-cache.
  */
 
-const CACHE_VERSION = 'v1.3.0';
+const CACHE_VERSION = 'v1.4.0';
 const STATIC_CACHE = `rumo-aprovacao-static-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `rumo-aprovacao-runtime-${CACHE_VERSION}`;
 
