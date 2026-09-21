@@ -40,11 +40,11 @@ jobs:
       - name: Apply topic-specific deepening
         run: python tools/deepen_lessons.py
 
-      - name: Normalize lesson depth
-        run: python tools/normalize_lesson_depth.py
-
       - name: Build paginated study manual V5
         run: python tools/build_study_manual_v5.py
+
+      - name: Normalize lesson depth after manual generation
+        run: python tools/normalize_lesson_depth.py
 
       - name: Sanitize all question alternatives
         run: python tools/sanitize_bank.py
