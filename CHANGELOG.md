@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0] - 2026-09-21
+
+### Added
+- Expansão de qualidade em todas as 3.944 páginas da GCM: núcleos essenciais aprofundados, relações/contrastes/armadilhas e recuperação ativa específica da página.
+- Validação de aumento mínimo por página, unicidade dos novos blocos e preservação integral dos IDs, subtópicos, matriz oficial e 2.650 questões.
+
+
 
 ## [1.7.0] - 2026-09-21
 

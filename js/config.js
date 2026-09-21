@@ -6,7 +6,7 @@
  * sua própria versão para evitar recarregar conteúdos que não mudaram.
  */
 export const APP_NAME = 'Rumo à Aprovação';
-export const APP_VERSION = '1.7.0';
+export const APP_VERSION = '1.8.0';
 export const DB_NAME = 'rumo-aprovacao-db';
 export const DB_VERSION = 1;
 
@@ -17,7 +17,7 @@ export const SEED_CONTEST_ID = 'gcm-salvador-2026';
 export const SEED_PACKAGES = [
   {
     id: 'gcm-salvador-2026',
-    version: '2026.09.21.5',
+    version: '2026.09.21.6',
     format: 'json',
     required: true,
   },
@@ -39,7 +39,7 @@ export const SEED_PACKAGES = [
 
 // Versão global apenas para diagnóstico/compatibilidade. O controle efetivo de
 // atualização é feito individualmente em seedVersion:<id-do-pacote>.
-export const SEED_DATA_VERSION = '2026.09.21.8';
+export const SEED_DATA_VERSION = '2026.09.21.9';
 export const PDFJS_VERSION = '6.3.289';
 
 export const ROUTES = [
