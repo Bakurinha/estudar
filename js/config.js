@@ -6,11 +6,11 @@
  * Worker a permanecerem sincronizados.
  */
 export const APP_NAME = 'Rumo à Aprovação';
-export const APP_VERSION = '1.2.0';
+export const APP_VERSION = '1.3.0';
 export const DB_NAME = 'rumo-aprovacao-db';
 export const DB_VERSION = 1;
 export const SEED_CONTEST_ID = 'gcm-salvador-2026';
-export const SEED_DATA_VERSION = '2026.09.21.2';
+export const SEED_DATA_VERSION = '2026.09.21.3';
 export const PDFJS_VERSION = '6.3.289';
 
 export const ROUTES = [
