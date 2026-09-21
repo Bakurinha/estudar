@@ -23,7 +23,10 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import base64, gzip
-          payload = Path('tools/.gcm-depth-payload.b64').read_text().strip()
+          payload = ''.join(
+              Path(f'tools/.gcm-depth-part-{i}.b64').read_text().strip()
+              for i in range(1, 5)
+          )
           Path('/tmp/gcm_depth.py').write_bytes(gzip.decompress(base64.b64decode(payload)))
           PY
           python /tmp/gcm_depth.py
@@ -37,7 +40,7 @@ jobs:
       - name: Commit validated GCM expansion
         shell: bash
         run: |
-          rm -f tools/.gcm-depth-payload.b64
+          rm -f tools/.gcm-depth-payload.b64 tools/.gcm-depth-part-*.b64
           rm -f .github/workflows/expand-gcm-depth.yml
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
