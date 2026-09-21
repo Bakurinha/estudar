@@ -1,0 +1,53 @@
+name: Build study bank
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/generate_seed_data.py'
+      - 'tools/expand_bank_v2.py'
+      - 'tools/validate_project.py'
+      - 'tools/validate_bank_v2.py'
+      - '.github/workflows/build-study-bank.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate canonical seed data
+        run: python tools/generate_seed_data.py
+
+      - name: Expand lessons and question bank
+        run: python tools/expand_bank_v2.py
+
+      - name: Validate original project invariants
+        run: python tools/validate_project.py
+
+      - name: Validate expanded bank
+        run: python tools/validate_bank_v2.py
+
+      - name: Commit generated study data
+        shell: bash
+        run: |
+          if git diff --quiet -- data/; then
+            echo "Generated data is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "data: rebuild expanded study bank"
+          git push
