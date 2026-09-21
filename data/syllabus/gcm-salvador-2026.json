@@ -1,0 +1,663 @@
+{
+  "contestId": "gcm-salvador-2026",
+  "source": {
+    "type": "official-notice",
+    "document": "Edital nº 002/2026",
+    "pages": "49-53",
+    "note": "Os campos officialScope preservam o recorte do Anexo I. Rótulos menores são apenas organização didática."
+  },
+  "subjects": [
+    {
+      "id": "portugues",
+      "name": "Língua Portuguesa",
+      "module": 1,
+      "questions": 10,
+      "priority": 1.25,
+      "topics": [
+        {
+          "id": "interpretacao-argumentativa",
+          "label": "Interpretação de textos argumentativos",
+          "officialScope": "Interpretação de textos argumentativos, com destaque para métodos de raciocínio e tipologia argumentativa"
+        },
+        {
+          "id": "construcao-textual",
+          "label": "Processos de construção textual",
+          "officialScope": "Processos de construção textual"
+        },
+        {
+          "id": "progressao-textual",
+          "label": "Progressão textual",
+          "officialScope": "A progressão textual"
+        },
+        {
+          "id": "coesao-coerencia-intertextualidade",
+          "label": "Coesão, coerência e intertextualidade",
+          "officialScope": "As marcas de textualidade: a coesão, a coerência e a intertextualidade"
+        },
+        {
+          "id": "reescritura",
+          "label": "Reescritura de frases",
+          "officialScope": "Reescritura de frases em busca da melhor expressão escrita"
+        },
+        {
+          "id": "vocabulario",
+          "label": "Domínio vocabular",
+          "officialScope": "Domínio vocabular e sua importância na construção do sentido do texto"
+        },
+        {
+          "id": "estrangeirismos",
+          "label": "Estrangeirismos",
+          "officialScope": "A presença dos estrangeirismos em nosso léxico"
+        },
+        {
+          "id": "classes-palavras",
+          "label": "Classes de palavras",
+          "officialScope": "Os diversos usos das várias classes de palavras"
+        },
+        {
+          "id": "sintaxe-pontuacao",
+          "label": "Sintaxe e pontuação",
+          "officialScope": "A organização sintática e o emprego dos sinais de pontuação"
+        },
+        {
+          "id": "variacao-linguistica",
+          "label": "Variação linguística e adequação",
+          "officialScope": "A variação linguística e sua adequação às diversas situações comunicativas"
+        },
+        {
+          "id": "denotacao-conotacao",
+          "label": "Denotação e conotação",
+          "officialScope": "A linguagem denotativa e a conotativa"
+        },
+        {
+          "id": "nova-ortografia",
+          "label": "Nova ortografia",
+          "officialScope": "A nova ortografia"
+        }
+      ]
+    },
+    {
+      "id": "rlm",
+      "name": "Raciocínio Lógico-Matemático",
+      "module": 1,
+      "questions": 10,
+      "priority": 1.25,
+      "topics": [
+        {
+          "id": "proposicoes",
+          "label": "Proposições e conectivos",
+          "officialScope": "Proposições, valor-verdade, negação, conjunção, disjunção, implicação, equivalência, proposições compostas"
+        },
+        {
+          "id": "equivalencias",
+          "label": "Equivalências lógicas",
+          "officialScope": "Equivalências lógicas"
+        },
+        {
+          "id": "problemas-raciocinio",
+          "label": "Problemas de raciocínio",
+          "officialScope": "Problemas de raciocínio: deduzir informações de relações arbitrárias entre objetos, lugares, pessoas e/ou eventos fictícios dados"
+        },
+        {
+          "id": "diagramas-graficos",
+          "label": "Diagramas, tabelas e gráficos",
+          "officialScope": "Diagramas lógicos, tabelas e gráficos"
+        },
+        {
+          "id": "conjuntos",
+          "label": "Conjuntos e operações",
+          "officialScope": "Conjuntos e suas operações"
+        },
+        {
+          "id": "numeros-operacoes",
+          "label": "Números e operações",
+          "officialScope": "Números naturais, inteiros, racionais, reais e suas operações"
+        },
+        {
+          "id": "reta-numerica",
+          "label": "Representação na reta",
+          "officialScope": "Representação na reta"
+        },
+        {
+          "id": "unidades-medida",
+          "label": "Unidades de medida",
+          "officialScope": "Unidades de medida: distância, massa e tempo"
+        },
+        {
+          "id": "plano-cartesiano",
+          "label": "Plano cartesiano",
+          "officialScope": "Representação de pontos no plano cartesiano"
+        },
+        {
+          "id": "algebra",
+          "label": "Álgebra básica",
+          "officialScope": "Álgebra básica: equações, sistemas e problemas do primeiro grau"
+        },
+        {
+          "id": "porcentagem-proporcao",
+          "label": "Porcentagem e proporcionalidade",
+          "officialScope": "Porcentagem e proporcionalidade direta e inversa"
+        },
+        {
+          "id": "sequencias-pa-pg",
+          "label": "Sequências, PA e PG",
+          "officialScope": "Sequências, reconhecimento de padrões, progressões aritmética e geométrica"
+        },
+        {
+          "id": "juros",
+          "label": "Juros",
+          "officialScope": "Juros"
+        },
+        {
+          "id": "geometria-basica",
+          "label": "Geometria básica",
+          "officialScope": "Geometria básica: distâncias e ângulos, polígonos, circunferência, perímetro e área"
+        },
+        {
+          "id": "semelhanca-triangulo",
+          "label": "Semelhança e triângulo retângulo",
+          "officialScope": "Semelhança e relações métricas no triângulo retângulo"
+        },
+        {
+          "id": "medidas-area-volume",
+          "label": "Comprimento, área e volume",
+          "officialScope": "Medidas de comprimento, área e volume"
+        },
+        {
+          "id": "contagem-probabilidade",
+          "label": "Contagem e probabilidade",
+          "officialScope": "Princípios de contagem e noção de probabilidade"
+        }
+      ]
+    },
+    {
+      "id": "informatica",
+      "name": "Informática",
+      "module": 1,
+      "questions": 8,
+      "priority": 0.9,
+      "topics": [
+        {
+          "id": "arquivos-digitais",
+          "label": "Arquivos digitais",
+          "officialScope": "Arquivos digitais: documentos, planilhas, imagens, sons, vídeos; principais padrões e características"
+        },
+        {
+          "id": "pdf",
+          "label": "Arquivos PDF",
+          "officialScope": "Arquivos PDF"
+        },
+        {
+          "id": "windows",
+          "label": "Windows XP, 7 e 8",
+          "officialScope": "Sistema operacional Windows XP, 7 e 8: manipulação de janelas, programas e arquivos; telas de controle e menus típicos; mecanismos de ajuda; mecanismos de busca"
+        },
+        {
+          "id": "editores-texto",
+          "label": "Editores de texto",
+          "officialScope": "Editores de texto: formatação, configuração de páginas, impressão, títulos, fontes, tabelas, corretores ortográficos, manipulação de figuras, cabeçalhos, rodapés, anotações e outras funcionalidades de formatação"
+        },
+        {
+          "id": "localizar-substituir",
+          "label": "Localização e substituição",
+          "officialScope": "Comandos de localização e substituição"
+        },
+        {
+          "id": "word-arquivos",
+          "label": "Word 2010+ e manipulação de arquivos",
+          "officialScope": "Manipulação de arquivos: leitura e gravação; controle de alterações; uso de senhas para proteção; formatos para gravação; inserção de objetos; macros; impressão; criação e manipulação de formulários; integração com planilhas; MS Word 2010 BR ou superior"
+        },
+        {
+          "id": "excel",
+          "label": "Excel 2010+",
+          "officialScope": "Planilhas: criação, manipulação de dados, fórmulas, cópia e recorte de dados, formatação de dados e outras funcionalidades para operação; manipulação de arquivos: leitura e gravação; integração com outras planilhas; filtros; ordenação; macros; controle de exibição; recursos para impressão; importação e exportação de dados; controle de alterações; proteção de dados e planilhas; MS Excel 2010 BR ou superior"
+        },
+        {
+          "id": "internet-seguranca",
+          "label": "Internet e segurança",
+          "officialScope": "Internet: conceitos gerais e funcionamento; endereçamento de recursos; navegação segura: cuidados no uso da Internet; ameaças; uso de senhas e criptografia; tokens e outros dispositivos de segurança; senhas fracas e fortes; navegadores e suas principais funções; sites e links; buscas; transferência de arquivos e dados: upload, download, banda, velocidades de transmissão"
+        }
+      ]
+    },
+    {
+      "id": "constitucional-civil",
+      "name": "Direito Constitucional e Direito Civil",
+      "module": 2,
+      "questions": 10,
+      "priority": 1.05,
+      "topics": [
+        {
+          "id": "const-conceito-principios",
+          "label": "Constituição: conceito, classificações e princípios",
+          "officialScope": "Constituição: conceito, classificações e princípios fundamentais"
+        },
+        {
+          "id": "const-direitos",
+          "label": "Direitos e garantias fundamentais",
+          "officialScope": "Direitos e garantias fundamentais: direitos e deveres individuais e coletivos, direitos sociais, nacionalidade, cidadania, direitos políticos e partidos políticos"
+        },
+        {
+          "id": "const-organizacao",
+          "label": "Organização político-administrativa",
+          "officialScope": "Organização político-administrativa: União, Estados, Distrito Federal, Municípios e Territórios"
+        },
+        {
+          "id": "const-administracao",
+          "label": "Administração pública e servidores",
+          "officialScope": "Administração pública: disposições gerais e servidores públicos"
+        },
+        {
+          "id": "const-judiciario",
+          "label": "Poder Judiciário",
+          "officialScope": "Poder Judiciário: disposições gerais e órgãos do Poder Judiciário, competências e estrutura"
+        },
+        {
+          "id": "const-cnj",
+          "label": "Conselho Nacional de Justiça",
+          "officialScope": "Conselho Nacional de Justiça (CNJ): composição e competência"
+        },
+        {
+          "id": "const-funcoes-justica",
+          "label": "Funções essenciais à Justiça",
+          "officialScope": "Funções essenciais à Justiça: Ministério Público, advocacia e defensoria pública"
+        },
+        {
+          "id": "civil-lindb",
+          "label": "Aplicação da lei e LINDB",
+          "officialScope": "Aplicação da Lei no Tempo e no Espaço; interpretação da Lei; analogia; princípios gerais do Direito e equidade; Lei de Introdução às Normas do Direito Brasileiro"
+        },
+        {
+          "id": "civil-pessoas",
+          "label": "Pessoas, domicílio e capacidade",
+          "officialScope": "Pessoas naturais; pessoas jurídicas; domicílio; capacidade civil e direitos inerentes à personalidade; emancipação"
+        },
+        {
+          "id": "civil-bens",
+          "label": "Bens",
+          "officialScope": "Bens considerados em si mesmos; bens reciprocamente considerados; bens públicos"
+        },
+        {
+          "id": "civil-fatos",
+          "label": "Fatos jurídicos",
+          "officialScope": "Negócio jurídico; atos jurídicos lícitos; atos ilícitos; prescrição e decadência; prova"
+        },
+        {
+          "id": "civil-obrigacoes",
+          "label": "Obrigações",
+          "officialScope": "Modalidades das obrigações; transmissão; adimplemento e extinção; inadimplemento"
+        },
+        {
+          "id": "civil-responsabilidade",
+          "label": "Responsabilidade civil",
+          "officialScope": "Responsabilidade civil; preferências e privilégios creditórios; indenização por dano moral; perda de uma chance; desconsideração da personalidade jurídica; preservação e reparação de danos; decadência e prescrição"
+        },
+        {
+          "id": "civil-jurisprudencia",
+          "label": "Jurisprudência e súmulas",
+          "officialScope": "Jurisprudência e Súmulas do STF, STJ e TJBA"
+        }
+      ]
+    },
+    {
+      "id": "penal-processual",
+      "name": "Direito Penal e Direito Processual Penal",
+      "module": 2,
+      "questions": 7,
+      "priority": 0.95,
+      "topics": [
+        {
+          "id": "penal-conceito-fontes",
+          "label": "Conceito e fontes do Direito Penal",
+          "officialScope": "Conceito do Direito Penal; fontes do Direito Penal"
+        },
+        {
+          "id": "penal-lei",
+          "label": "Interpretação e lei penal",
+          "officialScope": "Interpretação e integração da Lei Penal; analogia; princípio da reserva legal; lei penal no tempo e no espaço"
+        },
+        {
+          "id": "penal-teoria-crime",
+          "label": "Fato típico, dolo e culpa",
+          "officialScope": "Classificação das infrações penais; fato típico; conduta; resultado; relação de causalidade; crime doloso, culposo e preterdoloso"
+        },
+        {
+          "id": "penal-iter",
+          "label": "Consumação, tentativa e arrependimentos",
+          "officialScope": "Consumação e tentativa; desistência voluntária; arrependimento eficaz; arrependimento posterior; crime impossível"
+        },
+        {
+          "id": "penal-ilicitude",
+          "label": "Ilicitude e culpabilidade",
+          "officialScope": "Ilicitude e suas causas excludentes; culpabilidade e suas causas excludentes; concurso de pessoas"
+        },
+        {
+          "id": "penal-penas",
+          "label": "Penas e concurso de crimes",
+          "officialScope": "Sanções penais; penas privativas de liberdade; penas restritivas de direitos; pena de multa; medidas de segurança; concurso de crimes"
+        },
+        {
+          "id": "penal-sursis",
+          "label": "Sursis, livramento e punibilidade",
+          "officialScope": "Suspensão condicional da execução da pena; livramento condicional; causas extintivas da punibilidade"
+        },
+        {
+          "id": "penal-crimes-pessoa-patrimonio",
+          "label": "Crimes contra pessoa, patrimônio e dignidade sexual",
+          "officialScope": "Crimes contra Pessoa; Crimes contra o Patrimônio; Crimes contra a Dignidade Sexual"
+        },
+        {
+          "id": "penal-honra-fe-publica",
+          "label": "Crimes contra honra e fé pública",
+          "officialScope": "Crimes contra a Honra; Crimes contra a Fé Pública"
+        },
+        {
+          "id": "penal-administracao",
+          "label": "Crimes contra a Administração",
+          "officialScope": "Crimes contra a Administração Pública; Crimes contra a Administração da Justiça"
+        },
+        {
+          "id": "penal-leis-especiais",
+          "label": "Leis penais especiais do edital",
+          "officialScope": "Abuso de Autoridade; ECA; hediondos; licitações; tortura; CTB; meio ambiente; lavagem; Lei Geral do Esporte; Desarmamento; recuperação judicial e falência; Maria da Penha; Drogas; organizações criminosas e Lei 15.358/2026; pessoa com deficiência; ordem tributária/econômica e consumidor"
+        },
+        {
+          "id": "proc-principios",
+          "label": "Processo Penal e princípios",
+          "officialScope": "Processo Penal Brasileiro; Processo Penal Constitucional; sistemas e princípios fundamentais"
+        },
+        {
+          "id": "proc-aplicacao",
+          "label": "Aplicação da lei processual",
+          "officialScope": "Aplicação da lei processual penal no tempo, no espaço e em relação às pessoas; disposições preliminares do CPP"
+        },
+        {
+          "id": "proc-inquerito",
+          "label": "Inquérito policial",
+          "officialScope": "Inquérito policial"
+        },
+        {
+          "id": "proc-processo",
+          "label": "Processo, procedimento e relação processual",
+          "officialScope": "Processo, procedimento e relação jurídica processual; princípios gerais e informadores; pretensão punitiva"
+        },
+        {
+          "id": "proc-acao",
+          "label": "Ação penal",
+          "officialScope": "Ação penal"
+        },
+        {
+          "id": "proc-prova",
+          "label": "Prova e interceptação",
+          "officialScope": "Prova; Lei nº 9.296/1996 (Interceptação Telefônica) e alterações"
+        },
+        {
+          "id": "proc-sujeitos",
+          "label": "Sujeitos do processo",
+          "officialScope": "Sujeitos do Processo"
+        },
+        {
+          "id": "proc-prisao",
+          "label": "Prisão e cautelares",
+          "officialScope": "Prisão, medidas cautelares e liberdade provisória; Lei nº 7.960/1989 (Prisão Temporária)"
+        },
+        {
+          "id": "proc-juizados",
+          "label": "Juizados especiais",
+          "officialScope": "Lei nº 9.099/1995 e Lei nº 10.259/2001"
+        },
+        {
+          "id": "proc-prazos",
+          "label": "Prazos",
+          "officialScope": "Prazos: características, princípios e contagem"
+        },
+        {
+          "id": "proc-nulidades",
+          "label": "Nulidades",
+          "officialScope": "Nulidades"
+        },
+        {
+          "id": "proc-jurisprudencia",
+          "label": "Jurisprudência processual",
+          "officialScope": "Jurisprudência aplicada dos tribunais superiores"
+        }
+      ]
+    },
+    {
+      "id": "administracao-politicas",
+      "name": "Administração e Políticas Públicas",
+      "module": 2,
+      "questions": 5,
+      "priority": 0.7,
+      "topics": [
+        {
+          "id": "adm-introducao",
+          "label": "Introdução à Administração",
+          "officialScope": "Definição e importância da administração; história e evolução da administração"
+        },
+        {
+          "id": "adm-funcoes",
+          "label": "Funções administrativas",
+          "officialScope": "Planejamento, Organização, Direção e Controle"
+        },
+        {
+          "id": "adm-teorias",
+          "label": "Teorias da Administração",
+          "officialScope": "Teoria clássica, relações humanas, comportamental, contingência; gestão por competências e gestão de projetos"
+        },
+        {
+          "id": "adm-estruturas",
+          "label": "Estruturas, cultura e liderança",
+          "officialScope": "Estruturas funcional, matricial e projetos; cultura organizacional; estilos de liderança"
+        },
+        {
+          "id": "adm-planejamento",
+          "label": "Planejamento estratégico",
+          "officialScope": "Missão, visão, valores, análise SWOT, objetivos e metas"
+        },
+        {
+          "id": "adm-marketing",
+          "label": "Marketing e vendas",
+          "officialScope": "Fundamentos de marketing, segmentação, composto de marketing (4 Ps), estratégias de vendas"
+        },
+        {
+          "id": "adm-financeira",
+          "label": "Gestão financeira",
+          "officialScope": "Conceitos básicos de finanças, orçamento empresarial, fluxo de caixa, indicadores financeiros"
+        },
+        {
+          "id": "adm-rh",
+          "label": "Recursos Humanos",
+          "officialScope": "Recrutamento e seleção, treinamento e desenvolvimento, avaliação de desempenho, motivação e liderança"
+        },
+        {
+          "id": "adm-empreendedorismo",
+          "label": "Empreendedorismo",
+          "officialScope": "Processo empreendedor, plano de negócios, inovação e criatividade"
+        },
+        {
+          "id": "adm-etica",
+          "label": "Ética e responsabilidade",
+          "officialScope": "Ética na administração, responsabilidade social corporativa e sustentabilidade"
+        },
+        {
+          "id": "pp-conceitos",
+          "label": "Conceitos e ciclo de políticas públicas",
+          "officialScope": "Definição e evolução; ciclo de políticas públicas: formulação, implementação, avaliação; ferramentas de análise"
+        },
+        {
+          "id": "pp-governanca",
+          "label": "Governança e relações intragovernamentais",
+          "officialScope": "Federalismo e relações Estado-sociedade; governança e capacidades estatais; análise de políticas intergovernamentais"
+        },
+        {
+          "id": "pp-bases",
+          "label": "Bases quantitativas",
+          "officialScope": "Estatística descritiva e inferencial; micro e macroeconomia aplicada; análise de impacto"
+        },
+        {
+          "id": "pp-avaliacao",
+          "label": "Gestão e avaliação de políticas",
+          "officialScope": "Análise ex ante e ex post; avaliação de impacto; gestão de riscos"
+        }
+      ]
+    },
+    {
+      "id": "area-atuacao",
+      "name": "Conhecimentos na Área de Atuação",
+      "module": 2,
+      "questions": 10,
+      "priority": 1.0,
+      "topics": [
+        {
+          "id": "area-atendimento",
+          "label": "Relações humanas e atendimento",
+          "officialScope": "Qualidade no atendimento: comunicação, apresentação, atenção, cortesia, interesse, presteza, eficiência, tolerância, discrição, conduta e objetividade; trabalho em equipe"
+        },
+        {
+          "id": "area-defesa-riscos",
+          "label": "Defesa pessoal, riscos e informação",
+          "officialScope": "Noções de Defesa Pessoal; análise de riscos e gestão da informação; contingências; emergência; crises; procedimentos emergenciais; graus de sigilo; ameaças e vulnerabilidades"
+        },
+        {
+          "id": "area-protecao-escoltas",
+          "label": "Proteção e escoltas",
+          "officialScope": "Planejamento de proteção pessoal e de comitivas; rotas; pontos sensíveis; contingências; equipes; formações; varredura; controle de público; resposta a ameaças; condução operacional e estratégica de veículos"
+        },
+        {
+          "id": "area-seguranca-patrimonial",
+          "label": "Segurança física e patrimonial",
+          "officialScope": "Proteção de áreas críticas; materiais sensíveis; planos de segurança; controle de acessos; vigilância; monitoramento; equipamentos eletrônicos; segurança corporativa e patrimonial"
+        },
+        {
+          "id": "area-incidentes-negociacao",
+          "label": "Incidentes críticos e negociação",
+          "officialScope": "Incidente crítico; cadeia de comando; gerenciamento do cenário; estabilização; isolamentos e perímetros; comunicação operacional; negociação policial; escuta ativa; redução de tensão; escalonamento"
+        },
+        {
+          "id": "area-incendio",
+          "label": "Prevenção e combate a incêndio",
+          "officialScope": "NR-23; proteção contra incêndio; código de segurança contra incêndio, pânico e outros riscos; brigada e órgãos de resposta; extintores; rotas e saídas; abandono e evacuação"
+        },
+        {
+          "id": "area-socorrismo",
+          "label": "Condutas do socorrista",
+          "officialScope": "Medidas de segurança do local; comunicação e transferência ao atendimento especializado; Atendimento Pré-Hospitalar (APH) - Nível Básico"
+        },
+        {
+          "id": "area-inteligencia",
+          "label": "Serviços de inteligência",
+          "officialScope": "Finalidade, utilização, conceitos básicos, fontes de coleta e metodologia de produção de conhecimentos"
+        }
+      ]
+    },
+    {
+      "id": "legislacao",
+      "name": "Legislação",
+      "module": 2,
+      "questions": 10,
+      "priority": 1.1,
+      "topics": [
+        {
+          "id": "leg-maria-penha",
+          "label": "Lei Maria da Penha",
+          "officialScope": "Lei Federal nº 11.340/2006 (Lei Maria da Penha)"
+        },
+        {
+          "id": "leg-drogas",
+          "label": "Lei de Drogas",
+          "officialScope": "Lei nº 11.343/2006 (Lei de Drogas)"
+        },
+        {
+          "id": "leg-racismo",
+          "label": "Crimes de preconceito de raça ou cor",
+          "officialScope": "Lei nº 7.716/1989 e alterações"
+        },
+        {
+          "id": "leg-eca",
+          "label": "Estatuto da Criança e do Adolescente",
+          "officialScope": "Lei nº 8.069/1990 e alterações"
+        },
+        {
+          "id": "leg-ambiental",
+          "label": "Crimes ambientais",
+          "officialScope": "Lei nº 9.605/1998 e alterações"
+        },
+        {
+          "id": "leg-ctb",
+          "label": "Código de Trânsito Brasileiro",
+          "officialScope": "Lei nº 9.503/1997 e alterações"
+        },
+        {
+          "id": "leg-desarmamento",
+          "label": "Estatuto do Desarmamento",
+          "officialScope": "Lei nº 10.826/2003 e alterações"
+        },
+        {
+          "id": "leg-abuso",
+          "label": "Abuso de Autoridade",
+          "officialScope": "Lei nº 13.869/2019 e alterações"
+        },
+        {
+          "id": "leg-licitacoes",
+          "label": "Licitações e contratos",
+          "officialScope": "Lei nº 14.133/2021"
+        },
+        {
+          "id": "leg-lc1",
+          "label": "Regime Jurídico do Município",
+          "officialScope": "Lei Complementar nº 1/1991 e alterações"
+        },
+        {
+          "id": "leg-carreira",
+          "label": "Plano de Carreira da GCM",
+          "officialScope": "Lei Ordinária nº 9.640/2022 e alterações"
+        },
+        {
+          "id": "leg-guardas",
+          "label": "Estatuto Geral das Guardas Municipais",
+          "officialScope": "Lei nº 13.022/2014"
+        },
+        {
+          "id": "leg-regimento",
+          "label": "Regimento da GCM Salvador",
+          "officialScope": "Decreto nº 27.731/2016"
+        },
+        {
+          "id": "leg-disciplinar",
+          "label": "Regime Disciplinar da GCM",
+          "officialScope": "Lei nº 9.273/2017"
+        },
+        {
+          "id": "leg-organica-poderes",
+          "label": "Lei Orgânica: organização e Poderes",
+          "officialScope": "Princípios fundamentais; organização do Município; competências municipais; Poder Legislativo e Poder Executivo; atribuições da Câmara Municipal, do Prefeito e dos órgãos da Administração Municipal"
+        },
+        {
+          "id": "leg-organica-adm",
+          "label": "Lei Orgânica: Administração e servidores",
+          "officialScope": "Administração pública; servidores públicos; bens municipais; serviços públicos; planejamento, orçamento e finanças municipais; políticas sociais e desenvolvimento urbano"
+        },
+        {
+          "id": "leg-organizacao-adm",
+          "label": "Organização administrativa municipal",
+          "officialScope": "Estrutura e funcionamento da Administração Pública Municipal; administração direta e indireta; órgãos e entidades municipais; princípios, competências e responsabilidades dos agentes públicos"
+        },
+        {
+          "id": "leg-tributario",
+          "label": "Código Tributário e de Rendas",
+          "officialScope": "Lei Municipal nº 7.186/2006 e alterações: tributos municipais, obrigações tributárias, administração e fiscalização tributária"
+        },
+        {
+          "id": "leg-etica-transparencia",
+          "label": "Ética, integridade e transparência",
+          "officialScope": "Normas municipais relativas à ética, integridade, transparência, acesso à informação e controle da Administração Pública; organização, prestação e fiscalização dos serviços públicos"
+        },
+        {
+          "id": "leg-direitos-cidadaos",
+          "label": "Direitos, deveres e agentes públicos",
+          "officialScope": "Direitos e deveres dos cidadãos perante a Administração Municipal; normas municipais pertinentes ao exercício das atribuições dos agentes e servidores públicos"
+        }
+      ]
+    }
+  ]
+}

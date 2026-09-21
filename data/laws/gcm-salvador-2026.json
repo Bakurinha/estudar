@@ -1,0 +1,68 @@
+[
+  {
+    "id": "cf88",
+    "name": "Constituição Federal de 1988",
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "kind": "official"
+  },
+  {
+    "id": "cc",
+    "name": "Código Civil - Lei 10.406/2002",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+    "kind": "official"
+  },
+  {
+    "id": "cp",
+    "name": "Código Penal",
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+    "kind": "official"
+  },
+  {
+    "id": "cpp",
+    "name": "Código de Processo Penal",
+    "url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm",
+    "kind": "official"
+  },
+  {
+    "id": "l11340",
+    "name": "Lei 11.340/2006 - Maria da Penha",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm",
+    "kind": "official"
+  },
+  {
+    "id": "l11343",
+    "name": "Lei 11.343/2006 - Drogas",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11343.htm",
+    "kind": "official"
+  },
+  {
+    "id": "l13022",
+    "name": "Lei 13.022/2014 - Estatuto Geral das Guardas Municipais",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13022.htm",
+    "kind": "official"
+  },
+  {
+    "id": "l13869",
+    "name": "Lei 13.869/2019 - Abuso de Autoridade",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13869.htm",
+    "kind": "official"
+  },
+  {
+    "id": "l14133",
+    "name": "Lei 14.133/2021 - Licitações e Contratos",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+    "kind": "official"
+  },
+  {
+    "id": "l15358",
+    "name": "Lei 15.358/2026",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15358.htm",
+    "kind": "official"
+  },
+  {
+    "id": "fgv",
+    "name": "Página oficial do concurso - FGV",
+    "url": "https://conhecimento.fgv.br/concursos/pmsguarda2026",
+    "kind": "official"
+  }
+]

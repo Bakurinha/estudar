@@ -1,0 +1,257 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+}
+
+.sidebar__header {
+  min-height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.sidebar__collapse {
+  flex: 0 0 auto;
+}
+
+.sidebar__mobile-close {
+  display: none;
+  margin-left: auto;
+  font-size: 1.35rem;
+}
+
+.brand {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.brand__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.95rem;
+}
+
+.brand__subtitle {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.nav-list {
+  padding: 10px 8px 16px;
+  display: grid;
+  gap: 2px;
+}
+
+.nav-list__label {
+  margin: 14px 10px 5px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav-list__label:first-child {
+  margin-top: 2px;
+}
+
+.nav-list a {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border-radius: 8px;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.94rem;
+}
+
+.nav-list a:hover {
+  background: var(--surface-alt);
+}
+
+.nav-list a[aria-current="page"] {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.nav-icon {
+  width: 24px;
+  min-width: 24px;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.sidebar__footer {
+  margin-top: auto;
+  min-height: 52px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.78rem;
+}
+
+.sidebar__status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+.status-dot.is-offline {
+  background: var(--warning);
+}
+
+.app-shell.sidebar-collapsed {
+  grid-template-columns: var(--sidebar-collapsed) minmax(0, 1fr);
+}
+
+.sidebar-collapsed .brand,
+.sidebar-collapsed .nav-list a > span:not(.nav-icon),
+.sidebar-collapsed .nav-list__label,
+.sidebar-collapsed .sidebar__footer {
+  display: none;
+}
+
+.sidebar-collapsed .nav-list a {
+  justify-content: center;
+  padding-inline: 8px;
+}
+
+.sidebar-collapsed .sidebar__header {
+  justify-content: center;
+}
+
+.sidebar-collapsed .nav-icon {
+  font-size: 1.1rem;
+}
+
+.app-main {
+  min-width: 0;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar__menu {
+  display: none;
+}
+
+.topbar__contest {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.view {
+  width: min(100%, var(--content-width));
+  margin: 0 auto;
+}
+
+.reading-view {
+  width: min(100%, var(--reading-width));
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 18px;
+}
+
+.page-header__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stack {
+  display: grid;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.row--between {
+  justify-content: space-between;
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+.mobile-dock {
+  display: none;
+}

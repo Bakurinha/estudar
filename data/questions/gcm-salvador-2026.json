@@ -1,0 +1,4944 @@
+[
+  {
+    "id": "q-portugues-interpretacao-argumentativa-0001",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "interpretacao-argumentativa"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um artigo afirma: 'A iluminação pública não elimina a criminalidade, mas pode reduzir oportunidades para determinados delitos'. Qual alternativa preserva o sentido?",
+    "options": [
+      "A iluminação pública elimina delitos.",
+      "A iluminação pública pode contribuir para reduzir certas oportunidades de delito, sem garantir eliminação da criminalidade.",
+      "A iluminação pública aumenta necessariamente a criminalidade.",
+      "O texto considera iluminação irrelevante.",
+      "O texto garante redução de todos os delitos."
+    ],
+    "answerIndex": 1,
+    "explanation": "O texto usa 'pode' e limita o efeito a oportunidades para determinados delitos; não faz promessa absoluta.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-interpretacao-argumentativa-0002",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "interpretacao-argumentativa"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em um texto argumentativo, a tese corresponde principalmente:",
+    "options": [
+      "ao exemplo mais longo",
+      "à ideia central que o autor procura sustentar",
+      "a qualquer dado numérico",
+      "ao título obrigatoriamente",
+      "à última palavra do texto"
+    ],
+    "answerIndex": 1,
+    "explanation": "Tese é a posição ou ideia central defendida.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-interpretacao-argumentativa-0003",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "interpretacao-argumentativa"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A alternativa que apresenta informação verdadeira, mas não sustentada pelo texto, deve ser:",
+    "options": [
+      "aceita porque é verdadeira",
+      "aceita se estiver em linguagem formal",
+      "rejeitada, pois a interpretação deve se apoiar no texto",
+      "aceita se parecer lógica",
+      "rejeitada apenas em textos narrativos"
+    ],
+    "answerIndex": 2,
+    "explanation": "Interpretação exige suporte textual, não conhecimento externo solto.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-interpretacao-argumentativa-0004",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "interpretacao-argumentativa"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "No trecho 'Embora o custo inicial seja alto, a manutenção é econômica', a palavra 'embora' introduz:",
+    "options": [
+      "causa",
+      "conclusão",
+      "concessão",
+      "finalidade",
+      "explicação"
+    ],
+    "answerIndex": 2,
+    "explanation": "'Embora' apresenta uma concessão: reconhece um fato sem impedir a conclusão principal.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-construcao-textual-0005",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "construcao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'A equipe vistoriou o prédio. Depois, registrou as ocorrências', 'depois' ajuda principalmente a:",
+    "options": [
+      "negar a primeira frase",
+      "marcar sequência temporal",
+      "introduzir oposição",
+      "indicar causa",
+      "substituir o sujeito"
+    ],
+    "answerIndex": 1,
+    "explanation": "O advérbio conecta as ações por sequência temporal.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-construcao-textual-0006",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "construcao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual recurso contribui para ligar frases de um mesmo texto?",
+    "options": [
+      "Conectivos e pronomes referenciais",
+      "Apenas letras maiúsculas",
+      "Somente números",
+      "Apenas ponto final",
+      "Qualquer palavra estrangeira"
+    ],
+    "answerIndex": 0,
+    "explanation": "Conectivos e referências pronominais são mecanismos clássicos de encadeamento.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-construcao-textual-0007",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "construcao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Se um parágrafo introduz um assunto sem qualquer ligação com o tema anterior, ocorre principalmente um problema de:",
+    "options": [
+      "acentuação",
+      "encadeamento textual",
+      "flexão nominal",
+      "ortografia",
+      "formação de plural"
+    ],
+    "answerIndex": 1,
+    "explanation": "A quebra é de construção/encadeamento do texto.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-progressao-textual-0008",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "progressao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Há progressão textual quando:",
+    "options": [
+      "o texto repete a mesma frase sem acrescentar nada",
+      "cada parte retoma o tema e acrescenta informação",
+      "todo período tem o mesmo tamanho",
+      "não há conectivos",
+      "o autor evita qualquer exemplo"
+    ],
+    "answerIndex": 1,
+    "explanation": "Progressão envolve avanço informacional.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-progressao-textual-0009",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "progressao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um segundo período que explica a causa do problema apresentado no primeiro realiza progressão por:",
+    "options": [
+      "contradição",
+      "explicação",
+      "cópia",
+      "apagamento",
+      "pontuação"
+    ],
+    "answerIndex": 1,
+    "explanation": "A nova informação explica a anterior.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-coesao-coerencia-intertextualidade-0010",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "coesao-coerencia-intertextualidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'Marina entregou o relatório. Ela revisou os dados antes', o pronome 'ela' exerce papel de:",
+    "options": [
+      "coesão referencial",
+      "incoerência",
+      "interjeição",
+      "estrangeirismo",
+      "pontuação"
+    ],
+    "answerIndex": 0,
+    "explanation": "O pronome retoma 'Marina', ligando as frases.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-coesao-coerencia-intertextualidade-0011",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "coesao-coerencia-intertextualidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um texto afirma que 'nenhum veículo entrou' e depois que 'todos os veículos que entraram foram revistados', sem contexto que resolva a diferença. O problema principal é de:",
+    "options": [
+      "coerência",
+      "acentuação",
+      "regência",
+      "hífen",
+      "classe de palavra"
+    ],
+    "answerIndex": 0,
+    "explanation": "As ideias entram em choque, afetando a coerência global.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-coesao-coerencia-intertextualidade-0012",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "coesao-coerencia-intertextualidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma notícia que faz alusão explícita a uma frase conhecida de outro texto utiliza:",
+    "options": [
+      "intertextualidade",
+      "somente denotação",
+      "erro sintático",
+      "numeral",
+      "proporcionalidade"
+    ],
+    "answerIndex": 0,
+    "explanation": "Alusão e citação são formas de intertextualidade.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-reescritura-0013",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "reescritura"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A frase 'Apesar do atraso, a reunião ocorreu' mantém o sentido básico em:",
+    "options": [
+      "Porque houve atraso, a reunião não ocorreu.",
+      "Embora tenha havido atraso, a reunião ocorreu.",
+      "A reunião ocorreu antes do atraso.",
+      "Não houve atraso nem reunião.",
+      "A reunião ocorreu para causar atraso."
+    ],
+    "answerIndex": 1,
+    "explanation": "'Apesar de' e 'embora' podem marcar concessão.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-reescritura-0014",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "reescritura"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Trocar 'pode ocorrer' por 'ocorrerá' tende a:",
+    "options": [
+      "preservar exatamente o grau de certeza",
+      "aumentar o grau de certeza",
+      "criar negação",
+      "transformar em pergunta",
+      "eliminar o verbo"
+    ],
+    "answerIndex": 1,
+    "explanation": "'Pode' marca possibilidade; o futuro assertivo é mais categórico.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-reescritura-0015",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "reescritura"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na reescrita de uma frase, qual elemento merece atenção especial?",
+    "options": [
+      "Apenas o tamanho",
+      "Relações de causa, condição, oposição e conclusão",
+      "Somente a fonte tipográfica",
+      "A cor da página",
+      "O número de letras"
+    ],
+    "answerIndex": 1,
+    "explanation": "Conectivos e relações lógicas podem alterar o sentido mesmo com palavras semelhantes.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-vocabulario-0016",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "vocabulario"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'a fiscalização foi rigorosa', um sinônimo contextual adequado para 'rigorosa' é:",
+    "options": [
+      "descuidada",
+      "severa",
+      "imaginária",
+      "silenciosa",
+      "curta"
+    ],
+    "answerIndex": 1,
+    "explanation": "No contexto, 'severa' aproxima-se do sentido de rigorosa.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-vocabulario-0017",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "vocabulario"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Para escolher um sinônimo em questão de prova, o procedimento mais seguro é:",
+    "options": [
+      "consultar apenas a primeira acepção mental",
+      "avaliar a palavra dentro da frase",
+      "ignorar o contexto",
+      "trocar sempre por palavra mais longa",
+      "usar qualquer antônimo"
+    ],
+    "answerIndex": 1,
+    "explanation": "O contexto determina o sentido relevante.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-estrangeirismos-0018",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "estrangeirismos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A palavra 'download', em contexto de informática, é exemplo de:",
+    "options": [
+      "estrangeirismo",
+      "numeral",
+      "pronome",
+      "interjeição",
+      "preposição"
+    ],
+    "answerIndex": 0,
+    "explanation": "É termo de origem inglesa incorporado ao uso tecnológico.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-estrangeirismos-0019",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "estrangeirismos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Sobre estrangeirismos, é correto afirmar que:",
+    "options": [
+      "são sempre inadequados",
+      "podem ser adequados conforme contexto e uso",
+      "não existem na informática",
+      "só aparecem em textos literários",
+      "são erros ortográficos obrigatórios"
+    ],
+    "answerIndex": 1,
+    "explanation": "A adequação depende de contexto e convenções de uso.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-classes-palavras-0020",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "classes-palavras"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'o atendimento foi extremamente rápido', 'extremamente' é:",
+    "options": [
+      "substantivo",
+      "advérbio",
+      "artigo",
+      "pronome",
+      "preposição"
+    ],
+    "answerIndex": 1,
+    "explanation": "Modifica o adjetivo 'rápido', funcionando como advérbio de intensidade.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-classes-palavras-0021",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "classes-palavras"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'os agentes atentos observaram a entrada', a palavra 'atentos' é:",
+    "options": [
+      "adjetivo",
+      "verbo",
+      "preposição",
+      "artigo",
+      "interjeição"
+    ],
+    "answerIndex": 0,
+    "explanation": "Caracteriza o substantivo 'agentes'.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-classes-palavras-0022",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "classes-palavras"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'eles chegaram cedo', 'eles' é:",
+    "options": [
+      "pronome",
+      "substantivo próprio",
+      "conjunção",
+      "advérbio",
+      "numeral"
+    ],
+    "answerIndex": 0,
+    "explanation": "'Eles' substitui nomes e funciona como pronome pessoal.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-sintaxe-pontuacao-0023",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "sintaxe-pontuacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual frase separa indevidamente sujeito e verbo por vírgula?",
+    "options": [
+      "Os candidatos chegaram cedo.",
+      "Os candidatos, chegaram cedo.",
+      "Cansados, os candidatos chegaram cedo.",
+      "Os candidatos chegaram cedo, mas esperaram muito.",
+      "Quando o portão abriu, os candidatos entraram."
+    ],
+    "answerIndex": 1,
+    "explanation": "Em ordem direta, não se separa sujeito de verbo por vírgula sem motivo sintático.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-sintaxe-pontuacao-0024",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "sintaxe-pontuacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'A equipe, após a vistoria, registrou o fato', as vírgulas isolam:",
+    "options": [
+      "um termo deslocado/intercalado",
+      "o sujeito do verbo por erro",
+      "uma pergunta",
+      "um numeral",
+      "um estrangeirismo"
+    ],
+    "answerIndex": 0,
+    "explanation": "A expressão adverbial intercalada pode ser isolada por vírgulas.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-sintaxe-pontuacao-0025",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "sintaxe-pontuacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na frase 'O agente verificou o documento e liberou a entrada', o sujeito de 'liberou' é:",
+    "options": [
+      "documento",
+      "entrada",
+      "o agente",
+      "inexistente",
+      "indeterminado obrigatoriamente"
+    ],
+    "answerIndex": 2,
+    "explanation": "O sujeito permanece 'o agente', oculto no segundo verbo.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-sintaxe-pontuacao-0026",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "sintaxe-pontuacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A pontuação pode:",
+    "options": [
+      "apenas indicar respiração",
+      "organizar estrutura sintática e influenciar sentido",
+      "ser ignorada na escrita formal",
+      "substituir todos os conectivos",
+      "mudar a classe de qualquer palavra automaticamente"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pontuação é recurso sintático e semântico, não só pausa de fala.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-variacao-linguistica-0027",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "variacao-linguistica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma mensagem informal entre amigos e um ofício administrativo podem exigir registros diferentes porque:",
+    "options": [
+      "a língua não varia",
+      "a adequação depende da situação comunicativa",
+      "apenas o ofício usa palavras",
+      "todo uso informal é incorreto",
+      "a região elimina a gramática"
+    ],
+    "answerIndex": 1,
+    "explanation": "Variação e adequação consideram contexto, interlocutores e finalidade.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-variacao-linguistica-0028",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "variacao-linguistica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Norma-padrão e variação linguística:",
+    "options": [
+      "são conceitos incompatíveis",
+      "podem coexistir; a adequação depende do contexto",
+      "significam exatamente a mesma coisa",
+      "só existem na fala",
+      "não aparecem em concursos"
+    ],
+    "answerIndex": 1,
+    "explanation": "O estudo reconhece variedades e também situações em que a norma-padrão é exigida.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-denotacao-conotacao-0029",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "denotacao-conotacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'a notícia caiu como uma bomba', o trecho usa principalmente linguagem:",
+    "options": [
+      "denotativa",
+      "conotativa",
+      "matemática",
+      "jurídica literal",
+      "sem sentido"
+    ],
+    "answerIndex": 1,
+    "explanation": "A expressão é figurada, não descreve uma explosão real.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-denotacao-conotacao-0030",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "denotacao-conotacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'o portão tem três metros de largura', predomina sentido:",
+    "options": [
+      "conotativo",
+      "denotativo",
+      "irônico",
+      "metafórico",
+      "intertextual"
+    ],
+    "answerIndex": 1,
+    "explanation": "A frase descreve medida literal.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-nova-ortografia-0031",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "nova-ortografia"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Segundo a ortografia atual, a grafia correta é:",
+    "options": [
+      "auto-escola",
+      "autoescola",
+      "auto escola",
+      "aútoescola",
+      "auto-escolá"
+    ],
+    "answerIndex": 1,
+    "explanation": "'Autoescola' é escrita sem hífen.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-nova-ortografia-0032",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "nova-ortografia"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A grafia correta é:",
+    "options": [
+      "microondas",
+      "micro ondas",
+      "micro-ondas",
+      "mícro-ondas",
+      "micro--ondas"
+    ],
+    "answerIndex": 2,
+    "explanation": "O prefixo 'micro-' mantém hífen diante de palavra iniciada por 'o'.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-interpretacao-argumentativa-0033",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "interpretacao-argumentativa"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quando um autor apresenta um exemplo para sustentar sua tese, o exemplo funciona como:",
+    "options": [
+      "argumento ou evidência",
+      "pontuação",
+      "negação automática",
+      "título",
+      "erro de coesão"
+    ],
+    "answerIndex": 0,
+    "explanation": "O exemplo pode servir de evidência que sustenta a tese.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-construcao-textual-0034",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "construcao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O pronome em 'o relatório foi entregue e sua análise começou' retoma principalmente:",
+    "options": [
+      "relatório",
+      "entrega",
+      "começou",
+      "sua",
+      "nenhum termo"
+    ],
+    "answerIndex": 0,
+    "explanation": "'Sua' relaciona a análise ao relatório no contexto.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-progressao-textual-0035",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "progressao-textual"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Acrescentar uma consequência depois de apresentar uma causa contribui para:",
+    "options": [
+      "progressão textual",
+      "apagamento do tema",
+      "erro ortográfico",
+      "estrangeirismo",
+      "redução vocabular"
+    ],
+    "answerIndex": 0,
+    "explanation": "A informação nova faz o texto avançar.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-coesao-coerencia-intertextualidade-0036",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "coesao-coerencia-intertextualidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O conector 'portanto' costuma introduzir:",
+    "options": [
+      "conclusão",
+      "oposição",
+      "condição",
+      "concessão",
+      "enumeração"
+    ],
+    "answerIndex": 0,
+    "explanation": "'Portanto' é conectivo conclusivo.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-reescritura-0037",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "reescritura"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em geral, trocar 'porque' causal por 'portanto' sem alterar a ordem das orações tende a:",
+    "options": [
+      "manter sempre o sentido",
+      "mudar a relação lógica",
+      "corrigir qualquer erro",
+      "eliminar o verbo",
+      "criar intertextualidade"
+    ],
+    "answerIndex": 1,
+    "explanation": "'Porque' pode marcar causa; 'portanto', conclusão.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-vocabulario-0038",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "vocabulario"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "No contexto 'a informação é sensível', 'sensível' pode significar:",
+    "options": [
+      "que sente dor fisicamente obrigatoriamente",
+      "que exige cuidado ou proteção",
+      "que é falsa",
+      "que é numérica",
+      "que é estrangeira"
+    ],
+    "answerIndex": 1,
+    "explanation": "Em segurança da informação, 'sensível' pode indicar dado que exige proteção.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-classes-palavras-0039",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "classes-palavras"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'mas o acesso permaneceu bloqueado', 'mas' é:",
+    "options": [
+      "conjunção",
+      "substantivo",
+      "artigo",
+      "verbo",
+      "numeral"
+    ],
+    "answerIndex": 0,
+    "explanation": "'Mas' é conjunção adversativa.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-sintaxe-pontuacao-0040",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "sintaxe-pontuacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em uma enumeração simples, a vírgula normalmente serve para:",
+    "options": [
+      "separar itens",
+      "separar sujeito e verbo obrigatoriamente",
+      "criar pergunta",
+      "marcar porcentagem",
+      "substituir acento"
+    ],
+    "answerIndex": 0,
+    "explanation": "Vírgulas podem separar elementos de mesma função em enumeração.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-variacao-linguistica-0041",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "variacao-linguistica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A expressão adequada a um relatório oficial tende a privilegiar:",
+    "options": [
+      "registro formal e claro",
+      "gíria sem contexto",
+      "abreviação incompreensível",
+      "ambiguidade intencional",
+      "erro ortográfico"
+    ],
+    "answerIndex": 0,
+    "explanation": "Situação administrativa costuma exigir clareza e formalidade.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-denotacao-conotacao-0042",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "denotacao-conotacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'o sistema abriu uma janela', falando de interface gráfica, 'janela' é um termo técnico já convencional. Nesse contexto, a interpretação correta depende:",
+    "options": [
+      "do contexto de informática",
+      "apenas do sentido arquitetônico",
+      "da rima",
+      "do tamanho da palavra",
+      "do número de sílabas"
+    ],
+    "answerIndex": 0,
+    "explanation": "O contexto define o sentido relevante.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-nova-ortografia-0043",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "nova-ortografia"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O trema em palavras portuguesas de uso comum após o Acordo Ortográfico:",
+    "options": [
+      "é obrigatório em todas",
+      "foi abolido, salvo nomes próprios estrangeiros e derivados",
+      "substituiu o hífen",
+      "passou a marcar plural",
+      "virou acento agudo"
+    ],
+    "answerIndex": 1,
+    "explanation": "O trema deixou de ser usado em palavras portuguesas comuns.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-interpretacao-argumentativa-0044",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "interpretacao-argumentativa"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma conclusão que vai além das evidências apresentadas pelo texto é uma inferência:",
+    "options": [
+      "necessariamente válida",
+      "não sustentada",
+      "obrigatoriamente denotativa",
+      "sempre gramatical",
+      "sempre intertextual"
+    ],
+    "answerIndex": 1,
+    "explanation": "Inferência precisa ser suportada pelas informações do texto.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-sintaxe-pontuacao-0045",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "sintaxe-pontuacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na frase 'Se chover, o evento será remarcado', a oração inicial expressa:",
+    "options": [
+      "condição",
+      "causa obrigatória",
+      "conclusão",
+      "explicação",
+      "tempo passado"
+    ],
+    "answerIndex": 0,
+    "explanation": "'Se' introduz condição.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-classes-palavras-0046",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "classes-palavras"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'três equipes chegaram', 'três' é:",
+    "options": [
+      "numeral",
+      "verbo",
+      "advérbio",
+      "preposição",
+      "interjeição"
+    ],
+    "answerIndex": 0,
+    "explanation": "Indica quantidade numérica.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-coesao-coerencia-intertextualidade-0047",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "coesao-coerencia-intertextualidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em 'o projeto foi aprovado; contudo, ainda depende de regulamentação', 'contudo' indica:",
+    "options": [
+      "oposição/contraste",
+      "conclusão",
+      "finalidade",
+      "tempo",
+      "condição"
+    ],
+    "answerIndex": 0,
+    "explanation": "'Contudo' é conectivo adversativo.",
+    "tags": []
+  },
+  {
+    "id": "q-portugues-reescritura-0048",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "portugues",
+    "topicIds": [
+      "reescritura"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A forma 'não apenas estudou, mas também revisou' estabelece relação de:",
+    "options": [
+      "adição com reforço",
+      "causa",
+      "condição",
+      "negação total",
+      "tempo"
+    ],
+    "answerIndex": 0,
+    "explanation": "A estrutura adiciona duas ações e reforça a segunda.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0049",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 10% de 240?",
+    "options": [
+      "264",
+      "14",
+      "250",
+      "24",
+      "34"
+    ],
+    "answerIndex": 3,
+    "explanation": "10% = 0.1. Multiplicando 240 por 0.1, obtemos 24.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0050",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 15% de 320?",
+    "options": [
+      "368",
+      "38",
+      "335",
+      "58",
+      "48"
+    ],
+    "answerIndex": 4,
+    "explanation": "15% = 0.15. Multiplicando 320 por 0.15, obtemos 48.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0051",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 25% de 180?",
+    "options": [
+      "205",
+      "45",
+      "225",
+      "35",
+      "55"
+    ],
+    "answerIndex": 1,
+    "explanation": "25% = 0.25. Multiplicando 180 por 0.25, obtemos 45.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0052",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 30% de 450?",
+    "options": [
+      "145",
+      "135",
+      "480",
+      "585",
+      "125"
+    ],
+    "answerIndex": 1,
+    "explanation": "30% = 0.3. Multiplicando 450 por 0.3, obtemos 135.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0053",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 12% de 275?",
+    "options": [
+      "308",
+      "23",
+      "33",
+      "43",
+      "287"
+    ],
+    "answerIndex": 2,
+    "explanation": "12% = 0.12. Multiplicando 275 por 0.12, obtemos 33.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0054",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 40% de 90?",
+    "options": [
+      "126",
+      "36",
+      "46",
+      "26",
+      "130"
+    ],
+    "answerIndex": 1,
+    "explanation": "40% = 0.4. Multiplicando 90 por 0.4, obtemos 36.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0055",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 8% de 625?",
+    "options": [
+      "40",
+      "60",
+      "675",
+      "633",
+      "50"
+    ],
+    "answerIndex": 4,
+    "explanation": "8% = 0.08. Multiplicando 625 por 0.08, obtemos 50.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0056",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto corresponde a 35% de 260?",
+    "options": [
+      "91",
+      "351",
+      "81",
+      "295",
+      "101"
+    ],
+    "answerIndex": 0,
+    "explanation": "35% = 0.35. Multiplicando 260 por 0.35, obtemos 91.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0057",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Resolva a equação x + 3 = 7.",
+    "options": [
+      "10",
+      "4",
+      "2",
+      "7",
+      "6"
+    ],
+    "answerIndex": 1,
+    "explanation": "Subtraindo 3 dos dois lados: x=7-3=4.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0058",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Resolva a equação x + 5 = 11.",
+    "options": [
+      "11",
+      "16",
+      "4",
+      "8",
+      "6"
+    ],
+    "answerIndex": 4,
+    "explanation": "Subtraindo 5 dos dois lados: x=11-5=6.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0059",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Resolva a equação x + 8 = 20.",
+    "options": [
+      "14",
+      "10",
+      "12",
+      "20",
+      "28"
+    ],
+    "answerIndex": 2,
+    "explanation": "Subtraindo 8 dos dois lados: x=20-8=12.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0060",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Resolva a equação x + 12 = 31.",
+    "options": [
+      "17",
+      "43",
+      "31",
+      "19",
+      "21"
+    ],
+    "answerIndex": 3,
+    "explanation": "Subtraindo 12 dos dois lados: x=31-12=19.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0061",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Resolva a equação x + 15 = 40.",
+    "options": [
+      "40",
+      "27",
+      "23",
+      "25",
+      "55"
+    ],
+    "answerIndex": 3,
+    "explanation": "Subtraindo 15 dos dois lados: x=40-15=25.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0062",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Resolva a equação x + 22 = 57.",
+    "options": [
+      "57",
+      "35",
+      "79",
+      "37",
+      "33"
+    ],
+    "answerIndex": 1,
+    "explanation": "Subtraindo 22 dos dois lados: x=57-22=35.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0063",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual é o próximo termo da sequência 2, 5, 8, 11, ...?",
+    "options": [
+      "13",
+      "11",
+      "22",
+      "17",
+      "14"
+    ],
+    "answerIndex": 4,
+    "explanation": "A diferença entre termos é constante e vale 3; trata-se de uma PA. Próximo termo: 11+3=14.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0064",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual é o próximo termo da sequência 10, 14, 18, 22, ...?",
+    "options": [
+      "22",
+      "30",
+      "44",
+      "32",
+      "26"
+    ],
+    "answerIndex": 4,
+    "explanation": "A diferença entre termos é constante e vale 4; trata-se de uma PA. Próximo termo: 22+4=26.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0065",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual é o próximo termo da sequência 7, 12, 17, 22, ...?",
+    "options": [
+      "22",
+      "44",
+      "27",
+      "32",
+      "29"
+    ],
+    "answerIndex": 2,
+    "explanation": "A diferença entre termos é constante e vale 5; trata-se de uma PA. Próximo termo: 22+5=27.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0066",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na sequência 2, 6, 18, ... qual é o próximo termo?",
+    "options": [
+      "51",
+      "21",
+      "54",
+      "36",
+      "57"
+    ],
+    "answerIndex": 2,
+    "explanation": "Cada termo é o anterior multiplicado por 3; é uma PG de razão 3. Próximo: 54.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0067",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na sequência 5, 10, 20, ... qual é o próximo termo?",
+    "options": [
+      "40",
+      "40",
+      "38",
+      "22",
+      "42"
+    ],
+    "answerIndex": 0,
+    "explanation": "Cada termo é o anterior multiplicado por 2; é uma PG de razão 2. Próximo: 40.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0068",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na sequência 3, 12, 48, ... qual é o próximo termo?",
+    "options": [
+      "196",
+      "96",
+      "192",
+      "188",
+      "52"
+    ],
+    "answerIndex": 2,
+    "explanation": "Cada termo é o anterior multiplicado por 4; é uma PG de razão 4. Próximo: 192.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-proposicoes-0069",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "proposicoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual das frases é uma proposição?",
+    "options": [
+      "Feche a porta.",
+      "Que horas são?",
+      "Salvador é a capital da Bahia.",
+      "x + 2 = 5, sem valor definido para x.",
+      "Tomara que chova!"
+    ],
+    "answerIndex": 2,
+    "explanation": "A frase declarativa pode ser classificada como verdadeira ou falsa.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-proposicoes-0070",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "proposicoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A conjunção P e Q é verdadeira quando:",
+    "options": [
+      "P e Q são verdadeiras",
+      "apenas P é verdadeira",
+      "apenas Q é verdadeira",
+      "pelo menos uma é falsa",
+      "P e Q têm valores diferentes"
+    ],
+    "answerIndex": 0,
+    "explanation": "A conjunção só é verdadeira se ambas forem verdadeiras.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-proposicoes-0071",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "proposicoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A disjunção inclusiva P ou Q é falsa quando:",
+    "options": [
+      "P é verdadeira",
+      "Q é verdadeira",
+      "ambas são verdadeiras",
+      "ambas são falsas",
+      "apenas uma é verdadeira"
+    ],
+    "answerIndex": 3,
+    "explanation": "O 'ou' inclusivo só é falso quando as duas proposições são falsas.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-equivalencias-0072",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "equivalencias"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma forma equivalente a 'Se P, então Q' é:",
+    "options": [
+      "P e Q",
+      "não P ou Q",
+      "P ou não Q",
+      "Q e não P",
+      "não P e não Q"
+    ],
+    "answerIndex": 1,
+    "explanation": "A condicional P→Q é equivalente a ¬P∨Q.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-equivalencias-0073",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "equivalencias"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A negação de 'P e Q' é:",
+    "options": [
+      "não P e não Q",
+      "não P ou não Q",
+      "P ou Q",
+      "P e não Q",
+      "não P e Q"
+    ],
+    "answerIndex": 1,
+    "explanation": "Lei de De Morgan: ¬(P∧Q) ≡ ¬P∨¬Q.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-equivalencias-0074",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "equivalencias"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A negação de 'P ou Q' é:",
+    "options": [
+      "não P e não Q",
+      "não P ou não Q",
+      "P e Q",
+      "P ou não Q",
+      "não P ou Q"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lei de De Morgan: ¬(P∨Q) ≡ ¬P∧¬Q.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-problemas-raciocinio-0075",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "problemas-raciocinio"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Ana chegou antes de Bruno, e Bruno antes de Caio. Quem chegou primeiro?",
+    "options": [
+      "Ana",
+      "Bruno",
+      "Caio",
+      "Não é possível saber",
+      "Ana e Caio juntos"
+    ],
+    "answerIndex": 0,
+    "explanation": "Pela transitividade das relações, Ana antecede Bruno e Caio.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-problemas-raciocinio-0076",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "problemas-raciocinio"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em uma fila, Davi está atrás de Elisa e à frente de Fábio. Qual ordem é compatível?",
+    "options": [
+      "Davi-Elisa-Fábio",
+      "Elisa-Davi-Fábio",
+      "Fábio-Davi-Elisa",
+      "Elisa-Fábio-Davi",
+      "Fábio-Elisa-Davi"
+    ],
+    "answerIndex": 1,
+    "explanation": "Elisa deve vir antes de Davi, e Davi antes de Fábio.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-geometria-basica-0077",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "geometria-basica"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um retângulo mede 4 m por 3 m. Qual é sua área?",
+    "options": [
+      "24 m²",
+      "7 m²",
+      "12 m²",
+      "1 m²",
+      "14 m²"
+    ],
+    "answerIndex": 2,
+    "explanation": "Área do retângulo = base × altura = 4×3=12 m².",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-geometria-basica-0078",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "geometria-basica"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um retângulo mede 8 m por 5 m. Qual é sua área?",
+    "options": [
+      "80 m²",
+      "26 m²",
+      "3 m²",
+      "40 m²",
+      "13 m²"
+    ],
+    "answerIndex": 3,
+    "explanation": "Área do retângulo = base × altura = 8×5=40 m².",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-geometria-basica-0079",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "geometria-basica"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um retângulo mede 10 m por 6 m. Qual é sua área?",
+    "options": [
+      "60 m²",
+      "4 m²",
+      "32 m²",
+      "120 m²",
+      "16 m²"
+    ],
+    "answerIndex": 0,
+    "explanation": "Área do retângulo = base × altura = 10×6=60 m².",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-geometria-basica-0080",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "geometria-basica"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um retângulo mede 12 m por 7 m. Qual é sua área?",
+    "options": [
+      "168 m²",
+      "5 m²",
+      "19 m²",
+      "38 m²",
+      "84 m²"
+    ],
+    "answerIndex": 4,
+    "explanation": "Área do retângulo = base × altura = 12×7=84 m².",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-semelhanca-triangulo-0081",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "semelhanca-triangulo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um triângulo retângulo tem catetos 3 e 4. Qual é a hipotenusa?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "4",
+      "7"
+    ],
+    "answerIndex": 1,
+    "explanation": "Pelo Teorema de Pitágoras: h²=3²+4²=25; logo h=5.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-semelhanca-triangulo-0082",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "semelhanca-triangulo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um triângulo retângulo tem catetos 6 e 8. Qual é a hipotenusa?",
+    "options": [
+      "10",
+      "11",
+      "14",
+      "9",
+      "8"
+    ],
+    "answerIndex": 0,
+    "explanation": "Pelo Teorema de Pitágoras: h²=6²+8²=100; logo h=10.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-semelhanca-triangulo-0083",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "semelhanca-triangulo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um triângulo retângulo tem catetos 5 e 12. Qual é a hipotenusa?",
+    "options": [
+      "12",
+      "17",
+      "12",
+      "13",
+      "14"
+    ],
+    "answerIndex": 3,
+    "explanation": "Pelo Teorema de Pitágoras: h²=5²+12²=169; logo h=13.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-unidades-medida-0084",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "unidades-medida"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "2,5 km correspondem a:",
+    "options": [
+      "25 m",
+      "250 m",
+      "2.500 m",
+      "25.000 m",
+      "250.000 m"
+    ],
+    "answerIndex": 2,
+    "explanation": "1 km = 1.000 m; 2,5 km = 2.500 m.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-unidades-medida-0085",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "unidades-medida"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "1 hora e 45 minutos correspondem a:",
+    "options": [
+      "95 min",
+      "100 min",
+      "105 min",
+      "115 min",
+      "145 min"
+    ],
+    "answerIndex": 2,
+    "explanation": "1 hora = 60 min; 60+45=105.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-plano-cartesiano-0086",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "plano-cartesiano"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O ponto (-3, 4) está:",
+    "options": [
+      "à direita e acima",
+      "à esquerda e acima",
+      "à esquerda e abaixo",
+      "sobre o eixo x",
+      "sobre o eixo y"
+    ],
+    "answerIndex": 1,
+    "explanation": "x negativo: esquerda; y positivo: acima.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-reta-numerica-0087",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "reta-numerica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual é o maior número?",
+    "options": [
+      "-8",
+      "-3",
+      "-5",
+      "-10",
+      "-7"
+    ],
+    "answerIndex": 1,
+    "explanation": "Entre negativos, o mais próximo de zero é o maior.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-numeros-operacoes-0088",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "numeros-operacoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quanto é 3/4 de 20?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "16",
+      "18"
+    ],
+    "answerIndex": 2,
+    "explanation": "20×3/4=15.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-numeros-operacoes-0089",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "numeros-operacoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O valor de 2 + 3 × 4 é:",
+    "options": [
+      "20",
+      "14",
+      "24",
+      "18",
+      "10"
+    ],
+    "answerIndex": 1,
+    "explanation": "Multiplicação vem antes da adição: 3×4=12; 2+12=14.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-contagem-probabilidade-0090",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "contagem-probabilidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Com 4 camisas e 3 calças, quantas combinações de uma camisa com uma calça são possíveis?",
+    "options": [
+      "7",
+      "12",
+      "16",
+      "24",
+      "1"
+    ],
+    "answerIndex": 1,
+    "explanation": "Princípio multiplicativo: 4×3=12.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-contagem-probabilidade-0091",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "contagem-probabilidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em um dado comum, a probabilidade de sair número par é:",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3",
+      "5/6"
+    ],
+    "answerIndex": 2,
+    "explanation": "Há 3 resultados pares em 6 igualmente prováveis: 3/6=1/2.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-diagramas-graficos-0092",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "diagramas-graficos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma tabela registra 80 ocorrências em março e 100 em abril. O aumento percentual, tomando março como base, foi:",
+    "options": [
+      "10%",
+      "20%",
+      "25%",
+      "40%",
+      "80%"
+    ],
+    "answerIndex": 2,
+    "explanation": "Aumento=20; 20/80=0,25=25%.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-conjuntos-0093",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "conjuntos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Se A={1,2,3,4} e B={3,4,5}, então A∩B é:",
+    "options": [
+      "{1,2}",
+      "{3,4}",
+      "{5}",
+      "{1,2,5}",
+      "{1,2,3,4,5}"
+    ],
+    "answerIndex": 1,
+    "explanation": "Interseção contém os elementos comuns: 3 e 4.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-juros-0094",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "juros"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "R$ 1.000 aplicados a juros simples de 2% ao mês por 4 meses geram juros de:",
+    "options": [
+      "R$20",
+      "R$40",
+      "R$80",
+      "R$100",
+      "R$1.080"
+    ],
+    "answerIndex": 2,
+    "explanation": "J=C×i×t=1000×0,02×4=80.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-medidas-area-volume-0095",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "medidas-area-volume"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma caixa retangular de dimensões 2 m, 3 m e 5 m tem volume de:",
+    "options": [
+      "10 m³",
+      "15 m³",
+      "30 m³",
+      "60 m³",
+      "150 m³"
+    ],
+    "answerIndex": 2,
+    "explanation": "Volume=2×3×5=30 m³.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0096",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma equipe realiza 120 atendimentos em 4 horas, mantendo ritmo constante. Em 6 horas, quantos atendimentos realizará?",
+    "options": [
+      "160",
+      "180",
+      "200",
+      "220",
+      "240"
+    ],
+    "answerIndex": 1,
+    "explanation": "É proporcionalidade direta: 120/4=30 por hora; 30×6=180.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-porcentagem-proporcao-0097",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "porcentagem-proporcao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quatro agentes concluem uma tarefa em 6 horas, com produtividade igual. Mantidas as condições, oito agentes concluiriam em:",
+    "options": [
+      "2 h",
+      "3 h",
+      "4 h",
+      "6 h",
+      "12 h"
+    ],
+    "answerIndex": 1,
+    "explanation": "Grandezas inversamente proporcionais: dobrando agentes, o tempo cai pela metade: 3 h.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-algebra-0098",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "algebra"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Dois números somam 30 e um deles é 8 unidades maior que o outro. O maior é:",
+    "options": [
+      "11",
+      "15",
+      "19",
+      "22",
+      "30"
+    ],
+    "answerIndex": 2,
+    "explanation": "x+(x+8)=30 => 2x=22 => x=11; maior=19.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-sequencias-pa-pg-0099",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "sequencias-pa-pg"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em uma PA de primeiro termo 5 e razão 4, o 6º termo é:",
+    "options": [
+      "21",
+      "25",
+      "29",
+      "30",
+      "33"
+    ],
+    "answerIndex": 1,
+    "explanation": "a6=5+(6-1)×4=25.",
+    "tags": []
+  },
+  {
+    "id": "q-rlm-juros-0100",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "rlm",
+    "topicIds": [
+      "juros"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em juros compostos de 10% ao período, R$1.000 tornam-se após dois períodos:",
+    "options": [
+      "R$1.100",
+      "R$1.200",
+      "R$1.210",
+      "R$1.220",
+      "R$1.300"
+    ],
+    "answerIndex": 2,
+    "explanation": "1000×1,1²=1210.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-arquivos-digitais-0101",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "arquivos-digitais"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual extensão é normalmente associada a planilha do Microsoft Excel moderno?",
+    "options": [
+      ".xlsx",
+      ".jpg",
+      ".mp3",
+      ".pdf",
+      ".exe"
+    ],
+    "answerIndex": 0,
+    "explanation": ".xlsx é formato comum de pasta de trabalho do Excel.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-arquivos-digitais-0102",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "arquivos-digitais"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um arquivo .jpg é normalmente associado a:",
+    "options": [
+      "imagem",
+      "planilha",
+      "áudio sem compressão",
+      "executável",
+      "banco SQL"
+    ],
+    "answerIndex": 0,
+    "explanation": "JPEG/JPG é formato de imagem.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-pdf-0103",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "pdf"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma característica comum do PDF é:",
+    "options": [
+      "preservar a apresentação do documento entre dispositivos",
+      "ser sempre editável como planilha",
+      "executar macros obrigatoriamente",
+      "ser exclusivamente áudio",
+      "não permitir impressão"
+    ],
+    "answerIndex": 0,
+    "explanation": "PDF é voltado a distribuição com layout estável.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-windows-0104",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "windows"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "No Windows, uma pasta é usada principalmente para:",
+    "options": [
+      "organizar arquivos e outras pastas",
+      "aumentar memória RAM",
+      "substituir o processador",
+      "criar senha bancária",
+      "converter monitor em impressora"
+    ],
+    "answerIndex": 0,
+    "explanation": "Pastas organizam itens no sistema de arquivos.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-windows-0105",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "windows"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O mecanismo de busca do sistema operacional serve para:",
+    "options": [
+      "localizar arquivos, programas e recursos",
+      "formatar automaticamente todo disco",
+      "desligar a internet",
+      "alterar hardware fisicamente",
+      "criar PDF por definição"
+    ],
+    "answerIndex": 0,
+    "explanation": "Busca ajuda a localizar recursos.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-editores-texto-0106",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "editores-texto"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Cabeçalho em editor de texto é uma área normalmente:",
+    "options": [
+      "repetida no topo das páginas",
+      "usada apenas para fórmula de Excel",
+      "invisível e sem conteúdo",
+      "destinada a vídeo",
+      "que apaga o rodapé"
+    ],
+    "answerIndex": 0,
+    "explanation": "Cabeçalhos podem repetir informação no topo das páginas.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-editores-texto-0107",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "editores-texto"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A configuração de página pode incluir:",
+    "options": [
+      "margens e orientação",
+      "senha do roteador obrigatoriamente",
+      "placa de vídeo",
+      "taxa de juros",
+      "endereço IP do servidor"
+    ],
+    "answerIndex": 0,
+    "explanation": "Margens e orientação são configurações típicas de página.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-localizar-substituir-0108",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "localizar-substituir"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O comando localizar e substituir é útil para:",
+    "options": [
+      "trocar ocorrências de um texto por outro",
+      "desfragmentar memória RAM",
+      "ligar impressora fisicamente",
+      "criar usuário no Windows",
+      "medir banda da internet"
+    ],
+    "answerIndex": 0,
+    "explanation": "A função procura um texto e pode substituí-lo em múltiplas ocorrências.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-word-arquivos-0109",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "word-arquivos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Controle de alterações no Word serve para:",
+    "options": [
+      "registrar edições para revisão",
+      "aumentar resolução de imagens automaticamente",
+      "formatar disco",
+      "criar conexão VPN por si só",
+      "calcular juros compostos"
+    ],
+    "answerIndex": 0,
+    "explanation": "O recurso registra inserções, exclusões e outras alterações.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-word-arquivos-0110",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "word-arquivos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma macro em suíte de escritório é, em geral:",
+    "options": [
+      "sequência automatizada de comandos ou código",
+      "tipo de monitor",
+      "formato de áudio",
+      "método de impressão manual",
+      "senha obrigatória"
+    ],
+    "answerIndex": 0,
+    "explanation": "Macros automatizam tarefas.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-excel-0111",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "excel"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em uma planilha, fórmula geralmente começa com:",
+    "options": [
+      "=",
+      "#",
+      "@",
+      "%",
+      "&"
+    ],
+    "answerIndex": 0,
+    "explanation": "No Excel, fórmulas usualmente começam por '='.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-excel-0112",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "excel"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recurso Filtro é usado para:",
+    "options": [
+      "mostrar linhas que atendem critérios",
+      "apagar todas as fórmulas",
+      "converter planilha em áudio",
+      "desligar o computador",
+      "mudar tamanho físico do monitor"
+    ],
+    "answerIndex": 0,
+    "explanation": "Filtros exibem subconjuntos conforme critérios.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-excel-0113",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "excel"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Ordenar uma tabela por uma coluna significa:",
+    "options": [
+      "reorganizar linhas conforme valores dessa coluna",
+      "somar automaticamente todas as células",
+      "remover proteção",
+      "salvar como imagem obrigatoriamente",
+      "criar uma macro"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ordenação reorganiza registros segundo uma chave.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-internet-seguranca-0114",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "internet-seguranca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Upload significa:",
+    "options": [
+      "enviar dados do dispositivo para um serviço remoto",
+      "receber dados da internet",
+      "apagar cache",
+      "criptografar obrigatoriamente",
+      "medir CPU"
+    ],
+    "answerIndex": 0,
+    "explanation": "Upload é envio; download é recebimento.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-internet-seguranca-0115",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "internet-seguranca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Uma senha forte tende a:",
+    "options": [
+      "ser longa e difícil de adivinhar",
+      "usar apenas 123456",
+      "ser igual ao nome do usuário",
+      "ser compartilhada publicamente",
+      "ter uma única letra"
+    ],
+    "answerIndex": 0,
+    "explanation": "Comprimento e imprevisibilidade elevam a resistência a ataques de adivinhação.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-internet-seguranca-0116",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "internet-seguranca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Criptografia busca principalmente:",
+    "options": [
+      "proteger a confidencialidade e/ou integridade por transformação controlada dos dados",
+      "aumentar tamanho da tela",
+      "imprimir mais rápido",
+      "substituir backup",
+      "desligar firewall"
+    ],
+    "answerIndex": 0,
+    "explanation": "Criptografia transforma dados com uso de chaves/algoritmos para proteção.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-internet-seguranca-0117",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "internet-seguranca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Um navegador web é usado para:",
+    "options": [
+      "acessar e interagir com recursos da Web",
+      "editar BIOS obrigatoriamente",
+      "trocar memória RAM",
+      "medir pressão arterial",
+      "formatar papel"
+    ],
+    "answerIndex": 0,
+    "explanation": "Browsers acessam sites e aplicações web.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-internet-seguranca-0118",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "internet-seguranca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Banda de uma conexão está relacionada à:",
+    "options": [
+      "capacidade de transferência de dados por unidade de tempo",
+      "quantidade de pastas do Windows",
+      "tamanho do teclado",
+      "número de páginas de um PDF",
+      "quantidade de cores do Word"
+    ],
+    "answerIndex": 0,
+    "explanation": "Banda descreve capacidade de transmissão.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-excel-0119",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "excel"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Se A1 contém 10 e A2 contém 5, a fórmula =A1+A2 resulta em:",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "50",
+      "105"
+    ],
+    "answerIndex": 2,
+    "explanation": "Soma dos valores: 10+5=15.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-word-arquivos-0120",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "word-arquivos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Salvar um documento com senha de proteção tem como objetivo principal:",
+    "options": [
+      "restringir acesso ou alteração conforme o recurso usado",
+      "aumentar o processador",
+      "melhorar a internet",
+      "criar tabela dinâmica",
+      "mudar o teclado"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proteção por senha pode limitar abertura/edição conforme configuração.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-pdf-0121",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "pdf"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Converter um documento para PDF costuma ser útil quando se deseja:",
+    "options": [
+      "distribuir versão com layout mais estável",
+      "transformá-lo em executável",
+      "aumentar memória RAM",
+      "criar áudio",
+      "substituir backup automaticamente"
+    ],
+    "answerIndex": 0,
+    "explanation": "PDF é muito usado para distribuição e impressão consistente.",
+    "tags": []
+  },
+  {
+    "id": "q-informatica-internet-seguranca-0122",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "informatica",
+    "topicIds": [
+      "internet-seguranca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Token de segurança pode ser usado como:",
+    "options": [
+      "fator adicional de autenticação",
+      "tipo de papel",
+      "extensão de imagem",
+      "classe gramatical",
+      "unidade de área"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tokens podem gerar ou armazenar credenciais como fator adicional.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-conceito-principios-0123",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-conceito-principios"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Constituição ocupa posição central no ordenamento porque:",
+    "options": [
+      "organiza o Estado e estabelece normas fundamentais",
+      "é simples manual administrativo",
+      "vale apenas para Municípios",
+      "não trata de direitos",
+      "é inferior a decretos"
+    ],
+    "answerIndex": 0,
+    "explanation": "A Constituição estrutura o Estado e fixa direitos e regras fundamentais.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-direitos-0124",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-direitos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Direitos sociais integram o estudo de:",
+    "options": [
+      "direitos e garantias fundamentais",
+      "geometria",
+      "direito empresarial exclusivamente",
+      "ortografia",
+      "planilhas"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital inclui direitos sociais dentro de direitos e garantias fundamentais.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-organizacao-0125",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-organizacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "União, Estados, Distrito Federal e Municípios aparecem no edital dentro de:",
+    "options": [
+      "organização político-administrativa",
+      "direito das obrigações",
+      "teoria do crime",
+      "marketing",
+      "socorrismo"
+    ],
+    "answerIndex": 0,
+    "explanation": "São entes estudados na organização político-administrativa.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-administracao-0126",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-administracao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O estudo constitucional da Administração Pública inclui:",
+    "options": [
+      "disposições gerais e servidores públicos",
+      "apenas empresas privadas",
+      "somente direito penal",
+      "apenas orçamento doméstico",
+      "marketing de vendas"
+    ],
+    "answerIndex": 0,
+    "explanation": "É exatamente o recorte indicado no edital.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-judiciario-0127",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-judiciario"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O Poder Judiciário é estudado no edital quanto a:",
+    "options": [
+      "disposições gerais, órgãos, competências e estrutura",
+      "somente eleições",
+      "somente tributos municipais",
+      "apenas contratos privados",
+      "somente gramática"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o recorte curricular expresso.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-cnj-0128",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-cnj"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O CNJ está associado no edital a:",
+    "options": [
+      "composição e competência",
+      "cálculo de juros",
+      "competência tributária municipal apenas",
+      "controle de estoque",
+      "arquivo PDF"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital cobra composição e competência do CNJ.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-funcoes-justica-0129",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-funcoes-justica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qual grupo integra as funções essenciais à Justiça listadas no edital?",
+    "options": [
+      "Ministério Público, advocacia e defensoria pública",
+      "Banco Central, Correios e IBGE",
+      "Prefeitura, Câmara e mercado",
+      "Polícia Rodoviária e cartório apenas",
+      "empresa e sindicato"
+    ],
+    "answerIndex": 0,
+    "explanation": "São os três blocos expressamente citados.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-lindb-0130",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-lindb"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Analogia, princípios gerais e equidade aparecem no edital dentro de:",
+    "options": [
+      "aplicação/interpretação da lei e LINDB",
+      "geometria",
+      "direito eleitoral",
+      "redes de computadores",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "O recorte de Civil reúne esses instrumentos com a LINDB.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-pessoas-0131",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-pessoas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Em Direito Civil, pessoa natural e pessoa jurídica são:",
+    "options": [
+      "categorias de sujeitos de direito",
+      "tipos de pena",
+      "operações matemáticas",
+      "formatos de arquivo",
+      "modalidades de corrida"
+    ],
+    "answerIndex": 0,
+    "explanation": "São categorias fundamentais da disciplina de pessoas.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-pessoas-0132",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-pessoas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Emancipação está relacionada principalmente à:",
+    "options": [
+      "capacidade civil",
+      "pena privativa de liberdade",
+      "download",
+      "PA",
+      "licitação"
+    ],
+    "answerIndex": 0,
+    "explanation": "É instituto ligado à capacidade civil.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-bens-0133",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-bens"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Bens públicos aparecem no edital dentro do estudo de:",
+    "options": [
+      "bens",
+      "ação penal",
+      "probabilidade",
+      "Word",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "O tópico de bens inclui bens públicos.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-fatos-0134",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-fatos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Prescrição e decadência aparecem no edital em:",
+    "options": [
+      "fatos jurídicos e também responsabilidade civil",
+      "apenas informática",
+      "somente geometria",
+      "TAF",
+      "políticas públicas apenas"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital menciona prescrição/decadência em mais de um recorte civil.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-obrigacoes-0135",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-obrigacoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Adimplemento significa, em linhas gerais:",
+    "options": [
+      "cumprimento da obrigação",
+      "criação de crime",
+      "formatação de texto",
+      "negação lógica",
+      "aumento de pena"
+    ],
+    "answerIndex": 0,
+    "explanation": "No estudo das obrigações, adimplemento corresponde ao cumprimento.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-obrigacoes-0136",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-obrigacoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Inadimplemento está ligado a:",
+    "options": [
+      "não cumprimento da obrigação",
+      "aumento de velocidade de download",
+      "direito político",
+      "regra de hífen",
+      "PA"
+    ],
+    "answerIndex": 0,
+    "explanation": "É o descumprimento da prestação devida.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-responsabilidade-0137",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-responsabilidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Dano moral e perda de uma chance aparecem no edital no tópico de:",
+    "options": [
+      "responsabilidade civil",
+      "Poder Judiciário",
+      "conjuntos",
+      "Internet",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "São subtemas expressamente citados em responsabilidade civil.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-responsabilidade-0138",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-responsabilidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Desconsideração da personalidade jurídica busca, em determinadas hipóteses legais:",
+    "options": [
+      "superar a separação patrimonial para alcançar responsáveis",
+      "abolir toda pessoa jurídica",
+      "criar crime automaticamente",
+      "substituir contrato",
+      "eliminar a Constituição"
+    ],
+    "answerIndex": 0,
+    "explanation": "O instituto permite afastar pontualmente a autonomia patrimonial quando presentes requisitos legais.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-jurisprudencia-0139",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-jurisprudencia"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O edital cita jurisprudência e súmulas de:",
+    "options": [
+      "STF, STJ e TJBA",
+      "apenas STF",
+      "apenas tribunais estrangeiros",
+      "somente TCU",
+      "apenas Câmara Municipal"
+    ],
+    "answerIndex": 0,
+    "explanation": "Os três tribunais são expressamente mencionados.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-direitos-0140",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-direitos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Nacionalidade, cidadania e direitos políticos estão no edital associados a:",
+    "options": [
+      "direitos e garantias fundamentais",
+      "direito das coisas",
+      "processo civil",
+      "contabilidade",
+      "informática"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integram o bloco constitucional listado.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-organizacao-0141",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-organizacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Municípios são mencionados expressamente no tópico de:",
+    "options": [
+      "organização político-administrativa",
+      "penas",
+      "prova processual",
+      "juros",
+      "arquivos"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital lista Municípios entre os entes.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-administracao-0142",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-administracao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Servidores públicos aparecem tanto no conteúdo constitucional quanto em legislação municipal. Isso significa que o aluno deve:",
+    "options": [
+      "respeitar o recorte de cada disciplina e não misturar automaticamente as normas",
+      "estudar só uma vez e ignorar diferenças",
+      "retirar o tema do cronograma",
+      "substituir por direito penal",
+      "estudar apenas marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "O mesmo termo pode aparecer em recortes normativos diferentes; o contexto da matéria importa.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-fatos-0143",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-fatos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Negócio jurídico pertence ao estudo de:",
+    "options": [
+      "fatos jurídicos",
+      "Poder Judiciário",
+      "proposições",
+      "Excel",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "É subtema de fatos jurídicos no edital.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-responsabilidade-0144",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-responsabilidade"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Indenização por dano moral é associada no edital a:",
+    "options": [
+      "responsabilidade civil",
+      "direito eleitoral",
+      "estatística",
+      "internet",
+      "políticas públicas"
+    ],
+    "answerIndex": 0,
+    "explanation": "Está expressamente listada no bloco de responsabilidade civil.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-bens-0145",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-bens"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte de bens do edital inclui:",
+    "options": [
+      "bens em si, reciprocamente considerados e bens públicos",
+      "somente bens móveis",
+      "somente imóveis privados",
+      "somente dinheiro",
+      "apenas herança"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o trio indicado no Anexo I.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-const-funcoes-justica-0146",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "const-funcoes-justica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Defensoria Pública aparece no edital como:",
+    "options": [
+      "função essencial à Justiça",
+      "órgão do Legislativo",
+      "empresa pública",
+      "unidade de medida",
+      "tribunal superior"
+    ],
+    "answerIndex": 0,
+    "explanation": "A Defensoria integra as funções essenciais à Justiça.",
+    "tags": []
+  },
+  {
+    "id": "q-constitucional-civil-civil-lindb-0147",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "constitucional-civil",
+    "topicIds": [
+      "civil-lindb"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quando o edital menciona 'aplicação da lei no tempo e no espaço', ele está no bloco de:",
+    "options": [
+      "Direito Civil/LINDB",
+      "Informática",
+      "RLM",
+      "TAF",
+      "Administração Financeira"
+    ],
+    "answerIndex": 0,
+    "explanation": "É parte do recorte de Direito Civil.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-conceito-fontes-0148",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-conceito-fontes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O princípio da reserva legal, listado no edital, está ligado à ideia de que:",
+    "options": [
+      "não há crime nem pena sem previsão legal anterior, conforme o princípio da legalidade",
+      "todo ato moral é crime",
+      "qualquer costume cria pena",
+      "uma portaria pode criar livremente crime",
+      "a analogia sempre cria crime"
+    ],
+    "answerIndex": 0,
+    "explanation": "A legalidade penal exige lei anterior para definir crime e pena.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-lei-0149",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-lei"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A lei penal no tempo integra o estudo de:",
+    "options": [
+      "aplicação da lei penal",
+      "Word",
+      "geometria",
+      "serviços de inteligência",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "É conteúdo expresso do bloco penal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-teoria-crime-0150",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-teoria-crime"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Crime doloso é, em linhas gerais, aquele em que:",
+    "options": [
+      "há vontade ou assunção do risco conforme a lei",
+      "nunca existe vontade",
+      "não existe conduta",
+      "não há resultado possível",
+      "é sempre contravenção"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dolo relaciona-se à vontade/assunção do risco nos termos legais.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-teoria-crime-0151",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-teoria-crime"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Relação de causalidade conecta:",
+    "options": [
+      "conduta e resultado, quando juridicamente relevante",
+      "texto e pontuação",
+      "capital e juros",
+      "arquivo e extensão",
+      "município e estado apenas"
+    ],
+    "answerIndex": 0,
+    "explanation": "Nexo causal é elemento estudado na teoria do fato típico.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-iter-0152",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-iter"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Tentativa ocorre quando, em termos gerais:",
+    "options": [
+      "iniciada a execução, o crime não se consuma por circunstâncias alheias à vontade do agente, nos casos admitidos",
+      "o agente apenas pensa em agir",
+      "o resultado ocorre integralmente",
+      "não há qualquer ato de execução",
+      "sempre há arrependimento posterior"
+    ],
+    "answerIndex": 0,
+    "explanation": "É a noção legal geral de tentativa.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-ilicitude-0153",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-ilicitude"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Legítima defesa é tradicionalmente estudada como:",
+    "options": [
+      "causa de exclusão da ilicitude",
+      "pena de multa",
+      "tipo de recurso",
+      "modalidade de contrato",
+      "regra de Excel"
+    ],
+    "answerIndex": 0,
+    "explanation": "Integra o conjunto de excludentes de ilicitude.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-penas-0154",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-penas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Pena de multa aparece no edital junto de:",
+    "options": [
+      "sanções penais",
+      "direitos políticos",
+      "PDF",
+      "juros",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "É uma das sanções listadas.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-sursis-0155",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-sursis"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Sursis significa:",
+    "options": [
+      "suspensão condicional da execução da pena",
+      "prisão temporária",
+      "recurso administrativo",
+      "multa tributária",
+      "medida de Excel"
+    ],
+    "answerIndex": 0,
+    "explanation": "O próprio edital apresenta o termo entre aspas após 'suspensão condicional'.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-crimes-pessoa-patrimonio-0156",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-crimes-pessoa-patrimonio"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Crimes contra o patrimônio são um dos grupos expressamente cobrados em:",
+    "options": [
+      "Direito Penal",
+      "RLM",
+      "Informática",
+      "Administração",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital os lista no bloco penal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-administracao-0157",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-administracao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Crimes contra a Administração Pública e contra a Administração da Justiça:",
+    "options": [
+      "são grupos distintos listados no edital",
+      "não aparecem no edital",
+      "são tópicos de matemática",
+      "são apenas administrativos sem repercussão penal",
+      "são arquivos digitais"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ambos são expressamente mencionados.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-leis-especiais-0158",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-leis-especiais"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 15.358/2026 é mencionada pelo edital em conexão com:",
+    "options": [
+      "organizações criminosas",
+      "nova ortografia",
+      "Windows",
+      "juros simples",
+      "Administração clássica"
+    ],
+    "answerIndex": 0,
+    "explanation": "O Anexo I aponta alterações introduzidas pela Lei 15.358/2026 no tema de organizações criminosas.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-principios-0159",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-principios"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Processo Penal Constitucional e sistemas/princípios fundamentais pertencem ao bloco de:",
+    "options": [
+      "Processual Penal",
+      "Civil",
+      "RLM",
+      "Informática",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "São os primeiros itens do conteúdo processual penal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-inquerito-0160",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-inquerito"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O inquérito policial, no edital, é estudado em:",
+    "options": [
+      "Processual Penal",
+      "Direito Civil",
+      "Administração",
+      "Português",
+      "Geometria"
+    ],
+    "answerIndex": 0,
+    "explanation": "É tópico expresso do processo penal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-acao-0161",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-acao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A ação penal está relacionada ao exercício da pretensão punitiva perante o Judiciário e é conteúdo de:",
+    "options": [
+      "Processual Penal",
+      "Informática",
+      "Marketing",
+      "Geometria",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ação penal é tópico do processo penal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-prova-0162",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-prova"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 9.296/1996 citada no edital trata de:",
+    "options": [
+      "interceptação telefônica",
+      "licitações",
+      "drogas",
+      "guardas municipais",
+      "trânsito"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital a identifica expressamente como Lei de Interceptação Telefônica.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-prisao-0163",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-prisao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 7.960/1989 citada no edital está ligada a:",
+    "options": [
+      "prisão temporária",
+      "juizados especiais",
+      "licitações",
+      "crime ambiental",
+      "ECA"
+    ],
+    "answerIndex": 0,
+    "explanation": "É a lei da prisão temporária.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-juizados-0164",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-juizados"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Quais leis aparecem juntas no tópico de Juizados Especiais?",
+    "options": [
+      "9.099/1995 e 10.259/2001",
+      "11.340/2006 e 11.343/2006",
+      "13.022/2014 e 13.869/2019",
+      "8.072/1990 e 9.455/1997",
+      "9.605/1998 e 9.613/1998"
+    ],
+    "answerIndex": 0,
+    "explanation": "São as duas leis listadas no item 10 do processo penal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-prazos-0165",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-prazos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O edital inclui em 'Prazos':",
+    "options": [
+      "características, princípios e contagem",
+      "apenas datas de inscrição",
+      "somente prescrição civil",
+      "somente feriados",
+      "apenas cálculo de juros"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o recorte literal do Anexo I.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-proc-nulidades-0166",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-nulidades"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Nulidades processuais integram o conteúdo de:",
+    "options": [
+      "Processual Penal",
+      "Excel",
+      "Português",
+      "TAF",
+      "Administração Financeira"
+    ],
+    "answerIndex": 0,
+    "explanation": "Nulidades é item próprio do processo penal.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-funcoes-0167",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-funcoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Planejamento, organização, direção e controle são:",
+    "options": [
+      "funções administrativas",
+      "tipos de crime",
+      "classes de palavras",
+      "etapas do TAF",
+      "formatos de arquivo"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital lista as quatro funções administrativas.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-planejamento-0168",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-planejamento"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na análise SWOT, 'forças' e 'fraquezas' costumam representar fatores:",
+    "options": [
+      "internos",
+      "apenas externos",
+      "penais",
+      "gramaticais",
+      "processuais"
+    ],
+    "answerIndex": 0,
+    "explanation": "Forças e fraquezas são elementos internos; oportunidades e ameaças são externos.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-planejamento-0169",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-planejamento"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Missão de uma organização descreve principalmente:",
+    "options": [
+      "sua razão de existir e atuação central",
+      "apenas o orçamento anual",
+      "um crime",
+      "um arquivo PDF",
+      "uma equação"
+    ],
+    "answerIndex": 0,
+    "explanation": "Missão expressa propósito institucional.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-estruturas-0170",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-estruturas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Estrutura matricial combina, em geral:",
+    "options": [
+      "mais de uma linha de autoridade, como função e projeto",
+      "apenas uma hierarquia simples obrigatória",
+      "somente marketing",
+      "somente vendas",
+      "direito penal e civil"
+    ],
+    "answerIndex": 0,
+    "explanation": "A matriz combina dimensões organizacionais.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-marketing-0171",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-marketing"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Os 4 Ps do marketing referem-se tradicionalmente a:",
+    "options": [
+      "produto, preço, praça e promoção",
+      "pessoa, processo, prova e pena",
+      "plano, prazo, polícia e público",
+      "produto, prova, processo e prisão",
+      "preço, poder, política e pena"
+    ],
+    "answerIndex": 0,
+    "explanation": "É o composto clássico cobrado no edital.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-financeira-0172",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-financeira"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Fluxo de caixa acompanha principalmente:",
+    "options": [
+      "entradas e saídas de recursos ao longo do tempo",
+      "classes gramaticais",
+      "tipos de crime",
+      "quadrantes",
+      "endereços web"
+    ],
+    "answerIndex": 0,
+    "explanation": "É instrumento básico de gestão financeira.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-rh-0173",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-rh"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Recrutamento e seleção pertencem ao campo de:",
+    "options": [
+      "Recursos Humanos",
+      "Geometria",
+      "Direito Penal",
+      "Internet",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "São processos de RH expressamente cobrados.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-empreendedorismo-0174",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-empreendedorismo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Plano de negócios aparece no edital em:",
+    "options": [
+      "Empreendedorismo",
+      "Processo Penal",
+      "Nova ortografia",
+      "Windows",
+      "Constitucional"
+    ],
+    "answerIndex": 0,
+    "explanation": "É conteúdo do processo empreendedor.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-adm-etica-0175",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-etica"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Sustentabilidade e responsabilidade social corporativa aparecem no tópico de:",
+    "options": [
+      "Ética e responsabilidade",
+      "Processo Penal",
+      "RLM",
+      "Informática",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "Estão listadas nesse bloco.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-pp-conceitos-0176",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "pp-conceitos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Formulação, implementação e avaliação formam:",
+    "options": [
+      "ciclo de políticas públicas",
+      "tipos de sentença penal",
+      "classes de palavras",
+      "etapas de boot",
+      "componentes de juros"
+    ],
+    "answerIndex": 0,
+    "explanation": "São etapas clássicas do ciclo descrito no edital.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-pp-governanca-0177",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "pp-governanca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Federalismo e relações Estado-sociedade aparecem em:",
+    "options": [
+      "governança e relações intragovernamentais",
+      "geometria",
+      "Word",
+      "Direito Civil patrimonial",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "É parte do recorte de políticas públicas.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-pp-bases-0178",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "pp-bases"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Estatística descritiva e inferencial aparecem no edital como:",
+    "options": [
+      "bases quantitativas para políticas públicas",
+      "conteúdo de Português",
+      "crime",
+      "TAF",
+      "segurança patrimonial"
+    ],
+    "answerIndex": 0,
+    "explanation": "São ferramentas quantitativas do bloco.",
+    "tags": []
+  },
+  {
+    "id": "q-administracao-politicas-pp-avaliacao-0179",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "pp-avaliacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Avaliação ex ante ocorre, em regra, associada à análise:",
+    "options": [
+      "antes da implementação/decisão principal",
+      "somente depois de tudo",
+      "apenas durante uma prova",
+      "de arquivos",
+      "de ortografia"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ex ante significa avaliação anterior; ex post, posterior.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-atendimento-0180",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-atendimento"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Qualidade no atendimento, segundo o recorte do edital, inclui:",
+    "options": [
+      "cortesia, presteza, eficiência e objetividade",
+      "somente velocidade",
+      "apenas autoridade",
+      "apenas silêncio",
+      "somente formalidade"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital lista vários atributos, entre eles cortesia, presteza, eficiência e objetividade.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-atendimento-0181",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-atendimento"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Trabalho em equipe está expressamente incluído em:",
+    "options": [
+      "Relações humanas e atendimento",
+      "Geometria",
+      "Direito Civil",
+      "Excel",
+      "Juros"
+    ],
+    "answerIndex": 0,
+    "explanation": "É o item 2 desse bloco.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-defesa-riscos-0182",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-defesa-riscos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Planejamento de contingências integra:",
+    "options": [
+      "análise de riscos e gestão da informação",
+      "nova ortografia",
+      "direito das obrigações",
+      "marketing",
+      "plano cartesiano"
+    ],
+    "answerIndex": 0,
+    "explanation": "É subitem expresso do tópico.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-defesa-riscos-0183",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-defesa-riscos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Ameaças e vulnerabilidades aparecem no edital dentro de:",
+    "options": [
+      "segurança de informações",
+      "PA",
+      "Civil",
+      "Marketing",
+      "ortografia"
+    ],
+    "answerIndex": 0,
+    "explanation": "O recorte de riscos inclui ameaças e vulnerabilidades.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-protecao-escoltas-0184",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-protecao-escoltas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Estudo de rota e pontos sensíveis aparecem no edital em:",
+    "options": [
+      "operações de proteção e escoltas",
+      "Excel",
+      "Direito Civil",
+      "Políticas Públicas",
+      "Português"
+    ],
+    "answerIndex": 0,
+    "explanation": "São elementos do planejamento de proteção pessoal e comitivas.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-protecao-escoltas-0185",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-protecao-escoltas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Controle de público e resposta imediata a ameaças são citados em:",
+    "options": [
+      "operações de proteção e escoltas",
+      "juros",
+      "Word",
+      "responsabilidade civil",
+      "conjuntos"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital os inclui no bloco de operações.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-seguranca-patrimonial-0186",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-seguranca-patrimonial"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Credenciamento e barreiras pertencem a:",
+    "options": [
+      "controle de acessos",
+      "juros compostos",
+      "sintaxe",
+      "ação penal",
+      "estatística"
+    ],
+    "answerIndex": 0,
+    "explanation": "São exemplos do controle de acesso em segurança patrimonial.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-seguranca-patrimonial-0187",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-seguranca-patrimonial"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Vigilância e monitoramento aparecem no tópico de:",
+    "options": [
+      "segurança física e patrimonial",
+      "direito das obrigações",
+      "PA",
+      "Word",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "São itens expressos do bloco.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-incidentes-negociacao-0188",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-incidentes-negociacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Escuta ativa e redução de tensão são associadas no edital a:",
+    "options": [
+      "noções básicas de negociação policial",
+      "geometria",
+      "Excel",
+      "responsabilidade civil",
+      "juros"
+    ],
+    "answerIndex": 0,
+    "explanation": "São elementos conceituais do bloco de negociação.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-incidentes-negociacao-0189",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-incidentes-negociacao"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Cadeia de comando aparece no conteúdo de:",
+    "options": [
+      "gestão de incidentes críticos",
+      "nova ortografia",
+      "direito civil",
+      "internet",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "É parte do gerenciamento de incidente crítico.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-incendio-0190",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-incendio"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A NR-23 é citada no edital em:",
+    "options": [
+      "prevenção e combate a incêndio",
+      "direito penal",
+      "informática",
+      "políticas públicas",
+      "português"
+    ],
+    "answerIndex": 0,
+    "explanation": "A NR-23 aparece expressamente no bloco de incêndio.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-incendio-0191",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-incendio"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Tipos/uso de extintores, rotas e saídas de emergência pertencem ao bloco de:",
+    "options": [
+      "prevenção e combate a incêndio",
+      "Excel",
+      "Direito Civil",
+      "RLM",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "São itens expressamente listados.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-socorrismo-0192",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-socorrismo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "APH no edital significa:",
+    "options": [
+      "Atendimento Pré-Hospitalar",
+      "Administração Pública Hierárquica",
+      "Análise de Probabilidade Horária",
+      "Arquivo Protegido Híbrido",
+      "Ação Penal Homologada"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital explicita APH - Nível Básico como Atendimento Pré-Hospitalar.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-socorrismo-0193",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-socorrismo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Antes de prestar atendimento, o bloco de socorrismo destaca:",
+    "options": [
+      "medidas de segurança do local",
+      "cálculo de juros",
+      "classificação de bens",
+      "formatação de Word",
+      "análise SWOT"
+    ],
+    "answerIndex": 0,
+    "explanation": "Segurança do local é o primeiro subitem.",
+    "tags": []
+  },
+  {
+    "id": "q-area-atuacao-area-inteligencia-0194",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "area-atuacao",
+    "topicIds": [
+      "area-inteligencia"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Fontes de coleta e metodologia de produção de conhecimentos pertencem a:",
+    "options": [
+      "serviços de inteligência",
+      "geometria",
+      "direito civil",
+      "Word",
+      "marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "São subitens do bloco de inteligência.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-guardas-0195",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-guardas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Segundo a Lei 13.022/2014, as guardas municipais são instituições de caráter:",
+    "options": [
+      "civil",
+      "militar federal",
+      "judicial",
+      "privado",
+      "legislativo"
+    ],
+    "answerIndex": 0,
+    "explanation": "A Lei 13.022/2014 define as guardas como instituições de caráter civil.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-guardas-0196",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-guardas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Entre os princípios mínimos de atuação das guardas municipais previstos na Lei 13.022/2014 está:",
+    "options": [
+      "proteção dos direitos humanos fundamentais",
+      "sigilo absoluto de toda informação pública",
+      "atuação sem limites legais",
+      "substituição do Poder Judiciário",
+      "cobrança de tributos"
+    ],
+    "answerIndex": 0,
+    "explanation": "A proteção dos direitos humanos fundamentais é princípio expresso da lei.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-guardas-0197",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-guardas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A competência geral das guardas municipais, na Lei 13.022/2014, envolve a proteção de:",
+    "options": [
+      "bens, serviços, logradouros públicos municipais e instalações do Município",
+      "fronteiras internacionais exclusivamente",
+      "qualquer empresa privada obrigatoriamente",
+      "somente rodovias federais",
+      "apenas fóruns estaduais"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o núcleo da competência geral do art. 4º.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-maria-penha-0198",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-maria-penha"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei Maria da Penha cria mecanismos voltados ao enfrentamento da:",
+    "options": [
+      "violência doméstica e familiar contra a mulher",
+      "inadimplência tributária",
+      "pirataria de software",
+      "contravenção de trânsito em geral",
+      "corrupção eleitoral apenas"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o objeto central da Lei 11.340/2006.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-drogas-0199",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-drogas"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 11.343/2006 institui o:",
+    "options": [
+      "Sisnad",
+      "CNJ",
+      "SUS",
+      "FGTS",
+      "Sintegra"
+    ],
+    "answerIndex": 0,
+    "explanation": "A lei institui o Sistema Nacional de Políticas Públicas sobre Drogas - Sisnad.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-abuso-0200",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-abuso"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Na Lei 13.869/2019, abuso de autoridade exige, nos tipos previstos, finalidade específica como prejudicar alguém, beneficiar a si/terceiro ou agir por:",
+    "options": [
+      "mero capricho ou satisfação pessoal",
+      "qualquer erro de digitação",
+      "simples divergência interpretativa sempre",
+      "falta de treinamento físico",
+      "atraso de cinco minutos"
+    ],
+    "answerIndex": 0,
+    "explanation": "A lei prevê finalidades específicas; mera divergência de interpretação não configura, por si, abuso.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-abuso-0201",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-abuso"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A mera divergência na interpretação de lei ou avaliação de fatos e provas, segundo a Lei 13.869/2019:",
+    "options": [
+      "não configura abuso de autoridade por si só",
+      "sempre configura crime",
+      "gera prisão automática",
+      "é irrelevante em qualquer análise",
+      "é crime hediondo"
+    ],
+    "answerIndex": 0,
+    "explanation": "A própria lei exclui essa conclusão automática.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-licitacoes-0202",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-licitacoes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 14.133/2021 trata principalmente de:",
+    "options": [
+      "licitações e contratos administrativos",
+      "drogas",
+      "guardas municipais",
+      "crimes ambientais exclusivamente",
+      "direitos autorais"
+    ],
+    "answerIndex": 0,
+    "explanation": "É a nova lei geral de licitações e contratos administrativos.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-ctb-0203",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-ctb"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 9.503/1997 corresponde ao:",
+    "options": [
+      "Código de Trânsito Brasileiro",
+      "Código Civil",
+      "Estatuto do Desarmamento",
+      "ECA",
+      "Código Penal Militar"
+    ],
+    "answerIndex": 0,
+    "explanation": "É o CTB.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-desarmamento-0204",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-desarmamento"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 10.826/2003 é conhecida como:",
+    "options": [
+      "Estatuto do Desarmamento",
+      "Lei de Drogas",
+      "Lei de Tortura",
+      "Lei Maria da Penha",
+      "Lei de Licitações"
+    ],
+    "answerIndex": 0,
+    "explanation": "É o Estatuto do Desarmamento.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-eca-0205",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-eca"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 8.069/1990 corresponde ao:",
+    "options": [
+      "Estatuto da Criança e do Adolescente",
+      "Estatuto do Idoso",
+      "Código Civil",
+      "CTB",
+      "Estatuto Geral das Guardas"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lei 8.069/1990 é o ECA.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-ambiental-0206",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-ambiental"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 9.605/1998 trata de:",
+    "options": [
+      "crimes e infrações ambientais",
+      "drogas",
+      "carreira da GCM",
+      "organização do Município",
+      "processo eleitoral"
+    ],
+    "answerIndex": 0,
+    "explanation": "É a Lei de Crimes Ambientais.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-racismo-0207",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-racismo"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 7.716/1989 é cobrada no edital em relação a:",
+    "options": [
+      "crimes resultantes de preconceitos de raça ou de cor e alterações",
+      "juros",
+      "planilhas",
+      "carreira administrativa",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o recorte expresso da legislação geral.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-lc1-0208",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-lc1"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A LC 1/1991, no edital, refere-se ao:",
+    "options": [
+      "regime jurídico dos servidores públicos do Município de Salvador",
+      "Código Penal",
+      "CTB",
+      "Estatuto do Desarmamento",
+      "SISNAD"
+    ],
+    "answerIndex": 0,
+    "explanation": "É a lei complementar municipal de regime jurídico.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-carreira-0209",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-carreira"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 9.640/2022 trata, segundo o edital, do:",
+    "options": [
+      "Plano de Carreira e Vencimentos da Guarda Civil Municipal",
+      "Código Tributário nacional",
+      "Direito Eleitoral",
+      "Poder Judiciário",
+      "SUS"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital identifica expressamente esse objeto.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-regimento-0210",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-regimento"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O Decreto 27.731/2016 é cobrado como:",
+    "options": [
+      "Regimento da Guarda Civil Municipal de Salvador",
+      "Estatuto do Desarmamento",
+      "Lei de Drogas",
+      "Código Civil",
+      "regulamento do CNJ"
+    ],
+    "answerIndex": 0,
+    "explanation": "É o regimento da GCM de Salvador.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-disciplinar-0211",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-disciplinar"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei 9.273/2017 está associada ao:",
+    "options": [
+      "Regime Disciplinar da Guarda Civil Municipal",
+      "CTB",
+      "Código Civil",
+      "SISNAD",
+      "Poder Judiciário"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital a identifica como regime disciplinar da GCM.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-organica-poderes-0212",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-organica-poderes"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei Orgânica de Salvador é cobrada, entre outros pontos, quanto a:",
+    "options": [
+      "organização do Município, competências e Poderes",
+      "somente crimes hediondos",
+      "somente Windows",
+      "juros compostos",
+      "apenas marketing"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital lista organização, competências, Legislativo e Executivo.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-organica-adm-0213",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-organica-adm"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Bens municipais, serviços públicos, planejamento e orçamento aparecem no edital dentro de:",
+    "options": [
+      "Lei Orgânica do Município de Salvador",
+      "Lei de Drogas",
+      "Word",
+      "RLM",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "São itens expressamente listados na Lei Orgânica.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-organizacao-adm-0214",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-organizacao-adm"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Administração direta e indireta do Município aparece no edital em:",
+    "options": [
+      "organização administrativa municipal",
+      "direito penal especial",
+      "geometria",
+      "Excel",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "O recorte inclui estrutura e funcionamento da administração direta e indireta.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-tributario-0215",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-tributario"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "A Lei Municipal 7.186/2006 é citada no edital como:",
+    "options": [
+      "Código Tributário e de Rendas do Município de Salvador",
+      "Estatuto das Guardas",
+      "Lei de Drogas",
+      "Código Penal",
+      "Lei de Tortura"
+    ],
+    "answerIndex": 0,
+    "explanation": "O edital associa a lei ao Código Tributário e de Rendas.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-etica-transparencia-0216",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-etica-transparencia"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "Ética, integridade, transparência e acesso à informação aparecem no conteúdo de:",
+    "options": [
+      "legislação municipal",
+      "geometria",
+      "Word",
+      "direito penal apenas",
+      "TAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "São normas municipais expressamente mencionadas.",
+    "tags": []
+  },
+  {
+    "id": "q-legislacao-leg-direitos-cidadaos-0217",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "legislacao",
+    "topicIds": [
+      "leg-direitos-cidadaos"
+    ],
+    "difficulty": "medium",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O edital inclui direitos e deveres dos cidadãos perante:",
+    "options": [
+      "a Administração Municipal",
+      "apenas empresas privadas",
+      "apenas o Judiciário Federal",
+      "somente bancos",
+      "apenas a FGV"
+    ],
+    "answerIndex": 0,
+    "explanation": "Esse é o item 17 do recorte de legislação municipal.",
+    "tags": []
+  },
+  {
+    "id": "q-penal-processual-penal-honra-fe-publica-0218",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "penal-honra-fe-publica"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Crimes contra a Honra; Crimes contra a Fé Pública' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Prova e interceptação",
+      "Crimes contra honra e fé pública",
+      "Administração pública e servidores",
+      "Fato típico, dolo e culpa",
+      "Juizados especiais"
+    ],
+    "answerIndex": 1,
+    "explanation": "Esse recorte foi mapeado para 'Crimes contra honra e fé pública'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  },
+  {
+    "id": "q-penal-processual-proc-aplicacao-0219",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-aplicacao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Aplicação da lei processual penal no tempo, no espaço e em relação às pessoas; disposições preliminares do CPP' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Processos de construção textual",
+      "Aplicação da lei processual",
+      "Conceitos e ciclo de políticas públicas",
+      "Juizados especiais",
+      "Denotação e conotação"
+    ],
+    "answerIndex": 1,
+    "explanation": "Esse recorte foi mapeado para 'Aplicação da lei processual'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  },
+  {
+    "id": "q-penal-processual-proc-processo-0220",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-processo"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Processo, procedimento e relação jurídica processual; princípios gerais e informadores; pretensão punitiva' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Relações humanas e atendimento",
+      "Sequências, PA e PG",
+      "Processo, procedimento e relação processual",
+      "Plano cartesiano",
+      "Prova e interceptação"
+    ],
+    "answerIndex": 2,
+    "explanation": "Esse recorte foi mapeado para 'Processo, procedimento e relação processual'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  },
+  {
+    "id": "q-penal-processual-proc-sujeitos-0221",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-sujeitos"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Sujeitos do Processo' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Defesa pessoal, riscos e informação",
+      "Word 2010+ e manipulação de arquivos",
+      "Comprimento, área e volume",
+      "Sujeitos do processo",
+      "Contagem e probabilidade"
+    ],
+    "answerIndex": 3,
+    "explanation": "Esse recorte foi mapeado para 'Sujeitos do processo'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  },
+  {
+    "id": "q-penal-processual-proc-jurisprudencia-0222",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "penal-processual",
+    "topicIds": [
+      "proc-jurisprudencia"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Jurisprudência aplicada dos tribunais superiores' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Aplicação da lei e LINDB",
+      "Crimes de preconceito de raça ou cor",
+      "Prova e interceptação",
+      "Jurisprudência processual",
+      "Coesão, coerência e intertextualidade"
+    ],
+    "answerIndex": 3,
+    "explanation": "Esse recorte foi mapeado para 'Jurisprudência processual'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  },
+  {
+    "id": "q-administracao-politicas-adm-introducao-0223",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-introducao"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Definição e importância da administração; história e evolução da administração' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Lei Orgânica: organização e Poderes",
+      "Domínio vocabular",
+      "Jurisprudência processual",
+      "Arquivos PDF",
+      "Introdução à Administração"
+    ],
+    "answerIndex": 4,
+    "explanation": "Esse recorte foi mapeado para 'Introdução à Administração'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  },
+  {
+    "id": "q-administracao-politicas-adm-teorias-0224",
+    "contestId": "gcm-salvador-2026",
+    "subjectId": "administracao-politicas",
+    "topicIds": [
+      "adm-teorias"
+    ],
+    "difficulty": "easy",
+    "sourceType": "authorial",
+    "sourceLabel": "Questão autoral para treino - não é questão oficial da FGV",
+    "stem": "O recorte oficial 'Teoria clássica, relações humanas, comportamental, contingência; gestão por competências e gestão de projetos' corresponde a qual tópico de estudo nesta matriz?",
+    "options": [
+      "Bens",
+      "Teorias da Administração",
+      "Obrigações",
+      "Licitações e contratos",
+      "Estrangeirismos"
+    ],
+    "answerIndex": 1,
+    "explanation": "Esse recorte foi mapeado para 'Teorias da Administração'. Esta questão serve para fixar a organização exata do conteúdo do edital.",
+    "tags": [
+      "matriz-edital"
+    ]
+  }
+]

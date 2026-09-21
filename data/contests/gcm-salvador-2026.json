@@ -1,0 +1,135 @@
+{
+  "id": "gcm-salvador-2026",
+  "name": "Guarda Civil Municipal de Salvador 2026",
+  "shortName": "GCM Salvador 2026",
+  "organization": "Prefeitura Municipal do Salvador",
+  "organizer": "FGV",
+  "notice": "Edital nº 002/2026",
+  "noticeDate": "2026-09-24",
+  "examDate": "2027-01-17T08:00:00-03:00",
+  "examDurationMinutes": 270,
+  "totalQuestions": 70,
+  "status": "open",
+  "officialPage": "https://conhecimento.fgv.br/concursos/pmsguarda2026",
+  "localNoticePath": "./docs/edital-gcm-salvador-2026.pdf",
+  "localGuidePath": "./docs/guia-gcm-salvador-2026.pdf",
+  "rules": {
+    "minimumModule1": 14,
+    "minimumModule2": 21,
+    "minimumTotal": 35,
+    "questionValue": 1
+  },
+  "taf": {
+    "male": {
+      "run": {
+        "distanceM": 2200,
+        "timeMinutes": 12
+      },
+      "bar": {
+        "type": "dynamic",
+        "minimum": 3
+      },
+      "abdominal": {
+        "minimum": 25
+      },
+      "pushup": {
+        "minimum": 20
+      }
+    },
+    "female": {
+      "run": {
+        "distanceM": 2200,
+        "timeMinutes": 14
+      },
+      "bar": {
+        "type": "static",
+        "minimumSeconds": 10
+      },
+      "abdominal": {
+        "minimum": 20
+      },
+      "pushup": {
+        "minimum": 15
+      }
+    }
+  },
+  "studyGuide": {
+    "strategy": "Priorizar Português e RLM sem abandonar matérias de 10 questões e os mínimos dos dois módulos.",
+    "dailyMethod": "Teoria curta -> questões -> correção -> revisão ativa -> registro do erro.",
+    "targetScore": 80,
+    "phases": [
+      {
+        "name": "Base",
+        "goal": "Aprender fundamentos e mapear fraquezas"
+      },
+      {
+        "name": "Cobertura",
+        "goal": "Passar por todo o edital ao menos uma vez"
+      },
+      {
+        "name": "Consolidação",
+        "goal": "Questões, revisões e simulados"
+      },
+      {
+        "name": "Reta final",
+        "goal": "Simulados cronometrados, leis e pontos fracos"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "title": "Inscrições",
+      "start": "2026-09-21",
+      "end": "2026-10-30",
+      "type": "official"
+    },
+    {
+      "title": "Isenção da taxa",
+      "start": "2026-09-21",
+      "end": "2026-09-22",
+      "type": "official"
+    },
+    {
+      "title": "Prazo limite para pagamento",
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "type": "official"
+    },
+    {
+      "title": "Locais de prova",
+      "start": "2027-01-11",
+      "end": "2027-01-11",
+      "type": "official"
+    },
+    {
+      "title": "Prova objetiva",
+      "start": "2027-01-17T08:00:00-03:00",
+      "end": "2027-01-17T12:30:00-03:00",
+      "type": "official"
+    },
+    {
+      "title": "Convocação para o TAF",
+      "start": "2027-03-17",
+      "end": "2027-03-17",
+      "type": "official"
+    },
+    {
+      "title": "TAF",
+      "start": "2027-04-05",
+      "end": "2027-04-07",
+      "type": "official"
+    },
+    {
+      "title": "Avaliação psicológica",
+      "start": "2027-05-30",
+      "end": "2027-05-30",
+      "type": "official"
+    },
+    {
+      "title": "Resultado final previsto",
+      "start": "2027-09-02",
+      "end": "2027-09-02",
+      "type": "official"
+    }
+  ]
+}
