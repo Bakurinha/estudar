@@ -20,6 +20,7 @@ GENERIC = re.compile(
     r"o objetivo deste cap[ií]tulo [eé] dominar|resolva primeiro quest[oõ]es apenas deste t[oó]pico",
     re.I,
 )
+PRACTICE = re.compile(r"treino|quest[oõ]es|exerc[ií]cios|pr[aá]tica|atividade|desafio", re.I)
 
 
 def sentences(text):
@@ -33,17 +34,23 @@ def sentences(text):
     ]
 
 
+def block_text(block):
+    parts = [str(block.get("body") or "")]
+    parts.extend(str(item or "") for item in (block.get("items") or []))
+    return re.sub(r"\s+", " ", " ".join(parts)).strip()
+
+
 def page_claims(page, lesson):
     claims = []
     blocks = page.get("blocks") or []
     preferred = []
     for block in blocks:
-        body = re.sub(r"\s+", " ", str(block.get("body") or "")).strip()
+        body = block_text(block)
         title = str(block.get("title") or "")
         if len(body) >= 120 and not CONTROL_TITLES.search(title) and not GENERIC.search(body):
             preferred.append(body)
     if not preferred:
-        preferred = [str(b.get("body") or "") for b in blocks if len(str(b.get("body") or "")) >= 80]
+        preferred = [block_text(b) for b in blocks if len(block_text(b)) >= 80]
     for body in preferred:
         for sentence in sentences(body):
             if not GENERIC.search(sentence):
@@ -51,7 +58,6 @@ def page_claims(page, lesson):
     if not claims:
         for fallback in (page.get("editalBasis"), page.get("sourceScope"), lesson.get("officialScope")):
             claims.extend(sentences(fallback))
-    # deduplicação simples
     unique = []
     seen = set()
     for claim in claims:
@@ -62,9 +68,27 @@ def page_claims(page, lesson):
     return unique
 
 
+def practice_items(page):
+    results = []
+    for block in page.get("blocks") or []:
+        title = str(block.get("title") or "")
+        for item in block.get("items") or []:
+            clean = re.sub(r"\s+", " ", str(item or "")).strip()
+            if len(clean) >= 12:
+                results.append(clean)
+        if PRACTICE.search(title):
+            body = re.sub(r"\s+", " ", str(block.get("body") or "")).strip()
+            if len(body) >= 20:
+                results.append(body)
+    return results
+
+
+def is_practice(page):
+    return bool(PRACTICE.search(f"{page.get('title','')} {page.get('kind','')}"))
+
+
 def load_gcm():
-    lessons = json.loads((ROOT / "data/lessons/gcm-salvador-2026.json").read_text(encoding="utf-8"))
-    return lessons
+    return json.loads((ROOT / "data/lessons/gcm-salvador-2026.json").read_text(encoding="utf-8"))
 
 
 def load_packed(course_id):
@@ -83,22 +107,43 @@ def audit(course_id, lessons):
     missing = []
     claim_counts = []
     char_counts = []
+    practice_count = 0
+    practice_with_items = 0
+
     for lesson in lessons:
         for page in lesson.get("studyPages") or []:
             pages.append(page)
             claims = page_claims(page, lesson)
             claim_counts.append(len(claims))
-            chars = sum(len(str(block.get("body") or "")) for block in page.get("blocks") or [])
+            chars = sum(len(block_text(block)) for block in page.get("blocks") or [])
             char_counts.append(chars)
-            if not claims:
-                missing.append((lesson.get("topicId"), page.get("id"), page.get("title")))
+
+            practice = is_practice(page)
+            exercises = practice_items(page) if practice else []
+            if practice:
+                practice_count += 1
+                if exercises:
+                    practice_with_items += 1
+
+            # Página teórica precisa de afirmação recuperável. Página prática pode
+            # ser validada pelos próprios exercícios, sem inventar uma resposta.
+            if not claims and not (practice and exercises):
+                missing.append((
+                    lesson.get("topicId"),
+                    page.get("id"),
+                    page.get("title"),
+                    len(exercises),
+                ))
+
     if not pages:
         raise SystemExit(f"{course_id}: nenhuma página encontrada")
     if missing:
         sample = "\n".join(map(str, missing[:20]))
-        raise SystemExit(f"{course_id}: {len(missing)} páginas sem critério recuperável\n{sample}")
+        raise SystemExit(f"{course_id}: {len(missing)} páginas sem base recuperável\n{sample}")
+
     print(
         f"{course_id}: lessons={len(lessons)} pages={len(pages)} "
+        f"practice_pages={practice_count} practice_with_items={practice_with_items} "
         f"min_claims={min(claim_counts)} median_claims={statistics.median(claim_counts)} "
         f"avg_claims={statistics.mean(claim_counts):.1f} "
         f"min_chars={min(char_counts)} avg_chars={statistics.mean(char_counts):.0f}"
