@@ -3,9 +3,14 @@ import { ROUTES } from './config.js';
 import { qsa } from './utils.js';
 
 export function currentRoute() {
-  const hash = location.hash.replace(/^#\/?/, '');
-  const [route = 'dashboard', ...parts] = hash.split('/');
-  return { route: ROUTES.includes(route) ? route : 'dashboard', parts };
+  const rawHash = location.hash.replace(/^#\/?/, '');
+  const [path = 'dashboard', queryString = ''] = rawHash.split('?');
+  const [route = 'dashboard', ...parts] = path.split('/');
+  return {
+    route: ROUTES.includes(route) ? route : 'dashboard',
+    parts,
+    query: new URLSearchParams(queryString),
+  };
 }
 
 export function navigate(route, ...parts) {
