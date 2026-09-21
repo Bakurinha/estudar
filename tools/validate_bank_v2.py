@@ -62,6 +62,7 @@ required_sections = {
     "Como usar esta aula",
     "Objetivo da aula",
     "Fundamentos explicados passo a passo",
+    "Aprofundamento específico do tópico",
     "Método de resolução",
     "Exemplos comentados",
     "Diferenças que a banca pode explorar",
@@ -74,18 +75,26 @@ required_sections = {
 for topic_id, lesson in lesson_by_topic.items():
     if topic_id not in topics:
         fail(f"aula aponta para tópico inexistente: {topic_id}")
-    titles = {section.get("title") for section in lesson.get("sections", [])}
+    sections = lesson.get("sections", [])
+    titles = {section.get("title") for section in sections}
     if not required_sections.issubset(titles):
         missing = sorted(required_sections - titles)
         fail(f"aula {topic_id} não recebeu todos os blocos aprofundados: {missing}")
-    if lesson.get("depth") != "concurso-aprofundado-v3":
-        fail(f"aula {topic_id} não está marcada como profundidade V3")
-    if int(lesson.get("estimatedMinutes") or 0) < 65:
+    if lesson.get("depth") != "concurso-aprofundado-v4":
+        fail(f"aula {topic_id} não está marcada como profundidade V4")
+    if int(lesson.get("estimatedMinutes") or 0) < 80:
         fail(f"aula {topic_id} tem tempo planejado curto demais: {lesson.get('estimatedMinutes')}")
-    if int(lesson.get("theoryMinutes") or 0) < 40:
+    if int(lesson.get("theoryMinutes") or 0) < 55:
         fail(f"aula {topic_id} tem teoria curta demais: {lesson.get('theoryMinutes')}")
-    if len(lesson.get("sections", [])) < 10:
+    if len(sections) < 11:
         fail(f"aula {topic_id} possui poucas seções para o padrão aprofundado")
+
+    specific = next((s for s in sections if s.get("title") == "Aprofundamento específico do tópico"), None)
+    items = specific.get("items", []) if specific else []
+    if len(items) < 4:
+        fail(f"aula {topic_id} precisa de ao menos quatro pontos de aprofundamento específico")
+    if any(len(str(item).strip()) < 45 for item in items):
+        fail(f"aula {topic_id} possui aprofundamento específico curto demais")
 
 ids: set[str] = set()
 stems: set[str] = set()
@@ -148,8 +157,6 @@ for subject_id, subject in subjects.items():
         if count < target:
             fail(f"{topic['id']} tem {count} questões; mínimo exigido={target}")
 
-# O app embaralha alternativas em tempo de execução, mas o arquivo também não
-# deve concentrar o gabarito em uma única posição.
 total = len(questions)
 for index in range(5):
     ratio = answers[index] / total
@@ -159,7 +166,7 @@ for index in range(5):
 if total < 2650:
     fail(f"banco deveria ter ao menos 2.650 questões; encontrou {total}")
 
-print("VALIDAÇÃO V3 OK")
+print("VALIDAÇÃO V4 OK")
 print(f"Tópicos: {len(topics)}")
 print(f"Aulas: {len(lessons)}")
 print(f"Questões: {total}")
