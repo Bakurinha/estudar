@@ -72,22 +72,62 @@ required_sections = {
     "Mapa exato do edital",
 }
 
+total_manual_chars = 0
+total_manual_pages = 0
+
 for topic_id, lesson in lesson_by_topic.items():
     if topic_id not in topics:
         fail(f"aula aponta para tópico inexistente: {topic_id}")
+    subject_id, topic = topics[topic_id]
     sections = lesson.get("sections", [])
     titles = {section.get("title") for section in sections}
     if not required_sections.issubset(titles):
         missing = sorted(required_sections - titles)
-        fail(f"aula {topic_id} não recebeu todos os blocos aprofundados: {missing}")
-    if lesson.get("depth") != "concurso-aprofundado-v4":
-        fail(f"aula {topic_id} não está marcada como profundidade V4")
-    if int(lesson.get("estimatedMinutes") or 0) < 80:
+        fail(f"aula {topic_id} não recebeu todos os blocos-base: {missing}")
+
+    if lesson.get("depth") != "concurso-apostila-v5":
+        fail(f"aula {topic_id} não está marcada como apostila V5")
+
+    pages = lesson.get("studyPages") or []
+    subtopics = lesson.get("subtopics") or []
+    if len(pages) < 8:
+        fail(f"aula {topic_id} possui somente {len(pages)} páginas; mínimo V5=8")
+    if len(subtopics) < 4:
+        fail(f"aula {topic_id} possui somente {len(subtopics)} subtópicos; mínimo V5=4")
+
+    official_scope = topic["officialScope"]
+    seen_page_ids = set()
+    for page in pages:
+        page_id = page.get("id")
+        if not page_id or page_id in seen_page_ids:
+            fail(f"aula {topic_id} possui página sem id ou id duplicado: {page_id}")
+        seen_page_ids.add(page_id)
+        if page.get("sourceScope") != official_scope:
+            fail(f"página {topic_id}/{page_id} não repete exatamente o recorte oficial")
+        if page.get("sourceType") != "edital-explicado":
+            fail(f"página {topic_id}/{page_id} não identifica expansão didática do edital")
+        if not page.get("editalBasis") or official_scope not in page.get("editalBasis", ""):
+            fail(f"página {topic_id}/{page_id} sem justificativa explícita de vínculo com o edital")
+        blocks = page.get("blocks") or []
+        if len(blocks) < 4:
+            fail(f"página {topic_id}/{page_id} possui poucos blocos de estudo")
+        page_chars = len(json.dumps(page, ensure_ascii=False))
+        if page_chars < 1200:
+            fail(f"página {topic_id}/{page_id} curta demais: {page_chars} caracteres")
+
+    manual_chars = len(json.dumps(pages, ensure_ascii=False))
+    if manual_chars < 16000:
+        fail(f"aula {topic_id} curta demais para padrão apostila: {manual_chars} caracteres")
+    if int(lesson.get("contentCharacters") or 0) != manual_chars:
+        fail(f"aula {topic_id} possui métrica de conteúdo inconsistente")
+    if int(lesson.get("estimatedMinutes") or 0) < 220:
         fail(f"aula {topic_id} tem tempo planejado curto demais: {lesson.get('estimatedMinutes')}")
-    if int(lesson.get("theoryMinutes") or 0) < 55:
+    if int(lesson.get("theoryMinutes") or 0) < 180:
         fail(f"aula {topic_id} tem teoria curta demais: {lesson.get('theoryMinutes')}")
-    if len(sections) < 11:
-        fail(f"aula {topic_id} possui poucas seções para o padrão aprofundado")
+
+    trace = lesson.get("scopeTraceability") or {}
+    if trace.get("mode") != "exact-official-scope" or trace.get("officialScope") != official_scope:
+        fail(f"aula {topic_id} perdeu rastreabilidade exata ao Anexo I")
 
     specific = next((s for s in sections if s.get("title") == "Aprofundamento específico do tópico"), None)
     items = specific.get("items", []) if specific else []
@@ -95,6 +135,9 @@ for topic_id, lesson in lesson_by_topic.items():
         fail(f"aula {topic_id} precisa de ao menos quatro pontos de aprofundamento específico")
     if any(len(str(item).strip()) < 45 for item in items):
         fail(f"aula {topic_id} possui aprofundamento específico curto demais")
+
+    total_manual_chars += manual_chars
+    total_manual_pages += len(pages)
 
 ids: set[str] = set()
 stems: set[str] = set()
@@ -135,10 +178,7 @@ for q in questions:
 
     expected_subject = topics[topic_id][0]
     if q.get("subjectId") != expected_subject:
-        fail(
-            f"{qid}: tópico {topic_id} pertence a {expected_subject}, "
-            f"mas questão está em {q.get('subjectId')}"
-        )
+        fail(f"{qid}: tópico {topic_id} pertence a {expected_subject}, mas questão está em {q.get('subjectId')}")
 
     if not q.get("explanation"):
         fail(f"{qid} não possui explicação")
@@ -166,9 +206,12 @@ for index in range(5):
 if total < 2650:
     fail(f"banco deveria ter ao menos 2.650 questões; encontrou {total}")
 
-print("VALIDAÇÃO V4 OK")
+print("VALIDAÇÃO V5 OK")
 print(f"Tópicos: {len(topics)}")
 print(f"Aulas: {len(lessons)}")
+print(f"Páginas internas da apostila: {total_manual_pages}")
+print(f"Caracteres da apostila: {total_manual_chars}")
+print(f"Média de caracteres por tópico: {round(total_manual_chars/len(lessons))}")
 print(f"Questões: {total}")
 print("Questões por matéria:")
 for subject_id, subject in subjects.items():
