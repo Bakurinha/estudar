@@ -1,0 +1,46 @@
+name: Deepen GCM pages v1.8.0
+on:
+  push:
+    paths:
+      - '.github/workflows/deepen-gcm-pages-v18.yml'
+permissions:
+  contents: write
+jobs:
+  deepen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Expand every GCM study page
+        run: python tools/deepen_gcm_pages_v18.py
+      - name: Validate project and question bank
+        run: |
+          python tools/validate_project.py
+          python tools/validate_bank_v2.py
+      - name: Additional preservation checks
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          lessons=json.loads(Path('data/lessons/gcm-salvador-2026.json').read_text(encoding='utf-8'))
+          questions=json.loads(Path('data/questions/gcm-salvador-2026.json').read_text(encoding='utf-8'))
+          pages=[p for lesson in lessons for p in lesson.get('studyPages',[])]
+          assert len(lessons)==116
+          assert len(pages)==3944
+          assert len(questions)==2650
+          assert all(p.get('qualityExpansionVersion')=='gcm-page-depth-v1.8.0' for p in pages)
+          assert all(len(p.get('blocks') or [])>=7 for p in pages)
+          print('PRESERVATION CHECKS OK',len(lessons),len(pages),len(questions))
+          PY
+      - name: Commit only after all validations pass
+        run: |
+          rm -f tools/audit_gcm_page_depth.py
+          rm -f .github/workflows/audit-gcm-page-depth.yml
+          rm -f .github/workflows/deepen-gcm-pages-v18.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'feat: deepen every GCM study page with page-specific content'
+          git push
