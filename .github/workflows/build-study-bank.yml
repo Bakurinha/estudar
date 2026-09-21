@@ -8,6 +8,7 @@ on:
       - 'tools/expand_bank_v2.py'
       - 'tools/build_study_bank.py'
       - 'tools/deepen_lessons.py'
+      - 'tools/normalize_lesson_depth.py'
       - 'tools/sanitize_bank.py'
       - 'tools/validate_project.py'
       - 'tools/validate_bank_v2.py'
@@ -37,6 +38,9 @@ jobs:
 
       - name: Apply topic-specific deepening
         run: python tools/deepen_lessons.py
+
+      - name: Normalize lesson depth
+        run: python tools/normalize_lesson_depth.py
 
       - name: Sanitize all question alternatives
         run: python tools/sanitize_bank.py
