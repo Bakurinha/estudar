@@ -1,5 +1,6 @@
 name: Expand GCM study depth
 
+# Temporary one-shot migration. Removed automatically after a validated build.
 on:
   push:
     paths:
