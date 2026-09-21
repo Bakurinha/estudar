@@ -1,61 +1,69 @@
 # Rumo à Aprovação
 
-Plataforma web leve, multi-edital e instalável como PWA para preparação de concursos públicos.
+Plataforma web leve de estudos, instalável como PWA e hospedável diretamente no GitHub Pages.
 
-A versão `1.1.0` é entregue com o concurso **Guarda Civil Municipal de Salvador 2026 - Edital nº 002/2026** pré-carregado, incluindo matriz do conteúdo programático, 116 tópicos/aulas e um banco inicial de 224 questões autorais validadas.
+A versão **1.5.1** é multiárea: concursos e conteúdos acadêmicos convivem no mesmo aplicativo sem misturar progresso, exercícios ou histórico.
 
-> Importante: questões autorais são identificadas como autorais. O projeto não afirma que elas são questões oficiais da FGV. O edital oficial continua sendo a fonte de verdade curricular.
+Áreas embarcadas atualmente:
 
-## 1. Objetivos
+- **Guarda Civil Municipal de Salvador 2026** — preparação por edital, TAF, simulados e banco expandido de questões;
+- **Paradigmas de Linguagens de Programação em Python** — conteúdo derivado dos 4 PDFs fornecidos, organizado em 15 módulos/tópicos, 150 questões autorais baseadas no material e 46 exercícios/atividades localizados nos PDFs;
+- **Matemática e Lógica** — conteúdo derivado dos 7 PDFs fornecidos, organizado em 24 módulos/tópicos, 150 questões autorais baseadas no material e 122 exercícios/atividades localizados nos PDFs.
 
-O projeto foi feito para permitir que o candidato:
+> Questões criadas pelo projeto são identificadas como autorais. Nos cursos acadêmicos, a interface informa o PDF, módulo e páginas usados como fonte-base quando esses metadados estão disponíveis.
 
-- estude dentro do próprio aplicativo;
-- acompanhe todo o conteúdo do edital;
-- resolva questões filtradas pelo assunto correto;
-- revise erros e tópicos no tempo certo;
-- faça simulados com a distribuição real do concurso;
-- acompanhe cobertura, acertos e evolução;
-- registre horários, sessões de estudo e TAF;
-- mantenha histórico local;
-- exporte e restaure backup;
-- instale o site como PWA;
-- importe outros editais em PDF futuramente.
+## 1. Objetivo
+
+O aplicativo foi construído para ser uma ferramenta diária de estudo, não apenas uma checklist. Ele permite:
+
+- estudar teoria dentro do navegador;
+- navegar por módulos, tópicos, subtópicos e páginas internas;
+- resolver questões aleatórias filtradas pelo assunto correto;
+- revisar erros e conteúdos vencidos;
+- acompanhar percentual de acerto, cobertura e evolução;
+- registrar sessões e histórico;
+- gerar cronograma e eventos para o Google Calendar;
+- fazer simulados oficiais quando o edital possui distribuição de questões;
+- fazer treino misto nos cursos acadêmicos;
+- acompanhar TAF quando a área de estudo possui teste físico;
+- exportar e restaurar backup;
+- instalar o site como PWA no celular e no computador;
+- importar novos editais em PDF futuramente.
 
 ## 2. Filosofia do front-end
 
-A interface é intencionalmente simples e focada em texto.
+A interface é propositalmente leve e orientada a texto.
 
-Não há framework visual pesado, imagens decorativas, vídeos de fundo, animações complexas ou grandes dependências. O objetivo é abrir rápido, ler, responder e sair rapidamente de qualquer tela.
+Não há framework visual pesado, vídeos de fundo ou animações desnecessárias. A prioridade é:
 
-O projeto usa:
+1. abrir rápido;
+2. encontrar o assunto rapidamente;
+3. ler com conforto;
+4. responder exercícios sem recarregar a página;
+5. consultar histórico e desempenho sem travamentos.
+
+Tecnologias principais:
 
 - HTML semântico;
-- CSS modular;
+- CSS modular e responsivo;
 - JavaScript ES Modules;
 - IndexedDB;
 - Service Worker;
 - Web App Manifest;
-- PDF.js carregado sob demanda apenas ao importar edital.
+- PDF.js carregado sob demanda para importação de editais.
 
-## 3. Privacidade e armazenamento
+## 3. Persistência: IndexedDB
 
-### Não usa `localStorage`
+O projeto **não utiliza `localStorage` ou `sessionStorage` como banco persistente**.
 
-O projeto não usa `localStorage` ou `sessionStorage` como banco de dados.
+Dados do usuário permanecem no IndexedDB, incluindo:
 
-Dados persistentes ficam no **IndexedDB**:
-
-- concursos;
-- disciplinas;
-- tópicos;
-- aulas;
-- questões;
-- tentativas;
+- área de estudo ativa;
 - progresso;
+- respostas e tentativas;
 - revisões;
-- sessões de estudo;
 - simulados;
+- sessões de estudo;
 - TAF;
 - cronograma;
 - anotações;
@@ -63,445 +71,334 @@ Dados persistentes ficam no **IndexedDB**:
 - estatísticas;
 - configurações.
 
-O **Cache Storage** é usado somente pelo Service Worker para arquivos do PWA.
+O Cache Storage é usado pelo Service Worker apenas para o PWA e recursos da aplicação.
 
-Limpar os dados do site no navegador pode apagar o IndexedDB. Use o backup JSON periodicamente.
+> Limpar os dados do site pelo navegador pode apagar o IndexedDB. Exporte um backup antes de limpar os dados do domínio.
 
-## 4. Estrutura do projeto
+## 4. Estrutura multiárea
+
+Internamente, todas as áreas usam a mesma estrutura:
+
+```text
+Área de estudo
+└── disciplinas / unidades
+    └── tópicos
+        ├── subtópicos
+        ├── páginas de estudo
+        ├── exercícios
+        └── progresso
+```
+
+O nome interno `contestId` ainda aparece em algumas estruturas do código por compatibilidade com versões antigas, mas agora representa a **área de estudo ativa**, que pode ser um concurso ou um curso acadêmico.
+
+Cada área mantém seus próprios IDs, portanto responder questões de Matemática e Lógica não altera estatísticas da GCM ou de Python.
+
+## 5. Pacotes acadêmicos compactados
+
+Python e Matemática/Lógica são distribuídos como pacotes `gzip` codificados em Base64 e divididos em pequenos chunks dentro de:
+
+```text
+data/packages/
+```
+
+Quantidade atual:
+
+```text
+paradigmas-python.part-01.b64 ... part-10.b64
+matematica-logica.part-01.b64 ... part-07.b64
+```
+
+O navegador baixa as partes na primeira importação da versão do pacote, descompacta o JSON e persiste o conteúdo no IndexedDB.
+
+Isso evita manter grandes bancos textuais permanentemente carregados na memória em cada navegação.
+
+Cada pacote possui versão própria em `js/config.js`. Dessa forma uma atualização de Matemática não exige reimportar todo o banco da GCM.
+
+## 6. Falhas de pacote não derrubam o aplicativo
+
+Desde a versão 1.5.1, cursos acadêmicos são pacotes opcionais durante a inicialização.
+
+Se um chunk estiver temporariamente ausente, houver erro de rede ou o pacote estiver corrompido:
+
+- o erro é registrado em `metadata`;
+- a área defeituosa não é atualizada;
+- o restante da aplicação continua abrindo;
+- a GCM e áreas já importadas continuam acessíveis.
+
+Somente um pacote explicitamente marcado como obrigatório pode interromper o boot.
+
+Essa mudança corrige o problema em que o Pages mostrava:
+
+```text
+Não foi possível iniciar o aplicativo.
+Failed to fetch
+```
+
+quando um pacote acadêmico incompleto estava sendo publicado.
+
+## 7. Service Worker e atualização
+
+O Service Worker usa a versão de cache `v1.5.1`.
+
+Estratégia atual:
+
+- navegação HTML: **network-first**, com cache como fallback;
+- JavaScript, JSON, `.b64` e manifesto: **network-first**;
+- CSS e ícones: cache rápido com atualização em segundo plano.
+
+Arquivos que definem código ou conteúdo precisam priorizar a rede para impedir combinações incompatíveis do tipo:
+
+```text
+config.js novo + seed.js antigo
+```
+
+Caches antigos `rumo-aprovacao-*` são removidos quando o novo Service Worker é ativado.
+
+O usuário não precisa limpar o IndexedDB para atualizar o aplicativo.
+
+## 8. Conteúdo acadêmico e rastreabilidade
+
+### Paradigmas de Linguagens de Programação em Python
+
+Os módulos seguem a ordem dos PDFs enviados:
+
+1. classificação, critérios, paradigmas e implementação de linguagens;
+2. fundamentos de Python;
+3. decisão, repetição, funções, bibliotecas, exceções e eventos;
+4. programação orientada a objetos em Python.
+
+Os 4 documentos foram desdobrados em **15 tópicos principais**, cada um podendo conter subtópicos e várias páginas internas.
+
+O banco acadêmico possui **150 questões autorais baseadas nos PDFs**, com distribuição balanceada do gabarito. Além disso, **46 exercícios/atividades do próprio material** foram identificados para referência e desenvolvimento das aulas.
+
+### Matemática e Lógica
+
+A progressão segue os PDFs enviados:
+
+1. teoria dos conjuntos e princípios de contagem;
+2. gráficos e interpretação gráfica;
+3. funções reais;
+4. cálculo proposicional;
+5. cálculo de predicados;
+6. métodos de demonstração e indução;
+7. material Praticando, com estudos de caso e desafios.
+
+Os 7 documentos foram desdobrados em **24 tópicos principais**.
+
+O banco possui **150 questões autorais baseadas nos PDFs**, também com gabaritos balanceados. **122 exercícios/atividades do próprio material** foram identificados.
+
+### Conteúdo complementar
+
+Quando a aula acrescenta explicação didática externa ou uma reformulação para facilitar entendimento, esse conteúdo deve servir para explicar o tópico-fonte e não deve ser apresentado como reprodução literal do PDF.
+
+## 9. Exercícios
+
+O motor segue esta ordem:
+
+1. identifica a área ativa;
+2. filtra a disciplina/unidade;
+3. filtra o tópico;
+4. aplica dificuldade, quando selecionada;
+5. consulta histórico;
+6. prioriza questões inéditas e erros antigos;
+7. reduz repetição de questões vistas recentemente;
+8. embaralha a seleção;
+9. embaralha visualmente as alternativas sem alterar o gabarito real.
+
+Nos cursos acadêmicos, cada questão pode mostrar:
+
+```text
+Fonte-base: nome-do-pdf · módulo X · páginas Y-Z
+```
+
+Isso permite conferir de onde veio o tema cobrado.
+
+## 10. GCM Salvador 2026
+
+A área da GCM continua separada dos cursos acadêmicos e mantém recursos específicos de concurso:
+
+- edital estruturado;
+- aulas extensas e paginadas;
+- banco expandido de questões;
+- revisão;
+- simulado oficial de 70 questões;
+- verificação dos mínimos por módulo;
+- agenda do concurso;
+- TAF masculino e feminino;
+- acompanhamento de desempenho.
+
+O simulado respeita a distribuição cadastrada para o edital ativo.
+
+## 11. Simulados acadêmicos
+
+Cursos sem uma prova oficial configurada não fingem possuir um simulado oficial.
+
+Neles, a tela **Simulados** vira **Treino misto**:
+
+- 30 questões aleatórias;
+- 60 minutos sugeridos;
+- mistura de diferentes módulos;
+- relatório de acertos total e por unidade;
+- histórico salvo separadamente.
+
+O resultado é indicador de retenção e não nota acadêmica oficial.
+
+## 12. TAF
+
+A tela de TAF só apresenta métricas físicas para áreas que possuem regras de TAF cadastradas.
+
+Em Python e Matemática/Lógica a interface informa explicitamente que o recurso não se aplica àquela área acadêmica.
+
+## 13. Estrutura resumida do projeto
 
 ```text
 .
-├── index.html                 Shell principal
-├── manifest.webmanifest      Metadados do PWA
-├── sw.js                     Service Worker
+├── index.html
+├── manifest.webmanifest
+├── sw.js
 ├── README.md
 ├── CHANGELOG.md
-├── LICENSE
-├── .nojekyll
-│
 ├── css/
-│   ├── base.css              Variáveis, tipografia e normalização
-│   ├── layout.css            Sidebar, topbar, grids e estrutura
-│   ├── components.css        Cards, formulários, questões e barras
-│   └── responsive.css        Adaptação para celular/tablet
-│
 ├── js/
-│   ├── app.js                Inicialização e shell
-│   ├── config.js             Versão e constantes
-│   ├── db.js                 Única camada de IndexedDB
-│   ├── router.js             Roteamento por hash para GitHub Pages
-│   ├── state.js              Estado temporário da sessão
-│   ├── ui.js                 Toast, diálogo e componentes simples
-│   ├── utils.js              Utilidades puras
+│   ├── app.js
+│   ├── config.js
+│   ├── db.js
 │   ├── services/
-│   │   ├── seed.js           Importa o pacote inicial
-│   │   ├── questions.js      Motor de seleção de questões
-│   │   ├── performance.js    Estatísticas e domínio
-│   │   ├── schedule.js       Planejamento de estudo
-│   │   ├── calendar.js       Links do Google Calendar
-│   │   ├── pdfImport.js      PDF.js + parser híbrido
-│   │   └── backup.js         Exportação/restauração
 │   └── views/
-│       ├── dashboard.js
-│       ├── study.js
-│       ├── questions.js
-│       ├── reviews.js
-│       ├── simulator.js
-│       ├── performance.js
-│       ├── schedule.js
-│       ├── taf.js
-│       ├── history.js
-│       ├── import.js
-│       └── settings.js
-│
 ├── data/
-│   ├── contests/             Metadados dos concursos embarcados
-│   ├── syllabus/             Matriz exata do conteúdo programático
-│   ├── lessons/              Resumos didáticos
-│   ├── questions/            Banco autoral inicial
-│   └── laws/                 Links de fontes oficiais
-│
+│   ├── contests/
+│   ├── syllabus/
+│   ├── lessons/
+│   ├── questions/
+│   ├── packages/
+│   └── laws/
 ├── docs/
-│   ├── edital-gcm-salvador-2026.pdf
-│   └── guia-gcm-salvador-2026.pdf
-│
-├── assets/icons/             Ícones do PWA
-├── tools/                    Scripts de geração e validação
-└── tests/                    Testes estáticos simples
+├── assets/
+└── tools/
 ```
 
-## 5. IndexedDB
+## 14. GitHub Pages
 
-Banco: `rumo-aprovacao-db`
-
-Versão inicial: `1`
-
-### Stores
-
-| Store | Finalidade |
-|---|---|
-| `settings` | preferências e concurso ativo |
-| `metadata` | versão dos dados pré-carregados |
-| `contests` | concursos cadastrados/importados |
-| `subjects` | disciplinas de cada concurso |
-| `topics` | tópicos vinculados ao edital |
-| `lessons` | conteúdo de estudo |
-| `questions` | questões autorais/externas cadastradas |
-| `questionAttempts` | histórico de respostas |
-| `topicProgress` | situação e acertos por tópico |
-| `reviews` | fila de revisão espaçada |
-| `studySessions` | tempo de estudo registrado |
-| `simulations` | resultados dos simulados |
-| `tafSessions` | registros físicos |
-| `schedule` | agenda interna |
-| `notes` | anotações |
-| `favorites` | favoritos |
-| `stats` | estatísticas incrementais |
-| `imports` | metadados de importações futuras |
-
-### Índices e performance
-
-O aplicativo evita ler tabelas grandes inteiras sem necessidade.
-
-Exemplos de índices:
-
-- questões por concurso, matéria e tópico;
-- tentativas por concurso, questão, matéria, tópico e data;
-- tópicos por matéria;
-- revisões por vencimento;
-- sessões e TAF por data.
-
-`db.js` implementa consultas por cursor com limite. O histórico inicial, por exemplo, traz somente uma janela de registros e não tenta renderizar milhares de itens de uma vez.
-
-As estatísticas principais são incrementais. Ao responder uma questão, o total de acertos/erros é atualizado no store `stats`, evitando recalcular todo o histórico a cada abertura do dashboard.
-
-## 6. Banco de questões
-
-A versão atual contém **224 questões autorais validadas**.
-
-Cada questão guarda:
-
-```json
-{
-  "id": "...",
-  "contestId": "gcm-salvador-2026",
-  "subjectId": "rlm",
-  "topicIds": ["porcentagem-proporcao"],
-  "difficulty": "medium",
-  "sourceType": "authorial",
-  "stem": "...",
-  "options": ["..."],
-  "answerIndex": 0,
-  "explanation": "..."
-}
-```
-
-### Regra de seleção
-
-O motor de exercícios faz nesta ordem:
-
-1. filtra o concurso;
-2. filtra matéria;
-3. filtra tópico, quando escolhido;
-4. filtra dificuldade, quando escolhida;
-5. reduz questões de metaconteúdo da matriz quando há questões substanciais suficientes;
-6. embaralha;
-7. seleciona a quantidade pedida.
-
-Isso evita que uma sessão de “Porcentagem” receba uma questão de PA apenas porque ambas pertencem a RLM.
-
-### Como adicionar uma questão
-
-Para o pacote embarcado, adicione a questão ao gerador em `tools/generate_seed_data.py` e rode:
-
-```bash
-python tools/generate_seed_data.py
-```
-
-Depois rode o validador:
-
-```bash
-python tools/validate_project.py
-```
-
-Para conteúdo importado dinamicamente, a arquitetura aceita inserção via IndexedDB.
-
-## 7. Conteúdo e fonte de verdade
-
-O arquivo:
+O projeto foi pensado para URLs em subdiretório, por exemplo:
 
 ```text
-data/syllabus/gcm-salvador-2026.json
+https://bakurinha.github.io/estudar/
 ```
 
-é a matriz curricular da versão inicial.
+Para publicar em outro repositório:
 
-Cada tópico contém `officialScope`, que preserva o recorte do Anexo I do edital. O nome curto usado na interface é apenas organização didática.
+1. coloque `index.html`, `sw.js` e `manifest.webmanifest` na raiz;
+2. envie todas as pastas mantendo os caminhos relativos;
+3. abra **Settings → Pages**;
+4. escolha **Deploy from a branch**;
+5. selecione `main` e `/ (root)`;
+6. aguarde o deploy terminar.
 
-Os resumos do aplicativo são **resumos didáticos**, não reprodução do texto legal.
+O roteamento usa hash (`#/study`, `#/questions` etc.), portanto não necessita configuração de rewrite no servidor.
 
-O edital original foi incluído em:
+## 15. Instalação como PWA
 
-```text
-docs/edital-gcm-salvador-2026.pdf
-```
+No Android com Chrome/Edge:
 
-## 8. Simulado da Guarda Salvador 2026
+1. abra a URL do Pages;
+2. aguarde a versão atual carregar;
+3. use **Instalar app** ou **Adicionar à tela inicial**;
+4. confirme.
 
-A distribuição implementada é:
+Quando uma versão nova do Service Worker é detectada, o aplicativo pode mostrar **Atualização disponível**. Prefira usar **Atualizar agora** em vez de limpar os dados do site.
 
-- Português: 10;
-- RLM: 10;
-- Informática: 8;
-- Constitucional/Civil: 10;
-- Penal/Processual: 7;
-- Administração/Políticas Públicas: 5;
-- Área de Atuação: 10;
-- Legislação: 10.
+## 16. Se aparecer uma versão antiga
 
-Total: 70.
+Faça nesta ordem:
 
-O relatório confere simultaneamente:
+1. feche totalmente a aba/PWA e abra novamente;
+2. aguarde alguns segundos com internet;
+3. aceite **Atualizar agora**, se aparecer;
+4. recarregue a página uma vez.
 
-- Módulo I >= 14/28;
-- Módulo II >= 21/42;
-- total >= 35/70.
+Evite apagar dados do site, pois isso pode remover seu IndexedDB.
 
-Atingir esses mínimos no aplicativo não é garantia de classificação real.
+Se for indispensável limpar dados, exporte o backup primeiro.
 
-## 9. PWA
+## 17. Importação híbrida de editais
 
-O PWA usa:
-
-- `manifest.webmanifest`;
-- `sw.js`;
-- ícones 192x192 e 512x512;
-- `start_url` relativo;
-- `scope` relativo.
-
-Isso permite publicar o aplicativo em subdiretórios do tipo:
-
-```text
-https://usuario.github.io/nome-do-repositorio/
-```
-
-### Atualização
-
-Altere `APP_VERSION` em `js/config.js`, atualize `CACHE_VERSION` em `sw.js` e registre a mudança no `CHANGELOG.md`.
-
-### Registro robusto no GitHub Pages
-
-O `app.js` localiza o Service Worker a partir de `import.meta.url`, em vez de assumir que o site está publicado na raiz do domínio. Isso evita o erro clássico em URLs como `https://usuario.github.io/repositorio/`.
-
-O `sw.js` também monta suas URLs a partir do próprio escopo e faz o pré-cache arquivo por arquivo. Se um recurso opcional falhar, a instalação inteira do PWA não é cancelada.
-
-Na próxima visita, o navegador buscará os assets atualizados. Em desenvolvimento, se parecer que uma versão antiga ficou presa, use DevTools → Application → Service Workers → Unregister e recarregue.
-
-## 10. Importação híbrida de novos editais
-
-A tela **Novo edital** foi projetada para futuros PDFs.
-
-Fluxo:
+A tela **Novo edital** usa um fluxo híbrido:
 
 ```text
 PDF
 ↓
-PDF.js extrai texto no navegador
+PDF.js extrai o texto no navegador
 ↓
-parser local identifica estrutura provável
+parser local identifica uma estrutura provável
 ↓
-usuário confere o JSON
+usuário confere
 ↓
-endpoint de IA opcional pode refinar
+IA opcional pode refinar a análise
 ↓
 usuário confirma
 ↓
-novo concurso é criado separadamente no IndexedDB
+nova área é salva no IndexedDB
 ```
 
-### Por que existe revisão humana?
+O parser nunca deve ser considerado infalível para pesos, mínimos eliminatórios ou cronogramas; a revisão humana continua obrigatória.
 
-Editais variam muito. Um parser pode interpretar incorretamente uma tabela, peso ou mínimo eliminatório. Por isso a aplicação nunca afirma que a importação automática é infalível.
+Não coloque API keys secretas em um repositório GitHub Pages público.
 
-### PDF.js
+## 18. Google Calendar
 
-PDF.js é carregado **somente quando a tela de importação precisa dele**. Isso mantém o carregamento comum leve.
+O modo básico gera um link para criação de evento contendo título, início, fim e descrição. O usuário confirma o evento no Google Calendar.
 
-### IA opcional
+Uma sincronização bidirecional completa exigiria OAuth e um backend adequado.
 
-Em `Configurações` existe um campo de endpoint proxy.
+## 19. Backup
 
-O navegador envia JSON parecido com:
+Em **Configurações**:
 
-```json
-{
-  "task": "analyze-public-exam-notice",
-  "instruction": "Retorne JSON...",
-  "text": "texto extraído...",
-  "localAnalysis": {}
-}
-```
+- exporte o banco para JSON;
+- restaure um backup JSON;
+- mantenha uma cópia antes de trocar de aparelho ou limpar dados do navegador.
 
-Não coloque uma API key secreta no código do GitHub Pages.
+O backup deve preservar progresso, histórico, anotações, cronograma e configurações do IndexedDB.
 
-Se você desejar OpenAI, Gemini ou outro provedor, use um pequeno proxy/serverless que mantenha a credencial no servidor e devolva apenas o JSON analisado.
+## 20. Desenvolvimento local
 
-Sem endpoint, a importação local continua funcionando e o usuário pode editar manualmente o JSON.
+Não abra o projeto diretamente por `file://`.
 
-## 11. Google Calendar
-
-O modo básico não exige OAuth.
-
-O aplicativo gera URLs de criação de evento do Google Calendar com:
-
-- título;
-- início;
-- fim;
-- descrição.
-
-O usuário confirma o evento no próprio Google Calendar.
-
-Uma integração bidirecional futura exigiria OAuth/backend adequado. Não exponha `client_secret` em um repositório público.
-
-## 12. Hospedar no GitHub Pages
-
-### Opção A - interface do GitHub
-
-1. Crie uma conta em `github.com`.
-2. Clique em **New repository**.
-3. Escolha um nome, por exemplo `rumo-aprovacao`.
-4. Crie o repositório.
-5. Envie **o conteúdo desta pasta**, mantendo `index.html` na raiz.
-6. Faça o commit.
-7. Abra **Settings** do repositório.
-8. Abra **Pages**.
-9. Em **Build and deployment**, escolha **Deploy from a branch**.
-10. Selecione a branch `main` e a pasta `/ (root)`.
-11. Salve.
-12. Aguarde o endereço aparecer na própria tela do GitHub Pages.
-
-A aplicação usa roteamento por hash (`#/study`, `#/questions` etc.) exatamente para não depender de rewrites de servidor.
-
-### Opção B - Git
-
-```bash
-git init
-git add .
-git commit -m "feat: versão inicial da plataforma"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/rumo-aprovacao.git
-git push -u origin main
-```
-
-Depois ative Pages em Settings.
-
-## 13. Instalar como PWA no Android
-
-No Chrome/Edge Android:
-
-1. abra a URL do GitHub Pages;
-2. aguarde carregar;
-3. toque no menu do navegador;
-4. escolha **Instalar app** ou **Adicionar à tela inicial**;
-5. confirme.
-
-Em navegadores compatíveis, o próprio aplicativo também mostra o botão **Instalar** quando o evento de instalação estiver disponível.
-
-## 14. Desenvolvimento local
-
-Service Worker, módulos ES e PDF.js funcionam melhor servidos por HTTP em vez de abrir `file://`.
-
-Com Python:
+Use um servidor HTTP simples, por exemplo:
 
 ```bash
 python -m http.server 8080
 ```
 
-Abra:
+Depois acesse:
 
 ```text
 http://localhost:8080
 ```
 
-Não é necessário Node.js em produção.
+## 21. Versionamento
 
-## 15. Backup
+A versão da aplicação fica em:
 
-Em **Configurações**:
+```text
+js/config.js
+```
 
-- **Exportar JSON** cria cópia de todos os stores;
-- **Importar JSON** restaura o conteúdo do arquivo;
-- o backup carrega `schemaVersion` e `appVersion`.
+O cache do PWA fica em:
 
-Antes de apagar dados do navegador ou trocar de aparelho, exporte o backup.
+```text
+sw.js
+```
 
-## 16. TAF
+Ao alterar comportamento ou conteúdo relevante:
 
-A versão inicial inclui parâmetros do Edital 002/2026 para masculino e feminino e permite registrar:
+1. atualize a versão adequada;
+2. registre a mudança no `CHANGELOG.md`;
+3. valide os pacotes;
+4. confirme o deploy do Pages.
 
-- corrida;
-- barra;
-- abdominal remador;
-- flexão;
-- observação.
+## 22. Privacidade
 
-O aplicativo mostra se os mínimos cadastrados foram atingidos, mas não prescreve treinamento médico/individualizado.
+O GitHub Pages hospeda os arquivos públicos da aplicação. Progresso e histórico do usuário permanecem no IndexedDB do navegador, salvo quando algum recurso externo for explicitamente acionado.
 
-## 17. Solução de problemas
-
-### GitHub Pages mostra 404
-
-Confirme que `index.html` está na raiz da origem configurada em Pages.
-
-### O PWA não oferece instalação
-
-Verifique:
-
-- acesso por HTTPS ou localhost;
-- `manifest.webmanifest` carregando sem 404;
-- `sw.js` registrado;
-- ícones existentes;
-- DevTools → Application → Manifest.
-
-### Estou vendo uma versão antiga
-
-O Service Worker pode ter uma versão em cache. Recarregue; se necessário, desregistre o SW em DevTools e limpe apenas o cache, preservando IndexedDB se não quiser perder progresso.
-
-### IndexedDB não abre
-
-Veja o console do navegador. Navegação privada/restrições corporativas podem impedir armazenamento persistente.
-
-### Meu progresso desapareceu
-
-Possíveis causas:
-
-- limpeza dos dados do site;
-- outro navegador/perfil;
-- outro domínio/origem;
-- restauração incompleta.
-
-Restaure o backup JSON quando disponível.
-
-### Banco grande ficou lento
-
-O código já utiliza índices, limites e cursores. Ao criar novas funcionalidades, evite `getAll()` sem limite e evite renderizar milhares de elementos de uma vez.
-
-## 18. Acessibilidade
-
-O projeto usa:
-
-- HTML semântico;
-- `label` em formulários;
-- `aria-current` na navegação;
-- `aria-live` para avisos;
-- link “Pular para o conteúdo”;
-- foco visível;
-- navegação por teclado;
-- contraste claro/escuro;
-- informação textual além de cor.
-
-## 19. Licença
-
-Código do aplicativo: MIT, conforme `LICENSE`.
-
-O edital e legislação mantêm seus respectivos regimes jurídicos e fontes originais. Questões autorais do pacote são material criado para esta plataforma.
+Nenhuma credencial privada deve ser inserida diretamente no repositório público.
