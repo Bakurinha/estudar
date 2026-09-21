@@ -6,6 +6,7 @@ on:
     paths:
       - 'tools/generate_seed_data.py'
       - 'tools/expand_bank_v2.py'
+      - 'tools/build_study_bank.py'
       - 'tools/validate_project.py'
       - 'tools/validate_bank_v2.py'
       - '.github/workflows/build-study-bank.yml'
@@ -30,7 +31,7 @@ jobs:
         run: python tools/generate_seed_data.py
 
       - name: Expand lessons and question bank
-        run: python tools/expand_bank_v2.py
+        run: python tools/build_study_bank.py
 
       - name: Validate original project invariants
         run: python tools/validate_project.py
