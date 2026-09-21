@@ -26,21 +26,15 @@ function buildDisplayOptions(question) {
 
 function questionSourceBadge(question) {
   if (question.sourceType === 'generated-from-pdf') {
-    return 'Autoral baseada no PDF';
+    return 'Questão autoral baseada no material';
   }
   return 'Questão autoral';
 }
 
 function questionSourceLine(question) {
-  if (!question.sourceDocument) return '';
-
-  const details = [
-    `Fonte-base: ${question.sourceDocument}`,
-    question.sourceModule ? `módulo ${question.sourceModule}` : '',
-    question.sourcePages ? `páginas ${question.sourcePages}` : '',
-  ].filter(Boolean);
-
-  return details.join(' · ');
+  const moduleName = question.sourceModuleName || '';
+  if (!moduleName) return '';
+  return `Módulo: ${moduleName}`;
 }
 
 export async function renderQuestions(contestId) {

@@ -6,7 +6,7 @@
  * sua própria versão para evitar recarregar conteúdos que não mudaram.
  */
 export const APP_NAME = 'Rumo à Aprovação';
-export const APP_VERSION = '1.5.1';
+export const APP_VERSION = '1.6.0';
 export const DB_NAME = 'rumo-aprovacao-db';
 export const DB_VERSION = 1;
 
@@ -23,23 +23,23 @@ export const SEED_PACKAGES = [
   },
   {
     id: 'paradigmas-python',
-    version: '2026.09.21.1',
+    version: '2026.09.21.2',
     format: 'gzip-base64-chunks',
-    chunkCount: 10,
+    chunkCount: 4,
     required: false,
   },
   {
     id: 'matematica-logica',
-    version: '2026.09.21.1',
+    version: '2026.09.21.2',
     format: 'gzip-base64-chunks',
-    chunkCount: 7,
+    chunkCount: 6,
     required: false,
   },
 ];
 
 // Versão global apenas para diagnóstico/compatibilidade. O controle efetivo de
 // atualização é feito individualmente em seedVersion:<id-do-pacote>.
-export const SEED_DATA_VERSION = '2026.09.21.6';
+export const SEED_DATA_VERSION = '2026.09.21.7';
 export const PDFJS_VERSION = '6.3.289';
 
 export const ROUTES = [

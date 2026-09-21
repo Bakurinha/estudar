@@ -4,6 +4,23 @@ Todas as alterações relevantes deste projeto são registradas aqui.
 
 O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/) e o projeto utiliza versionamento semântico.
 
+
+## [1.6.0] - 2026-09-21
+
+### Alterado
+
+- aprofundamento intensivo dos subtópicos dos dois cursos acadêmicos sem mudar módulos, tópicos, IDs ou questões;
+- cada subtópico agora possui páginas próprias de fundamentos, aplicação, diferenças/armadilhas e revisão ativa;
+- nomes dos arquivos-fonte foram removidos da interface; somente os nomes dos módulos são exibidos;
+- Paradigmas/Python passou a 510 páginas internas e aproximadamente 904.614 caracteres didáticos;
+- Matemática e Lógica passou a 816 páginas internas e aproximadamente 1.397.882 caracteres didáticos.
+
+### Mantido
+
+- escopo original do projeto e dos cursos;
+- 150 questões de Python e 150 de Matemática/Lógica;
+- IDs de módulos, tópicos e questões para preservar o progresso no IndexedDB.
+
 ## [1.5.1] - 2026-09-21
 
 ### Corrigido

@@ -24,7 +24,7 @@ export async function renderStudy(contestId) {
         <h1>Estudar</h1>
         <p class="muted">
           ${course
-            ? 'Módulos organizados na ordem dos PDFs enviados. Cada tópico possui páginas internas, subtópicos numerados, leitura guiada, comentários, exercícios do material e prática autoral.'
+            ? 'Módulos organizados na ordem do material enviado. Cada tópico possui páginas internas e cada subtópico recebe fundamentos, aplicação, diferenças, armadilhas e revisão ativa.'
             : 'Apostilas organizadas estritamente pela matriz do edital. Cada tópico possui páginas, subtópicos, teoria guiada, aprofundamento, armadilhas e prática.'}
         </p>
       </header>
@@ -37,7 +37,7 @@ export async function renderStudy(contestId) {
                 <h2 class="card__title">${escapeHtml(subject.name)}</h2>
                 <span class="small muted">
                   ${course
-                    ? `${subject.bankQuestions || 0} questões autorais no banco · unidade/PDF ${subject.module}`
+                    ? `${subject.bankQuestions || 0} questões autorais no banco · Módulo ${subject.module}`
                     : `${subject.questions} questões na prova · Módulo ${subject.module}`}
                 </span>
               </div>
@@ -195,14 +195,12 @@ export async function renderLesson(contestId, topicId) {
   const sourceBlock = course
     ? `
       <div class="notice" style="margin-top:14px">
-        <strong>Rastreabilidade do material</strong>
+        <strong>Módulo de origem</strong>
         <p style="margin-top:6px">
-          PDF: ${escapeHtml(lesson.sourceDocument || 'material enviado')} ·
-          módulo ${escapeHtml(String(lesson.sourceModule || topic.module || '—'))} ·
-          páginas ${escapeHtml(lesson.sourcePages || 'consultar módulo')}.
+          ${escapeHtml(lesson.sourceModuleName || lesson.sourceModule || 'Material de estudo')}.
           ${lesson.originalExerciseCount
-            ? `Foram localizados ${lesson.originalExerciseCount} exercício(s)/atividade(s) do próprio PDF neste tópico.`
-            : 'Nenhum exercício explícito do PDF foi localizado neste tópico.'}
+            ? ` Foram localizados ${lesson.originalExerciseCount} exercício(s)/atividade(s) do material-base neste tópico.`
+            : ''}
         </p>
       </div>
     `
@@ -213,7 +211,7 @@ export async function renderLesson(contestId, topicId) {
       <aside class="card" style="margin-top:18px">
         <strong>Subtópicos estruturados</strong>
         <p class="small muted" style="margin-top:4px">
-          A numeração preserva o módulo do PDF e desdobra seus conceitos para facilitar revisão.
+          A numeração preserva a ordem do módulo e desdobra seus conceitos para facilitar a revisão.
         </p>
         <ol style="line-height:1.7;margin-top:10px">
           ${subtopics.map(item => `

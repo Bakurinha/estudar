@@ -402,3 +402,14 @@ Ao alterar comportamento ou conteúdo relevante:
 O GitHub Pages hospeda os arquivos públicos da aplicação. Progresso e histórico do usuário permanecem no IndexedDB do navegador, salvo quando algum recurso externo for explicitamente acionado.
 
 Nenhuma credencial privada deve ser inserida diretamente no repositório público.
+
+
+## Conteúdo acadêmico aprofundado (v1.6.0)
+
+A versão 1.6.0 preserva integralmente a arquitetura multiárea e os IDs existentes. A mudança é de profundidade, não de escopo.
+
+- Paradigmas/Python: 90 subtópicos, 510 páginas internas, cerca de 904.614 caracteres didáticos e 150 questões.
+- Matemática e Lógica: 144 subtópicos, 816 páginas internas, cerca de 1.397.882 caracteres didáticos e 150 questões.
+- Cada subtópico possui fundamentos, aplicação, comparações, armadilhas e revisão ativa.
+- Nomes de arquivos-fonte não são exibidos; a interface apresenta somente módulos, tópicos e subtópicos.
+- O conteúdo complementar permanece preso aos conceitos já previstos nos materiais-base.
