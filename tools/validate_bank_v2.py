@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,20 +58,34 @@ missing_lessons = sorted(set(topics) - set(lesson_by_topic))
 if missing_lessons:
     fail(f"tópicos sem aula: {missing_lessons}")
 
+required_sections = {
+    "Como usar esta aula",
+    "Objetivo da aula",
+    "Fundamentos explicados passo a passo",
+    "Método de resolução",
+    "Exemplos comentados",
+    "Diferenças que a banca pode explorar",
+    "Conteúdo técnico para memorizar depois de compreender",
+    "Checklist antes de fazer exercícios",
+    "Prática obrigatória",
+    "Mapa exato do edital",
+}
+
 for topic_id, lesson in lesson_by_topic.items():
     if topic_id not in topics:
         fail(f"aula aponta para tópico inexistente: {topic_id}")
     titles = {section.get("title") for section in lesson.get("sections", [])}
-    required = {
-        "Mapa exato do edital",
-        "Conceitos que você precisa dominar",
-        "Aplicações e exemplos",
-        "Como isso costuma virar questão",
-        "Armadilha de prova",
-        "Meta de domínio",
-    }
-    if not required.issubset(titles):
-        fail(f"aula {topic_id} não recebeu todos os blocos aprofundados")
+    if not required_sections.issubset(titles):
+        missing = sorted(required_sections - titles)
+        fail(f"aula {topic_id} não recebeu todos os blocos aprofundados: {missing}")
+    if lesson.get("depth") != "concurso-aprofundado-v3":
+        fail(f"aula {topic_id} não está marcada como profundidade V3")
+    if int(lesson.get("estimatedMinutes") or 0) < 65:
+        fail(f"aula {topic_id} tem tempo planejado curto demais: {lesson.get('estimatedMinutes')}")
+    if int(lesson.get("theoryMinutes") or 0) < 40:
+        fail(f"aula {topic_id} tem teoria curta demais: {lesson.get('theoryMinutes')}")
+    if len(lesson.get("sections", [])) < 10:
+        fail(f"aula {topic_id} possui poucas seções para o padrão aprofundado")
 
 ids: set[str] = set()
 stems: set[str] = set()
@@ -79,7 +93,6 @@ coverage = Counter()
 subject_count = Counter()
 answers = Counter()
 difficulty = Counter()
-source_types = Counter()
 
 for q in questions:
     qid = q.get("id")
@@ -127,7 +140,6 @@ for q in questions:
     subject_count[expected_subject] += 1
     answers[answer] += 1
     difficulty[q.get("difficulty", "unknown")] += 1
-    source_types[q.get("sourceType", "unknown")] += 1
 
 for subject_id, subject in subjects.items():
     target = TARGETS[subject_id]
@@ -137,8 +149,7 @@ for subject_id, subject in subjects.items():
             fail(f"{topic['id']} tem {count} questões; mínimo exigido={target}")
 
 # O app embaralha alternativas em tempo de execução, mas o arquivo também não
-# deve concentrar o gabarito em uma única posição. Com milhares de questões,
-# exigimos que nenhuma letra ultrapasse 30% da base.
+# deve concentrar o gabarito em uma única posição.
 total = len(questions)
 for index in range(5):
     ratio = answers[index] / total
@@ -148,7 +159,7 @@ for index in range(5):
 if total < 2650:
     fail(f"banco deveria ter ao menos 2.650 questões; encontrou {total}")
 
-print("VALIDAÇÃO V2 OK")
+print("VALIDAÇÃO V3 OK")
 print(f"Tópicos: {len(topics)}")
 print(f"Aulas: {len(lessons)}")
 print(f"Questões: {total}")
