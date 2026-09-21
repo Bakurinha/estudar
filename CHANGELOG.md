@@ -1,5 +1,19 @@
 # Changelog
 
+
+## [1.7.0] - 2026-09-21
+
+### Added
+- Aprofundamento da GCM sem alteração do escopo oficial: 116 tópicos preservados.
+- Seis subtópicos didáticos por tópico, sempre vinculados ao `officialScope` do Anexo I.
+- 34 páginas internas por tópico, com fundamento, aplicação, diferenças, armadilhas, revisão ativa e ponte para exercícios.
+- Validação de densidade mínima por subtópico e rastreabilidade literal ao item do edital.
+
+### Changed
+- O banco de 2.650 questões foi preservado sem alteração.
+- A versão do pacote GCM foi elevada para `2026.09.21.5`.
+- Aplicativo e cache atualizados para 1.7.0.
+
 Todas as alterações relevantes deste projeto são registradas aqui.
 
 O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/) e o projeto utiliza versionamento semântico.
