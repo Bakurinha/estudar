@@ -7,6 +7,7 @@ on:
       - 'tools/generate_seed_data.py'
       - 'tools/expand_bank_v2.py'
       - 'tools/build_study_bank.py'
+      - 'tools/sanitize_bank.py'
       - 'tools/validate_project.py'
       - 'tools/validate_bank_v2.py'
       - '.github/workflows/build-study-bank.yml'
@@ -32,6 +33,9 @@ jobs:
 
       - name: Expand lessons and question bank
         run: python tools/build_study_bank.py
+
+      - name: Sanitize all question alternatives
+        run: python tools/sanitize_bank.py
 
       - name: Validate original project invariants
         run: python tools/validate_project.py
