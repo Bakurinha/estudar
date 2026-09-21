@@ -1,6 +1,7 @@
 name: Expand GCM study depth
 
 # Temporary one-shot migration. Removed automatically after a validated build.
+# Payload integrity is verified with SHA-256 before any project file is changed.
 on:
   push:
     paths:
