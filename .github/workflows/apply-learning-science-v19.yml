@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'tools/apply_learning_science_v19.py'
+      - 'tools/patch_learning_practice.py'
       - '.github/workflows/apply-learning-science-v19.yml'
 
 permissions:
@@ -23,7 +24,9 @@ jobs:
           find data -type f -print0 | sort -z | xargs -0 sha256sum > /tmp/data-before.sha256
 
       - name: Apply methodology migration
-        run: python tools/apply_learning_science_v19.py
+        run: |
+          python tools/apply_learning_science_v19.py
+          python tools/patch_learning_practice.py
 
       - name: Check JavaScript syntax
         run: |
@@ -52,6 +55,7 @@ jobs:
       - name: Commit validated methodology
         run: |
           rm -f tools/apply_learning_science_v19.py
+          rm -f tools/patch_learning_practice.py
           rm -f .github/workflows/apply-learning-science-v19.yml
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
