@@ -9,6 +9,7 @@ on:
       - 'tools/build_study_bank.py'
       - 'tools/deepen_lessons.py'
       - 'tools/normalize_lesson_depth.py'
+      - 'tools/build_study_manual_v5.py'
       - 'tools/sanitize_bank.py'
       - 'tools/validate_project.py'
       - 'tools/validate_bank_v2.py'
@@ -41,6 +42,9 @@ jobs:
 
       - name: Normalize lesson depth
         run: python tools/normalize_lesson_depth.py
+
+      - name: Build paginated study manual V5
+        run: python tools/build_study_manual_v5.py
 
       - name: Sanitize all question alternatives
         run: python tools/sanitize_bank.py
