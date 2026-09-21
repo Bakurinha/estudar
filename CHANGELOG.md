@@ -1,9 +1,112 @@
 # Changelog
 
-Todas as alterações relevantes deste projeto serão documentadas neste arquivo.
+Todas as alterações relevantes deste projeto são registradas aqui.
 
-O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/) e o projeto usa versionamento semântico.
+O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/) e o projeto utiliza versionamento semântico.
 
+## [1.5.1] - 2026-09-21
+
+### Corrigido
+
+- corrigido o erro de inicialização `Failed to fetch` no GitHub Pages;
+- corrigida a quantidade de chunks do pacote **Paradigmas de Linguagens de Programação em Python** de 8 para 10;
+- corrigida a quantidade de chunks do pacote **Matemática e Lógica** de 12 para 7;
+- cursos acadêmicos deixaram de ser dependências obrigatórias do boot: falha em um pacote opcional não derruba mais todo o aplicativo;
+- erros de pacote agora são registrados individualmente em `metadata`;
+- mensagens de erro de rede, HTTP e descompressão ficaram mais específicas;
+- Service Worker atualizado para evitar mistura entre `config.js` novo e JavaScript/dados antigos em cache.
+
+### Adicionado
+
+- publicação dos 7 chunks completos de Matemática e Lógica;
+- carregamento versionado dos pacotes usando query string de versão;
+- validação básica da estrutura interna de cada pacote antes da gravação no IndexedDB;
+- diagnóstico do carregamento de cada área de estudo;
+- aviso não bloqueante quando somente um curso opcional não pode ser atualizado.
+
+### Alterado
+
+- Service Worker elevado para cache `v1.5.1`;
+- JavaScript, JSON, manifesto e arquivos `.b64` agora usam estratégia **network-first**;
+- CSS e ícones continuam usando cache rápido com atualização em segundo plano;
+- seletor superior passou de “Concurso ativo” para **“Área de estudo”**;
+- branding alterado para “Plataforma de estudos”;
+- Dashboard passou a distinguir concurso de curso acadêmico;
+- tela Estudar passou a exibir rastreabilidade do PDF, subtópicos e quantidade de atividades do material;
+- tela Exercícios exibe PDF/módulo/páginas utilizados como fonte-base nas questões acadêmicas;
+- cursos acadêmicos receberam **Treino misto** no lugar de um falso simulado oficial;
+- TAF informa explicitamente quando não se aplica a uma área acadêmica.
+
+### Performance
+
+- chunks acadêmicos são baixados sequencialmente para reduzir pico de memória/conexões em celulares;
+- pacotes já importados não são recarregados quando sua versão não mudou;
+- um pacote atualizado pode ser reimportado sem exigir reconstrução de todas as outras áreas.
+
+## [1.5.0] - 2026-09-21
+
+### Adicionado
+
+- arquitetura multiárea para concursos e disciplinas acadêmicas no mesmo IndexedDB;
+- área **Paradigmas de Linguagens de Programação em Python**;
+- 4 PDFs de Python organizados na sequência do material-fonte;
+- 15 tópicos principais de Python com subtópicos e páginas internas;
+- 150 questões autorais baseadas nos PDFs de Python;
+- 46 exercícios/atividades do material de Python identificados para uso nas aulas;
+- área **Matemática e Lógica**;
+- 7 PDFs de Matemática/Lógica organizados na sequência do material-fonte;
+- 24 tópicos principais de Matemática/Lógica com subtópicos e páginas internas;
+- 150 questões autorais baseadas nos PDFs de Matemática/Lógica;
+- 122 exercícios/atividades do material de Matemática/Lógica identificados;
+- metadados de rastreabilidade por documento, módulo e páginas;
+- pacotes acadêmicos compactados em gzip + Base64 e divididos em chunks;
+- versão própria para cada pacote de conteúdo.
+
+### Validação
+
+- os 11 PDFs utilizados foram comparados e não apresentaram duplicação de arquivo por hash;
+- banco de Python validado com 150 IDs e enunciados únicos;
+- banco de Matemática/Lógica validado com 150 IDs e enunciados únicos;
+- todas as questões acadêmicas possuem cinco alternativas, gabarito válido, explicação e vínculo a tópico existente;
+- distribuição original do gabarito de cada banco foi balanceada em 30 respostas por posição A–E;
+- questões continuam tendo alternativas embaralhadas na camada visual sem mudar o gabarito real.
+
+## [1.4.0] - 2026-09-21
+
+### Adicionado
+
+- aulas da GCM transformadas em apostilas paginadas;
+- índice interno de páginas;
+- navegação anterior/próxima;
+- indicação explícita do recorte do edital que fundamenta cada página;
+- validações mínimas de volume e densidade por tópico.
+
+### Conteúdo
+
+- 116 tópicos da GCM convertidos em 116 apostilas;
+- 928 páginas internas de estudo;
+- aproximadamente 3,7 milhões de caracteres no banco de aulas expandido.
+
+## [1.3.0] - 2026-09-21
+
+### Adicionado
+
+- aprofundamento específico em todos os 116 tópicos da GCM;
+- validação de pontos específicos por tópico.
+
+### Banco de questões
+
+- banco da GCM expandido para 2.650 questões autorais;
+- verificação de alternativas duplicadas, gabaritos, explicações e vínculo matéria/tópico.
+
+## [1.2.0] - 2026-09-21
+
+### Alterado
+
+- seleção de exercícios passou a considerar histórico de respostas;
+- questões inéditas e erros anteriores receberam prioridade;
+- questões vistas recentemente receberam menor prioridade;
+- alternativas passaram a ser embaralhadas a cada exibição preservando o gabarito original.
 
 ## [1.1.0] - 2026-09-21
 
@@ -20,11 +123,10 @@ O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/)
 
 ### Corrigido
 
-- registro do `sw.js` agora é resolvido a partir de `import.meta.url`, compatível com GitHub Pages em subdiretórios;
-- instalação do Service Worker não depende mais de `cache.addAll()`, que podia cancelar todo o PWA quando um único arquivo falhava;
-- URLs do cache agora são montadas a partir do escopo real do Service Worker;
-- navegação HTML offline possui fallback para o `index.html`;
-- documentação corrigida para refletir o banco atual de 224 questões validadas.
+- registro do `sw.js` passou a ser resolvido a partir de `import.meta.url`, compatível com GitHub Pages em subdiretórios;
+- instalação do Service Worker deixou de depender de `cache.addAll()`, que podia cancelar todo o PWA quando um único arquivo falhava;
+- URLs do cache passaram a ser montadas a partir do escopo real do Service Worker;
+- navegação HTML offline recebeu fallback para o `index.html`.
 
 ### Performance
 
@@ -39,8 +141,8 @@ O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/)
 - arquitetura multi-edital;
 - concurso Guarda Civil Municipal de Salvador 2026 pré-carregado;
 - matriz curricular baseada no Anexo I do Edital nº 002/2026;
-- 116 tópicos/aulas;
-- 224 questões autorais validadas pré-carregadas;
+- 116 tópicos/aulas iniciais;
+- banco inicial autoral;
 - filtro de exercícios por matéria, tópico, dificuldade e erros;
 - seleção aleatória após filtragem curricular;
 - simulado de 70 questões com distribuição oficial;
@@ -66,19 +168,8 @@ O formato segue a ideia do [Keep a Changelog](https://keepachangelog.com/pt-BR/)
 - parser preliminar de novos editais;
 - revisão manual da estrutura antes da importação;
 - endpoint de IA opcional sem credencial embutida no repositório;
-- PDFs do edital e guia incluídos em `docs/`;
 - README completo;
-- gerador de dados e validador de projeto.
-
-### Performance
-
-- PDF.js carregado somente quando necessário;
-- consultas IndexedDB por índices;
-- cursores com limite em tabelas de crescimento contínuo;
-- dashboard usa estatísticas incrementais em vez de recalcular todo o histórico;
-- histórico limitado a janela recente;
-- questões filtradas antes do embaralhamento;
-- assets visuais reduzidos ao essencial.
+- geradores de dados e validadores do projeto.
 
 ### Segurança e privacidade
 
