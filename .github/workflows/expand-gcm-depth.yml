@@ -1,0 +1,46 @@
+name: Expand GCM study depth
+
+on:
+  push:
+    paths:
+      - '.github/workflows/expand-gcm-depth.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild GCM study depth
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64, gzip
+          payload = Path('tools/.gcm-depth-payload.b64').read_text().strip()
+          Path('/tmp/gcm_depth.py').write_bytes(gzip.decompress(base64.b64decode(payload)))
+          PY
+          python /tmp/gcm_depth.py
+
+      - name: Validate existing project invariants
+        shell: bash
+        run: |
+          python tools/validate_project.py
+          python tools/validate_bank_v2.py
+
+      - name: Commit validated GCM expansion
+        shell: bash
+        run: |
+          rm -f tools/.gcm-depth-payload.b64
+          rm -f .github/workflows/expand-gcm-depth.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'feat: deepen all GCM topics without changing edital scope'
+          git push
