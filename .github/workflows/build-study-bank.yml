@@ -7,6 +7,7 @@ on:
       - 'tools/generate_seed_data.py'
       - 'tools/expand_bank_v2.py'
       - 'tools/build_study_bank.py'
+      - 'tools/deepen_lessons.py'
       - 'tools/sanitize_bank.py'
       - 'tools/validate_project.py'
       - 'tools/validate_bank_v2.py'
@@ -33,6 +34,9 @@ jobs:
 
       - name: Expand lessons and question bank
         run: python tools/build_study_bank.py
+
+      - name: Apply topic-specific deepening
+        run: python tools/deepen_lessons.py
 
       - name: Sanitize all question alternatives
         run: python tools/sanitize_bank.py
