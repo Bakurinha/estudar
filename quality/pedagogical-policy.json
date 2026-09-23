@@ -47,7 +47,10 @@
     "legacyFlagCountsMayNotIncrease": true,
     "legacyTemplateCountsMayNotIncrease": true,
     "duplicateBlockExcessMayNotIncrease": true,
-    "genericMethodologyRatioMayNotIncrease": true
+    "genericMethodologyRatioMayNotIncrease": true,
+    "questionCountMayNotDecrease": true,
+    "maxAutomaticPageCountDrop": 0.05,
+    "largeCoverageReductionRequiresDeliberatePolicyChange": true
   },
   "pilotTopics": [
     "interpretacao-argumentativa",
