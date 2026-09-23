@@ -62,7 +62,7 @@ jobs:
         if: github.ref_name == 'pedagogical-quality-v2' && github.actor != 'github-actions[bot]'
         shell: bash
         run: |
-          if git diff --quiet -- quality/reports/ data/quality/; then
+          if [ -z "$(git status --porcelain -- quality/reports/ data/quality/)" ]; then
             echo "Quality artifacts already up to date."
             exit 0
           fi
