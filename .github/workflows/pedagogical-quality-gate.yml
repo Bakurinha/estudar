@@ -1,0 +1,75 @@
+name: Pedagogical quality gate
+
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'quality/**'
+      - 'tools/**'
+      - '.github/workflows/**'
+  push:
+    branches:
+      - main
+      - pedagogical-quality-v2
+    paths:
+      - 'data/**'
+      - 'quality/**'
+      - 'tools/**'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout with history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Bootstrap baseline and classification on quality branch
+        if: github.ref_name == 'pedagogical-quality-v2' && github.actor != 'github-actions[bot]'
+        run: python tools/build_pedagogical_baseline.py --write
+
+      - name: Validate existing project invariants
+        run: python tools/validate_project.py
+
+      - name: Validate expanded bank
+        run: python tools/validate_bank_v2.py
+
+      - name: Validate learning-method grounding
+        run: python tools/validate_learning_method.py
+
+      - name: Run pedagogical quality gate
+        shell: bash
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            python tools/pedagogical_quality_gate.py --reference HEAD^ --report quality/reports/quality-gate-current.json
+            python tools/pedagogical_preservation_gate.py --reference HEAD^
+          else
+            python tools/pedagogical_quality_gate.py --reference HEAD --report quality/reports/quality-gate-current.json
+            python tools/pedagogical_preservation_gate.py --reference HEAD
+          fi
+
+      - name: Commit bootstrap quality artifacts
+        if: github.ref_name == 'pedagogical-quality-v2' && github.actor != 'github-actions[bot]'
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- quality/reports/ data/quality/)" ]; then
+            echo "Quality artifacts already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add quality/reports/ data/quality/
+          git commit -m "quality: bootstrap pedagogical baseline and classification"
+          git push

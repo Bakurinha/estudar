@@ -11,9 +11,6 @@ on:
       - 'tools/normalize_lesson_depth.py'
       - 'tools/build_study_manual_v5.py'
       - 'tools/sanitize_bank.py'
-      - 'tools/validate_project.py'
-      - 'tools/validate_bank_v2.py'
-      - '.github/workflows/build-study-bank.yml'
 
 permissions:
   contents: write
@@ -25,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -54,6 +53,11 @@ jobs:
 
       - name: Validate expanded bank
         run: python tools/validate_bank_v2.py
+
+      - name: Block pedagogical regressions before commit
+        run: |
+          python tools/pedagogical_quality_gate.py --reference HEAD --report quality/reports/quality-gate-build.json
+          python tools/pedagogical_preservation_gate.py --reference HEAD
 
       - name: Commit generated study data
         shell: bash

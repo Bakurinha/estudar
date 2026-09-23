@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "name": "Quality Gate Pedagógico V2",
+  "principle": "Repetir conhecimento para revisão é permitido; repetir a mesma experiência cognitiva sem ganho novo é proibido.",
+  "scope": "Todo conteúdo novo ou alterado do projeto. A dívida legada é tratada por catraca: pode diminuir, nunca aumentar.",
+  "questions": {
+    "exactNormalizedStemDuplicates": 0,
+    "nearDuplicateThreshold": 0.9,
+    "forbidMetalinguisticScopeQuestions": true,
+    "forbidPlaceholderAlternatives": true,
+    "legacyTemplateFamiliesMayNotGrow": true,
+    "requiredPedagogyMetadataForNewOrModified": [
+      "templateFamily",
+      "cognitiveLevel",
+      "cognitiveOps",
+      "skillTarget",
+      "errorTarget"
+    ],
+    "allowedCognitiveLevels": [
+      "fixacao",
+      "compreensao",
+      "aplicacao",
+      "transferencia"
+    ],
+    "hardQuestionRule": "difficulty=hard exige cognitiveLevel aplicacao/transferencia e pelo menos duas operações cognitivas",
+    "templateFamilyTargetMaxShare": 0.05
+  },
+  "pages": {
+    "genericMethodologyMaxShareInNewOrChangedText": 0.15,
+    "exactDuplicateNewBlocks": 0,
+    "repetitionForReviewRequiresRevisitOf": true,
+    "newPageRequiresPedagogicalRole": true,
+    "newOrChangedBlockRequiresLearningGain": true,
+    "allowedPedagogicalRoles": [
+      "diagnostico",
+      "ensinar",
+      "exemplo_resolvido",
+      "comparar",
+      "pratica_guiada",
+      "pratica_independente",
+      "transferencia",
+      "revisao"
+    ]
+  },
+  "ratchet": {
+    "exactStemDuplicateExcessMayNotIncrease": true,
+    "legacyFlagCountsMayNotIncrease": true,
+    "legacyTemplateCountsMayNotIncrease": true,
+    "duplicateBlockExcessMayNotIncrease": true,
+    "genericMethodologyRatioMayNotIncrease": true,
+    "questionCountMayNotDecrease": true,
+    "maxAutomaticPageCountDrop": 0.05,
+    "largeCoverageReductionRequiresDeliberatePolicyChange": true
+  },
+  "pilotTopics": [
+    "interpretacao-argumentativa",
+    "porcentagem-proporcao",
+    "penal-ilicitude",
+    "leg-guardas"
+  ]
+}
