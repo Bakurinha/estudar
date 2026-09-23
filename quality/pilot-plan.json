@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "name": "Piloto de aprendizagem por aplicação",
+  "contestId": "gcm-salvador-2026",
+  "scopeRule": "O piloto não cria novos itens de edital. Ele melhora somente a progressão pedagógica dentro do officialScope existente.",
+  "topics": [
+    {
+      "topicId": "interpretacao-argumentativa",
+      "reason": "testa interpretação, inferência, argumentação e transferência em texto"
+    },
+    {
+      "topicId": "porcentagem-proporcao",
+      "reason": "testa procedimento matemático, escolha de modelo e cálculo"
+    },
+    {
+      "topicId": "penal-ilicitude",
+      "reason": "testa regra jurídica, requisitos, contraste de institutos e caso concreto"
+    },
+    {
+      "topicId": "leg-guardas",
+      "reason": "testa lei seca, competência, alteração mínima de redação e aplicação prática"
+    }
+  ],
+  "learningLadder": [
+    "explicacao_simples",
+    "explicacao_tecnica",
+    "exemplo_resolvido",
+    "exemplo_comentado",
+    "pratica_guiada",
+    "pratica_independente",
+    "transferencia",
+    "fgv_like",
+    "revisao_espacada"
+  ],
+  "masteryEvidence": [
+    "recupera_sem_consulta",
+    "resolve_aplicacao_direta",
+    "resolve_contexto_novo",
+    "resolve_questao_sem_pista",
+    "repete_desempenho_apos_intervalo"
+  ],
+  "initialInternalTargets": {
+    "fixacao": 0.85,
+    "compreensao": 0.8,
+    "aplicacao": 0.75,
+    "transferencia": 0.7,
+    "externalValidation": "questões oficiais compatíveis ficam fora do treino inicial e servem como teste cego"
+  }
+}
