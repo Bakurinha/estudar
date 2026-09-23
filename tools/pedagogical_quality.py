@@ -162,10 +162,11 @@ def classify_question(question: dict[str, Any]) -> dict[str, Any]:
 def flatten_pages(lessons: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     pages: dict[str, dict[str, Any]] = {}
     for lesson in lessons:
-        topic_id = lesson.get("topicId")
+        topic_id = str(lesson.get("topicId") or "sem-topico")
         for index, page in enumerate(lesson.get("studyPages") or []):
-            page_id = page.get("id") or f"{topic_id}-page-{index+1:03d}"
-            pages[page_id] = {"topicId": topic_id, **page}
+            page_id = str(page.get("id") or f"page-{index+1:03d}")
+            quality_key = f"{topic_id}|{page_id}"
+            pages[quality_key] = {"_qualityKey": quality_key, "topicId": topic_id, **page}
     return pages
 
 
@@ -346,7 +347,7 @@ def strict_page_errors(
 
     errors: list[str] = []
     for page in changed:
-        pid = str(page.get("id") or "sem-id")
+        pid = str(page.get("_qualityKey") or f"{page.get('topicId','sem-topico')}|{page.get('id','sem-id')}")
         old = prev_pages.get(pid)
         if old is None:
             role = page.get("pedagogicalRole")
