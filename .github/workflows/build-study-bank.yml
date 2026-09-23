@@ -11,12 +11,6 @@ on:
       - 'tools/normalize_lesson_depth.py'
       - 'tools/build_study_manual_v5.py'
       - 'tools/sanitize_bank.py'
-      - 'tools/validate_project.py'
-      - 'tools/validate_bank_v2.py'
-      - 'tools/pedagogical_quality.py'
-      - 'tools/pedagogical_quality_gate.py'
-      - 'quality/pedagogical-policy.json'
-      - '.github/workflows/build-study-bank.yml'
 
 permissions:
   contents: write
