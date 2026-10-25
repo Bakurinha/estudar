@@ -1,5 +1,11 @@
 # Changelog
 
+## Segurança — 2026-10-25 (configuração)
+
+- Actions fixadas por SHA verificado; permissões de leitura explícitas e credenciais de checkout removidas dos fluxos sem escrita.
+- Dependabot configurado para propor atualizações de Actions e dos pacotes npm aplicáveis, sem merge automático.
+
+
 ## 1.9.1 — Recuperação sem olhar e IDs estáveis
 
 - Páginas acadêmicas sem ID passam a usar identificador estável por tópico e posição.
