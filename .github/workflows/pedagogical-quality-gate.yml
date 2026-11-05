@@ -11,6 +11,7 @@ on:
     branches:
       - main
       - pedagogical-quality-v2
+      - fix/security-october-2026
     paths:
       - 'data/**'
       - 'quality/**'
@@ -23,6 +24,7 @@ permissions:
 
 jobs:
   quality:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
 
     steps:
@@ -60,28 +62,3 @@ jobs:
             python tools/pedagogical_quality_gate.py --reference HEAD --report quality/reports/quality-gate-current.json
             python tools/pedagogical_preservation_gate.py --reference HEAD
           fi
-
-  bootstrap:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/pedagogical-quality-v2' && github.actor != 'github-actions[bot]'
-    needs: quality
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
-        with:
-          python-version: '3.12'
-      - run: python tools/build_pedagogical_baseline.py --write
-      - name: Commit bootstrap quality artifacts
-        shell: bash
-        run: |
-          if [ -z "$(git status --porcelain -- quality/reports/ data/quality/)" ]; then
-            echo "Quality artifacts already up to date."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add quality/reports/ data/quality/
-          git commit -m "quality: bootstrap pedagogical baseline and classification"
-          git push
