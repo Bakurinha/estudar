@@ -2,11 +2,6 @@ name: Pedagogical quality gate
 
 on:
   pull_request:
-    paths:
-      - 'data/**'
-      - 'quality/**'
-      - 'tools/**'
-      - '.github/workflows/**'
   push:
     branches:
       - main
